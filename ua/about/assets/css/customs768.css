@@ -1,0 +1,117 @@
+@media screen and (max-width: 769px) {
+    .card:hover {
+        width: 320px;
+        height: 431px;
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .rychka:hover {
+        height: 291px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/ruch2-320x295.jpg);
+    }
+    .glyshkova {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/glu1-320-295.png);
+    }
+    .glyshkova:hover {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/glu2-320x295.jpg);
+    }
+    .milian {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/mil1-320-295.png);
+    }
+    .milian:hover {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/mil2-320x295.jpg);
+    }
+    .tarasov {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/tar1-320-295.png);
+    }
+    .tarasov:hover {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/tar2-320x295.jpg);
+    }
+    .nazarenko {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/naz1-320-295.png);
+    }
+    .nazarenko:hover {
+        height: 295px;
+        width: 320px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/320x295/naz2-320x295.jpg);
+    }
+    .card-body {
+        width: 320px;
+        height: 141px;
+        position: absolute;
+        top: 290;
+    }
+    .contcomand {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .container>.navbar-header,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container-fluid>.navbar-collapse {
+        margin-right: 45px;
+        margin-left: -118px;
+    }
+    .infoicons .col-lg-3 {
+        display: none;
+    }
+    .col-md-titleaboutus {
+        display: none;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -43px !important;
+    }
+    .col-md-glyshkova {
+        display: none;
+    }
+    .newsmob {
+        display: block;
+    }
+    .notpc {
+        display: none;
+    }
+    .notpc {
+        display: block;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    .hone {
+        font-weight: 450;
+        font-size: 85px;
+        line-height: 76px;
+    }
+}
+
+.btnssa {
+    color: #ffffff;
+    padding: 3px 15px;
+    border: 2px solid #ffffff;
+}

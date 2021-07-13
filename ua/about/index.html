@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Тарасов и Партнеры | юридические услуги</title>
+    <meta name="description" content="Ваш юридический отдел! Юридическая компания «Тарасов и партнеры» — специалист по сопровождению деятельности предприятий. По сути, мы заменяем юридический отдел. Это не только экономически выгодно, но и эффективно.">
+    <meta name="keywords" content="@yield('keywords')" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" href="img/ico.svg" type="image/x-icon">
+
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+    <!-- Gallery Lightbox -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+    .navbar-right {
+            margin-top: 9px;
+            margin-right: -179px;
+        }
+        
+        .navbar>.container .navbar-brand,
+        .navbar>.container-fluid .navbar-brand {
+            margin-left: -48px;
+            margin-top: -2px;
+        }
+        
+        .lang {
+            font-style: normal;
+            font-weight: 450;
+            font-size: 14px;
+            line-height: 18px;
+            color: #B49A67;
+        }
+        
+        @media (max-width: 1920px) {
+            .navbar {
+                min-height: 67px;
+            }
+        }
+        
+        @media (max-width: 960px) {
+            .navbar {
+                min-height: 63px;
+            }
+            .container>.navbar-header,
+            .container-fluid>.navbar-header,
+            .container>.navbar-collapse,
+            .container-fluid>.navbar-collapse {
+                margin-right: -84px;
+                margin-left: -15px;
+            }
+            .navbar-brand {
+                padding: 12px 10px;
+            }
+            .navbar>.container .navbar-brand,
+            .navbar>.container-fluid .navbar-brand {
+                margin-left: -84px;
+            }
+            .navbar-right {
+                float: right !important;
+                margin-right: -27px;
+                margin-top: 7px;
+            }
+        }
+        
+        .men a {
+            font-family: "Futura PT";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #223A76;
+        }
+        
+        .men a:hover {
+            color: #b49a67;
+        }
+        
+        .activ {
+            color: #b49a67;
+        }
+        
+        @media (min-width: 1470px) {
+            .navbar>.container .navbar-brand,
+            .navbar>.container-fluid .navbar-brand {
+                margin-left: 0px;
+            }
+            .navbar-right {
+                margin-right: 0px;
+            }
+        }
+        
+        @media (max-width: 480px) {}
+        
+        .navbar>.container .navbar-brand,
+        .navbar>.container-fluid .navbar-brand {
+            margin-left: -7px;
+        }
+    }
+    @media (max-width: 768px) {
+        .newsmob {
+            display: block;
+        }
+        
+        .navbar>.container .navbar-brand,
+        .navbar>.container-fluid .navbar-brand {
+            margin-left: 0px;
+        }
+        
+        .hone {
+            font-weight: 450;
+            font-size: 85px;
+            line-height: 76px;
+        }
+    }
+    @media (max-width: 480px) {
+        .hone {
+            font-weight: 450;
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+    @media (max-width: 480px) {
+        .hone {
+            font-weight: 450;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        
+        .navbar>.container .navbar-brand,
+        .navbar>.container-fluid .navbar-brand {
+            margin-left: -7px;
+        }
+    }
+    .breadc {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 17px;
+        line-height: 22px;
+        color: #B49A67;
+        padding-bottom: 59px;
+        padding-top: 120px;
+    }
+    .breadc a {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 17px;
+        line-height: 22px;
+        color: #B49A67;
+    }
+    .navbar-default {
+        background-color: #E5E5E5;
+    }
+    .lang {
+        background: #E5E5E5;
+        color: #B49A67;
+        border: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        padding-top: 4px;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .heading {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 60px;
+        line-height: 47px;
+        color: #223A76;
+        padding-bottom: 45px;
+    }
+    .texts {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .hr {
+        border: 1px solid #B49A67;
+    }
+    .small-text {
+        font-family: Futura PT;
+        Weight: 400;
+        font-size: 17px;
+    }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Start header section -->
+    <header style="z-index: 9999999999;" id="mu-header">
+        <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+                    <!-- LOGO -->
+
+                    <a class="navbar-brand" href=""><img src="img/logo.svg" alt="Logo img"></a>
+
+
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+                        <li id="home"><a href="ua">Головна</a></li>
+                        <li id="about"><a href="ua/about">Про нас</a></li>
+                        <li id="men"><a href="#mu-restaurant-menu">Команда</a></li>
+                        <li id="praktiki"><a href="ua/praktiki/yuridicheskiy-autsyursing">Практики</a></li>
+                        <li><a id="men" href="#mu-gallery">Наші клієнти</a></li>
+                        <li><a id="men" href="#mu-chef">Публікації</a></li>
+                        <li><a id="men" href="#mu-contact">Контакти</a></li>
+                        <li class="lang" style="padding-top:12px;">
+                            <select class="lang" style="lang" onchange="window.location.href = this.options[this.selectedIndex].value">								
+                    <option style="display:none" class="lang" value="@yield('UA')">&nbsp;&nbsp;&nbsp;&nbsp;UA&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                    <option class="lang" value="@yield('EN')">&nbsp;&nbsp;&nbsp;&nbsp;EN&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                    <option class="lang" value="@yield('RU')">&nbsp;&nbsp;&nbsp;&nbsp;RU&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                </select></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="mu-about-us">
+        <div class="container">
+            <div class="row">
+                <p class="breadc"><a href="ua">Головна</a> / <a>Про нас</a></p>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <img src="img/onas-left.svg" alt="tarasov & partners">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="heading">Про нас</h1>
+                        <p class="texts"><span style="color:#B49A67">Юридична компанія Tarasov&Partners</span> - це команда експертів у різних сферах права, сервіс, що відповідає світовим стандартам, індивідуальний підхід до кожного кейсу й 100% гарантія конфіденційності
+                            та захисту персональних даних.
+                        </p>
+                        <p class="hr"></p>
+                        <p class="small-text">
+                            <strong>Основний напрямок нашої роботи</strong> - юридичний супровід підприємств та захист посадових осіб. Ми маємо глибоке розуміння бізнесу та потреб наших клієнтів. Ми уважно вивчаємо специфіку їх роботи, щоб підібрати найоптимальніше
+                            рішення для кожного окремого питання. Наша головна мета - забезпечити сприятливі умови для стабільного розвитку наших клієнтів та захистити їх інтереси в довгостроковій перспективі.
+                        </p>
+                        <p class="small-text">Наша компанія була заснована у 2008 році. За цей час ми здобули десятки перемог у резонансних справах, неодноразово супроводжували державні закупівлі на мільйони доларів, виграли сотні справ, а головне – захистили інтереси та репутацію
+                            наших клієнтів.
+                        </p>
+                        <p class="small-text">Офіс <strong>Tarasov&Partners</strong> розташований в Києві, проте ми надаємо юридичні послуги по всій Україні та світу. Неважливо де знаходитесь ви чи ваше підприємство, наші спеціалісти миттєво виїдуть у будь-яку точку світу,
+                            якщо це необхідно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p style="font-family: Futura PT;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      color: #64759F;
+      text-align:center; padding-top:90px;">© Copyright Tarasov & Partners 2020</p>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <!-- Counter -->
+
+    <!-- Gallery Lightbox -->
+    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Date Picker -->
+    <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+    <!-- Custom js -->
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the navbar
+        var navbar = document.getElementById("mu-header");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        //window.location.href1 = 'http://specific-page.com';
+
+
+        $(document).ready(function() {
+            if (location.pathname == '/ua') {
+                $('#home > a').addClass('activ');
+            }
+            if (location.pathname == '/ua/about') {
+                $('#about > a').addClass('activ');
+            }
+            if (location.pathname == '/ua/praktiki/yuridicheskiy-autsyursing') {
+                $('#praktiki > a').addClass('activ');
+            }
+        });
+    </script>
+</body>
+
+</html>
