@@ -1,4 +1,12 @@
 @media screen and (max-width: 769px) {
+    .ollpublic {
+        display: block;
+    }
+    .hree {
+        display: block;
+        height: 1px;
+        background-color: rgb(114, 114, 114);
+    }
     #mu-reservation\>div>div>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first {
         width: 100% !important;
     }
@@ -133,11 +141,11 @@
     }
     .cardss {
         height: 165px;
-        width: 290px;
+        width: 354px;
     }
     .card-bodys {
         background: #223A76;
-        width: 290px;
+        width: 354px;
         height: 158px;
     }
     .newsone {

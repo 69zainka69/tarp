@@ -1,4 +1,25 @@
 @media screen and (max-width: 1961px) {
+    .titleheading {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 60px;
+        line-height: 77px;
+        margin-left: -8px;
+        padding-top: 4px;
+        color: #223A76;
+    }
+    .iconnumber {
+        display: none;
+    }
+    .infoiconss420 {
+        display: none;
+    }
+    .ollpublic {
+        display: none;
+    }
+    .hree {
+        display: none;
+    }
     .btnssa {
         color: white;
         border: 1px solid;
