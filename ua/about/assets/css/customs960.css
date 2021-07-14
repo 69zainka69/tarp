@@ -83,7 +83,24 @@
         margin-right: 45px;
         margin-left: -118px;
     }
+    .headerimg {
+        width: 418px;
+    }
     .infoicons .col-lg-3 {
+        display: none;
+    }
+    .imagess {
+        width: 389px;
+        height: 375px;
+    }
+    .container {
+        width: 929px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 99px;
+    }
+    .butom {
         display: none;
     }
 }

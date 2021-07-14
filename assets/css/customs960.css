@@ -1,4 +1,38 @@
 @media screen and (max-width: 961px) {
+    .phonesfooter {
+        width: 167px;
+    }
+    .iconfooters {
+        display: block;
+    }
+    .iconsfooter {
+        display: none;
+    }
+    .contacts {
+        padding-left: 57px;
+    }
+    .mapsg {
+        padding-left: 0px;
+    }
+    .cardss {
+        height: 165px;
+        width: 290px;
+    }
+    .card-bodys {
+        background: #223A76;
+        width: 290px;
+        height: 158px;
+    }
+    .newsone {
+        width: 579px;
+        height: 320px;
+    }
+    .comentsto {
+        height: 70px;
+    }
+    .comentstokate {
+        display: none;
+    }
     .rychka {
         height: 291px;
         width: 290px;
@@ -76,6 +110,9 @@
         margin-right: 2px;
         margin-left: 2px;
     }
+    .container {
+        width: 918px;
+    }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
     .container>.navbar-collapse,
@@ -83,8 +120,117 @@
         margin-right: 45px;
         margin-left: -118px;
     }
-    .infoicons .col-lg-3 {
+    .infoicons {
+        display: none !important;
+    }
+    .infoiconss {
+        display: block !important;
+    }
+    .butonas {
         display: none;
+    }
+    .practic {
+        width: 920px;
+    }
+    .practicfirst {
+        padding-right: 0px;
+        height: 234px;
+        width: 470px;
+        padding-left: 0px;
+    }
+    .practictwo {
+        background: #223A76;
+        height: 234px;
+        width: 450px;
+    }
+    .practictwotwo {
+        padding-right: -15px;
+        height: 234px;
+        width: 450px;
+    }
+    .practicimg {
+        width: 100%;
+        height: 234px;
+    }
+    .practiccart {
+        padding-right: -15px;
+        height: 234px;
+        width: 450px;
+    }
+    .practiccarts {
+        height: 234px;
+        width: 468px;
+        padding-left: 22px;
+    }
+    .practicscar {
+        padding-left: 15px;
+        height: 234px;
+        width: 450px;
+    }
+    .practictextcart {
+        height: 234px !important;
+    }
+    .fd {
+        height: 234px;
+        padding-left: 15px;
+    }
+    .card-body {
+        width: 290px !important;
+        height: 141px;
+    }
+    .rychka {
+        height: 291px;
+        width: 290px;
+    }
+    .card:hover {
+        width: 290px;
+        height: 431px;
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .rychka:hover {
+        height: 291px;
+        width: 290px;
+    }
+    .glyshkova {
+        height: 295px;
+        width: 290px;
+    }
+    .glyshkova:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .milian {
+        height: 295px;
+        width: 290px;
+    }
+    .milian:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .tarasov {
+        height: 295px;
+        width: 290px;
+    }
+    .tarasov:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .nazarenko {
+        height: 295px;
+        width: 290px;
+    }
+    .nazarenko:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -16px !important;
+    }
+    .navbar-right {
+        float: right !important;
+        margin-right: 56px !important;
+        margin-top: 7px;
     }
 }
 

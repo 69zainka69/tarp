@@ -349,17 +349,3 @@ li a {
 .imageman2:hover {
     background: #b49a67;
 }
-
-@media (min-width: 961px) {
-    .sectionourclient {
-        background: url(img/backback.svg) no-repeat center;
-        height: 200px;
-    }
-}
-
-@media (max-width: 961px) {
-    .sectionourclient {
-        background-image: url(img/backback960.svg);
-        height: 200px;
-    }
-}

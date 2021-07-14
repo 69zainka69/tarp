@@ -363,3 +363,7 @@ li a {
         height: 200px;
     }
 }
+
+.navbar-default .navbar-toggle {
+    border-color: rgba(221, 221, 221, 0);
+}

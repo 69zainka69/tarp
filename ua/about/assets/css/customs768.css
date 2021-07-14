@@ -1,4 +1,4 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 770px) {
     .card:hover {
         width: 320px;
         height: 431px;
@@ -108,10 +108,47 @@
         font-size: 85px;
         line-height: 76px;
     }
-}
-
-.btnssa {
-    color: #ffffff;
-    padding: 3px 15px;
-    border: 2px solid #ffffff;
+    .btnssa {
+        color: #ffffff;
+        padding: 3px 15px;
+        border: 2px solid #ffffff;
+    }
+    .headerimg {
+        display: none !important;
+    }
+    .headerimag {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 648px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 185px !important;
+    }
+    #mu-header>nav>div>div.navbar-header>button {
+        display: block;
+    }
+    #top-menu {
+        display: none;
+    }
+    .telph {
+        display: block !important;
+        padding-left: 63px;
+        padding-top: 20px;
+        color: #223A76;
+    }
+    .telph a {
+        padding-left: 74px;
+        color: #223A76;
+    }
+    .telph a:hover {
+        color: #ffffff;
+    }
+    .breadc {
+        padding-left: 31px;
+        padding-bottom: 6px !important;
+    }
 }

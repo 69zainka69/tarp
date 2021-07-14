@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name="robots" content="noindex">
     <title>Тарасов и Партнеры</title>
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')" />
@@ -30,11 +30,16 @@
     <!-- Main style sheet -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/customs1920.css">
     <link rel="stylesheet" type="text/css" href="assets/css/customs960.css">
     <link rel="stylesheet" type="text/css" href="assets/css/customs768.css">
     <link rel="stylesheet" type="text/css" href="assets/css/customs480.css">
     <link rel="stylesheet" type="text/css" href="assets/css/customs320.css">
     <style>
+        .btn-det {
+            z-index: 99;
+        }
+        
         .navbar-right {
             margin-top: 9px;
             margin-right: -179px;
@@ -110,6 +115,12 @@
             .navbar-right {
                 margin-right: 0px;
             }
+        }
+        
+        .textbutton .onpc {
+            color: #B49A67;
+            padding: 3px 10px;
+            border: solid 1px #B49A67;
         }
         
         @media (max-width: 480px) {
@@ -206,78 +217,42 @@
         }
         
         .rychka {
-            height: 291px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/ruch1-320-295.png);
         }
         
-        .card:hover {
-            width: 320px;
-            height: 431px;
-            box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
-        }
-        
         .rychka:hover {
-            height: 291px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/ruch2-320x295.jpg);
         }
         
         .glyshkova {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/glu1-320-295.png);
         }
         
         .glyshkova:hover {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/glu2-320x295.jpg);
         }
         
         .milian {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/mil1-320-295.png);
         }
         
         .milian:hover {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/mil2-320x295.jpg);
         }
         
         .tarasov {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/tar1-320-295.png);
         }
         
         .tarasov:hover {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/tar2-320x295.jpg);
         }
         
         .nazarenko {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/naz1-320-295.png);
         }
         
         .nazarenko:hover {
-            height: 295px;
-            width: 320px;
-            ​​​​​​​background-repeat: no-repeat;
             background-image: url(img/comand/320x295/naz2-320x295.jpg);
         }
         
@@ -286,16 +261,6 @@
             height: 141px;
             position: absolute;
             top: 290;
-        }
-        
-        .newsone {
-            width: 664px;
-            height: 324px;
-        }
-        
-        .cardss {
-            height: 165px;
-            width: 320px;
         }
         
         .lang {
@@ -339,12 +304,6 @@
             font-size: 17px;
             line-height: 17px;
             padding-top: 10px;
-        }
-        
-        .card-bodys {
-            background: #223A76;
-            width: 320px;
-            height: 158px;
         }
         
         .butomzap:hover {
@@ -428,10 +387,6 @@
             padding-bottom: 39.92px;
         }
         
-        .iconsfooter {
-            padding-left: 120px;
-        }
-        
         .zapis {
             padding-left: 80px;
             margin-top: -57px;
@@ -494,7 +449,7 @@
             border: 2px solid #B49A67;
         }
         
-        .notpc {
+        .ontpc {
             display: block;
         }
         
@@ -504,15 +459,6 @@
         
         .newsmob {
             display: none;
-        }
-        
-        .newstitle {
-            padding-top: 39px;
-            padding-left: 3px;
-            font-style: normal;
-            font-weight: 450;
-            font-size: 27px;
-            line-height: 30px;
         }
         
         .newstext {
@@ -536,14 +482,6 @@
         
         .newsright {
             padding-right: 0px !important;
-            padding-top: 15px;
-        }
-        
-        .titlenew {
-            font-weight: 450;
-            font-size: 27px;
-            line-height: 30px;
-            color: #FFFFFF;
         }
         
         .benerslide {
@@ -552,15 +490,47 @@
             width: 100%;
             height: 865px;
         }
+        
+        .infoicons {
+            display: block;
+        }
+        
+        .infoiconss {
+            display: none;
+        }
+        
+        @media screen and (max-width: 1961px) {
+            .sectionourclient {
+                background: url(img/backback.svg) no-repeat center;
+                height: 200px;
+            }
+        }
+        
+        @media screen and (max-width: 961px) {
+            .sectionourclient {
+                background-image: url(img/backback960.svg);
+                height: 200px;
+            }
+        }
+        
+        @media screen and (max-width: 780px) {
+            .sectionourclient {
+                background-image: url(img/backback780.svg);
+                height: 301px;
+            }
+        }
     </style>
 </head>
+
 
 <body>
 
 
 
     <!-- Start header section -->
-    <header style="z-index: 9999999999;" id="mu-header">
+    <header style="z-index: 9999999999; position: fixed;
+    top: 0;
+    width: 100%;" id="mu-header">
         <nav class="navbar navbar-default mu-main-navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -572,20 +542,16 @@
                 <span class="icon-bar"></span>
               </button>
 
-                    <!-- LOGO -->
-
                     <a class="navbar-brand" href=""><img src="img/logo.svg" alt="Logo img"></a>
-
-
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-                        <li id="home"><a href="ua">Головна</a></li>
-                        <li id="about"><a href="ua/about">Про нас</a></li>
+                        <li id="home"><a style="color:#B49A67;" href="https://new-partner.vm.ua/tarp">Головна</a></li>
+                        <li id="about"><a href="https://new-partner.vm.ua/tarp/ua/about/">Про нас</a></li>
                         <li id="men"><a href="#mu-restaurant-menu">Команда</a></li>
-                        <li id="praktiki"><a href="ua/praktiki/yuridicheskiy-autsyursing">Практики</a></li>
+                        <li id="praktiki"><a href="https://new-partner.vm.ua/tarp/ua/praktiki/yuridicheskiy-autsyursing/">Практики</a></li>
                         <li><a id="men" href="#mu-gallery">Наші клієнти</a></li>
-                        <li><a id="men" href="#mu-chef">Публікації</a></li>
+                        <li><a id="men" href="#pubcil">Публікації</a></li>
                         <li><a id="men" href="#mu-contact">Контакти</a></li>
                         <li class="lang" style="padding-top:12px;">
                             <select class="lang" style="lang" onchange="window.location.href = this.options[this.selectedIndex].value">								
@@ -633,15 +599,17 @@
     </svg>&nbsp;
     </a>
                             <a class="iconcs" target="_blank" href="https://www.instagram.com/"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9.81717 0.333374C11.2963 0.333374 12.7755 0.333374 14.2546 0.333374C16.9993 0.341232 19.0044 2.25079 19.0126 4.86758C19.0208 7.72012 19.0208 10.5727 19.0126 13.4331C19.0044 16.0106 16.9993 17.9358 14.3204 17.9437C11.321 17.9516 8.32157 17.9516 5.32216 17.9437C2.63502 17.9358 0.613502 16.0184 0.605284 13.4566C0.597067 10.5805 0.597067 7.71226 0.605284 4.84401C0.605284 2.25079 2.61859 0.341232 5.3386 0.333374C6.83419 0.333374 8.32157 0.333374 9.81717 0.333374ZM9.82538 1.81072C8.34622 1.81072 6.86706 1.80287 5.3879 1.81072C3.42391 1.81858 2.15018 3.02875 2.14197 4.90687C2.13375 7.73584 2.13375 10.5648 2.14197 13.3938C2.14197 15.2483 3.42391 16.4585 5.36325 16.4663C8.32157 16.4742 11.2799 16.4742 14.2382 16.4663C16.1776 16.4663 17.4595 15.2405 17.4595 13.3938C17.4677 10.5491 17.4677 7.71226 17.4595 4.86758C17.4513 3.04447 16.1776 1.82644 14.2546 1.81858C12.7837 1.80287 11.3045 1.81072 9.82538 1.81072Z" fill="#223A76">
-    <path d="M9.78424 13.5352C7.25323 13.5274 5.19884 11.5471 5.20706 9.12674C5.21527 6.68282 7.29432 4.71826 9.84998 4.73398C12.381 4.75756 14.4272 6.73783 14.4107 9.15817C14.3861 11.5864 12.3235 13.5431 9.78424 13.5352ZM9.80067 12.0579C11.5264 12.0579 12.8658 10.7613 12.8658 9.11102C12.8576 7.50794 11.5099 6.21919 9.83354 6.21133C8.10785 6.20347 6.75196 7.49222 6.75196 9.14245C6.74374 10.7613 8.10785 12.0657 9.80067 12.0579Z" fill="#223A76">
-    <path d="M14.7725 5.45657C14.1315 5.44871 13.6467 4.96936 13.6549 4.34856C13.6631 3.74347 14.189 3.25626 14.8136 3.27198C15.4381 3.28769 15.9558 3.79848 15.9476 4.38785C15.9312 4.99293 15.4134 5.46443 14.7725 5.45657Z" fill="#223A76">
-    </svg>&nbsp;
+                                <path d="M9.81765 0.333374C11.2968 0.333374 12.776 0.333374 14.2551 0.333374C16.9998 0.341232 19.0049 2.25079 19.0131 4.86758C19.0213 7.72012 19.0213 10.5727 19.0131 13.4331C19.0049 16.0106 16.9998 17.9358 14.3209 17.9437C11.3215 17.9516 8.32206 17.9516 5.32265 17.9437C2.63551 17.9358 0.61399 16.0184 0.605773 13.4566C0.597555 10.5805 0.597555 7.71226 0.605773 4.84401C0.605773 2.25079 2.61907 0.341232 5.33909 0.333374C6.83468 0.333374 8.32206 0.333374 9.81765 0.333374ZM9.82587 1.81072C8.34671 1.81072 6.86755 1.80287 5.38839 1.81072C3.42439 1.81858 2.15067 3.02875 2.14246 4.90687C2.13424 7.73584 2.13424 10.5648 2.14246 13.3938C2.14246 15.2483 3.42439 16.4585 5.36374 16.4663C8.32206 16.4742 11.2804 16.4742 14.2387 16.4663C16.178 16.4663 17.46 15.2405 17.46 13.3938C17.4682 10.5491 17.4682 7.71226 17.46 4.86758C17.4518 3.04447 16.178 1.82644 14.2551 1.81858C12.7842 1.80287 11.305 1.81072 9.82587 1.81072Z" fill="#223A76"/>
+                                <path d="M9.78472 13.5352C7.25372 13.5274 5.19933 11.5471 5.20754 9.12674C5.21576 6.68282 7.2948 4.71826 9.85046 4.73398C12.3815 4.75756 14.4276 6.73783 14.4112 9.15817C14.3866 11.5864 12.3239 13.5431 9.78472 13.5352ZM9.80116 12.0579C11.5268 12.0579 12.8663 10.7613 12.8663 9.11102C12.8581 7.50794 11.5104 6.21919 9.83403 6.21133C8.10834 6.20347 6.75245 7.49222 6.75245 9.14245C6.74423 10.7613 8.10834 12.0657 9.80116 12.0579Z" fill="#223A76"/>
+                                <path d="M14.773 5.45657C14.132 5.44871 13.6472 4.96936 13.6554 4.34856C13.6636 3.74347 14.1895 3.25626 14.8141 3.27198C15.4386 3.28769 15.9563 3.79848 15.9481 4.38785C15.9316 4.99293 15.4139 5.46443 14.773 5.45657Z" fill="#223A76"/>
+                                </svg>
+                                &nbsp;
     </a>
                             <a class="iconcs" target="_blank" href="https://www.youtube.com/user/TarasovAndPartners"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9.91376 5.19458C9.42658 4.91334 8.80151 5.25261 8.80151 5.80615V12.471C8.80151 13.029 9.42658 13.3638 9.91376 13.087L15.6681 9.75682C16.146 9.48005 16.146 8.80598 15.6681 8.52921L9.91376 5.19458ZM10.2723 11.2166V7.06501L13.8572 9.14525L10.2723 11.2166Z" fill="#223A76">
-    <path d="M19.6853 0.82883C15.1214 0.172616 8.75126 0.172616 4.18735 0.82883C2.36271 1.09221 0.924138 2.48499 0.611605 4.29292C0.0279026 7.64988 0.0279026 10.6408 0.611605 13.9933C0.924138 15.8012 2.36271 17.194 4.18735 17.4574C6.47161 17.7877 9.21087 17.9529 11.9501 17.9529C14.6802 17.9529 17.4103 17.7877 19.6899 17.4574C21.5146 17.194 22.9531 15.8012 23.2657 13.9933C23.8494 10.6363 23.8494 7.64542 23.2657 4.29292C22.9486 2.48052 21.51 1.08774 19.6853 0.82883ZM21.8133 13.7522C21.6065 14.9486 20.6643 15.8682 19.4693 16.0378C15.0387 16.6762 8.84318 16.6762 4.39877 16.0378C3.20379 15.8637 2.2616 14.9486 2.05477 13.7522C1.49405 10.5203 1.49405 7.76148 2.05477 4.52505C2.2616 3.32869 3.20379 2.4091 4.39877 2.23947C6.62328 1.91806 9.27981 1.76181 11.9363 1.76181C14.5929 1.76181 17.254 1.92252 19.4693 2.23947C20.6643 2.41356 21.6065 3.32869 21.8133 4.52505C22.3786 7.76148 22.3786 10.5203 21.8133 13.7522Z" fill="#223A76">
-    </svg>&nbsp;
+                                <path d="M9.9145 5.19458C9.42731 4.91334 8.80225 5.25261 8.80225 5.80615V12.471C8.80225 13.029 9.42731 13.3638 9.9145 13.087L15.6688 9.75682C16.1468 9.48005 16.1468 8.80598 15.6688 8.52921L9.9145 5.19458ZM10.273 11.2166V7.06501L13.8579 9.14525L10.273 11.2166Z" fill="#223A76"/>
+                                <path d="M19.6858 0.82883C15.1219 0.172616 8.75175 0.172616 4.18784 0.82883C2.3632 1.09221 0.924626 2.48499 0.612093 4.29292C0.0283909 7.64988 0.0283909 10.6408 0.612093 13.9933C0.924626 15.8012 2.3632 17.194 4.18784 17.4574C6.47209 17.7877 9.21136 17.9529 11.9506 17.9529C14.6807 17.9529 17.4108 17.7877 19.6904 17.4574C21.5151 17.194 22.9536 15.8012 23.2662 13.9933C23.8499 10.6363 23.8499 7.64542 23.2662 4.29292C22.949 2.48052 21.5105 1.08774 19.6858 0.82883ZM21.8138 13.7522C21.607 14.9486 20.6648 15.8682 19.4698 16.0378C15.0392 16.6762 8.84367 16.6762 4.39926 16.0378C3.20428 15.8637 2.26209 14.9486 2.05526 13.7522C1.49454 10.5203 1.49454 7.76148 2.05526 4.52505C2.26209 3.32869 3.20428 2.4091 4.39926 2.23947C6.62376 1.91806 9.2803 1.76181 11.9368 1.76181C14.5934 1.76181 17.2545 1.92252 19.4698 2.23947C20.6648 2.41356 21.607 3.32869 21.8138 4.52505C22.3791 7.76148 22.3791 10.5203 21.8138 13.7522Z" fill="#223A76"/>
+                                </svg>
+                                &nbsp;
     </a>
                         </div>
                     </div>
@@ -668,9 +636,10 @@
 
                         <div class="mu-title">
                             <h2 class="titleheading">Про нас</h2>
+                            <P class="abownas"><a class="detail" href="">Детальніше про нас</a></P>
                         </div>
 
-                        <div class="infoicons" class="row">
+                        <div class="infoicons bubl" class="row">
 
                             <div class="col-lg-3">
                                 <div class="mu-about-us-left">
@@ -696,8 +665,8 @@
                                 </div>
 
                                 <svg style="padding-top:25px; padding-bottom:25px;" width="100%" viewBox="0 0 566 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line y1="0.758358" x2="565.585" y2="0.758358" stroke="#B49A67" stroke-width="1.40003">
-    </svg>
+                                                             <line y1="0.758358" x2="565.585" y2="0.758358" stroke="#B49A67" stroke-width="1.40003">
+                                    </svg>
 
                                 <div class="col-lg-4">
 
@@ -718,20 +687,68 @@
                                     <p>Оперативний виїзд в будь-яку точку світу</p>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="infoiconss">
+                            <div style="height:70px;"></div>
+                            <div class="col-sm-4">
+                                <div class="mu-about-us-right">
+                                    <p class="heidingnum1">12</p>
+                                    <p style="text-align:center;">Років на ринку юридичніх послуг</p>
+                                </div>
+                            </div>
+                            <div style="" class="col-sm-4">
+                                <p class="heidingnum2">15</p>
+                                <p style="text-align:center;">багатопрофільних юристів та адвокатів</p>
+                            </div>
+
+                            <div style="" class="col-sm-4">
+                                <p class="heidingnum1">24/7</p>
+                                <p style="text-align:center;">Цілодобова юридична підтримка без вихідних</p>
+                            </div>
+
+                            <svg style="padding-top:25px; padding-bottom:25px;" width="100%" viewBox="0 0 566 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <line y1="0.758358" x2="565.585" y2="0.758358" stroke="#B49A67" stroke-width="1.40003">
+                                </svg>
+
+                            <div class="col-sm-4">
+
+                                <p class="heidingnum2">100%</p>
+                                <p style="text-align:center;">Гарантія конфіденціальності</p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <p class="heidingnum1"><img alt="icon beskonechnost" width="100px" src="img/etern-sign.svg"></p>
+                                <p style="text-align:center;">Широкий спектр послуг</p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <p class="heidingnum2"><svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.01 30.5986C60.01 14.0283 46.5803 0.598633 30.01 0.598633C13.4397 0.598633 0.0100098 14.0283 0.0100098 30.5986C0.0100098 47.1689 13.4397 60.5986 30.01 60.5986C46.5803 60.5752 59.9866 47.1689 60.01 30.5986ZM52.1819 26.8486C52.6272 29.333 52.6272 31.8643 52.1819 34.3486H44.8928C44.9631 33.1064 45.01 31.8643 45.01 30.5986C45.01 29.333 44.9631 28.0908 44.8928 26.8486H52.1819ZM49.4631 19.3486H44.0959C43.6975 16.7939 43.0881 14.2627 42.2913 11.7783C45.2444 13.7002 47.7053 16.3018 49.4631 19.3486ZM27.5959 8.23926C29.1897 8.05176 30.8069 8.05176 32.4241 8.23926C34.5334 11.6143 35.9397 15.4111 36.5022 19.3486H23.5178C24.1038 15.4111 25.4866 11.6143 27.5959 8.23926ZM7.83814 34.3486C7.39282 31.8643 7.39282 29.333 7.83814 26.8486H15.1272C15.0569 28.0908 15.01 29.333 15.01 30.5986C15.01 31.8643 15.0569 33.1064 15.1272 34.3486H7.83814ZM10.5569 41.8486H15.9241C16.3225 44.4033 16.9319 46.9346 17.7288 49.4189C14.7756 47.4971 12.3147 44.8955 10.5569 41.8486ZM15.9241 19.3486H10.5569C12.3147 16.3018 14.7756 13.7002 17.7288 11.7783C16.9319 14.2627 16.3225 16.7939 15.9241 19.3486ZM32.4241 52.958C30.8069 53.1455 29.1897 53.1455 27.5959 52.958C25.4866 49.583 24.1038 45.7861 23.5178 41.8486H36.5022C35.9163 45.7861 34.5334 49.583 32.4241 52.958ZM37.3928 34.3486H22.6272C22.5569 33.1299 22.51 31.9111 22.51 30.5986C22.51 29.2861 22.5569 28.0674 22.6272 26.8486H37.3928C37.4631 28.0674 37.51 29.2861 37.51 30.5986C37.51 31.9111 37.4631 33.1299 37.3928 34.3486ZM42.2913 49.4189C43.0881 46.9346 43.6741 44.4033 44.0959 41.8486H49.4631C47.7053 44.8955 45.2444 47.4971 42.2913 49.4189Z" fill="#223A76">
+</svg>
+                                </p>
+                                <p style="text-align:center;">Оперативний виїзд в будь-яку точку світу</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="text-align:center; padding-top: 79px;">
+        </div>
+        <div class="butonas" style="text-align:center; padding-top: 79px;">
             <p class="btn"><a class="detail" href="">Детальніше про нас</a></p>
         </div>
     </section>
 
     <section id="mu-gallery">
         <div class="container contcomand">
-            <div class="row">
+            <div class="row lefter">
                 <div class="coomandos" class="col-lg-12">
+                    <div class="textkomand on768" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
+                        <h3 class="titleaboutus">Команда</h3>
+                        <p class="textaboutus texton768">Наша основна мета - забезпечити керівництву підприємства та його власнику оперативну та постійну юридичну підтримку, стати вашим юридичним відділом.</p>
+                        <p class="bottkomand"><a href=""><span>Вся команда</span></a></p>
+                    </div>
                     <div class="mu-gallery-area">
                         <div class="mu-gallery-content">
                             <div class="mu-gallery-body">
@@ -758,7 +775,7 @@
                                     </div>
                                 </div>
 
-                                <div class="textkomand" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
+                                <div class="textkomand nenadonamob" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
                                     <h3 class="titleaboutus">Команда</h3>
                                     <p class="textaboutus">Наша основна мета - забезпечити керівництву підприємства та його власнику оперативну та постійну юридичну підтримку, стати вашим юридичним відділом.</p>
                                     <p class="bottkomand"><a href=""><span>Вся команда</span></a></p>
@@ -820,23 +837,22 @@
     <section style="background: #F8F8F8;" id="mu-reservation">
         <div class="container">
             <div class="row">
-                <div style="padding-top: 128px;" class="col-lg-12">
+                <div style="padding-top: 128px; z-index:3;" class="col-lg-12 col-md-12 col-sm-12 ">
                     <div class="mu-reservation-area">
                         <p style="float:right;" class="btn"><a href="">Весь список послуг</a></p>
                         <div class="mu-title">
                             <h2 class="titleheading">Практики</h2>
                         </div>
 
-                        <div class="row" style="color: #FFFFFF;">
-                            <div style="padding-right: 0px; padding-left: 0px;" class="col-lg-6 col-md-6"><img style="float:left; width:100%;
-                          height: 330px;" src="img/image1.svg" alt="img"></div>
-                            <div style="background:#223A76; 
-                            height: 330px;" class="col-lg-6 col-md-6">
-                                <p>&nbsp;
+                        <div class="row practic" style="color: #FFFFFF;">
+                            <div style="background-image: url(img/image1.svg); background-position: center;" class="col-lg-6 col-md-6 col-sm-6 practicfirst">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 practictwo">
+
+                                <p class="titlecartwidth" style="text-align:center;">Юридичний аутсорсинг
                                 </p>
-                                <p style="font-weight: 450; font-size: 37.3153px; text-align:center;">Юридичний аутсорсинг
-                                </p>
-                                <ul style="padding-left:50px;">
+                                <ul class="liul" style="padding-left:50px;">
                                     <li>Повний юридичний супровід вашого бізнесу 24/7</li>
                                     <li>Індивідуальні пакети послуг</li>
                                     <li>Широкий спектр практик </li>
@@ -847,111 +863,147 @@
                                 <p>&nbsp;</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 newsleft">
-                                <div class="col-lg-6 col-md-6 newsleft">
-                                    <img style="width:100%;" src="img/image2.svg" alt="миниатюра">
+                        <div style="padding-top:15px; " class="row">
+                            <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practictwotwo">
+                                <div class="col-lg-6 col-md-6 col-sm-6 newsleft">
+                                    <img class="practicimg" src="img/image2.svg" alt="миниатюра">
                                 </div>
-                                <div style="background:white;" class="col-lg-6 col-md-6">
-                                    <p class="newstitle">Кримінальне <br>право</p>
-                                    <p class="text">Справи про економічні,<br> службові та господарські злочини – наша основна спеціалізація</p>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                    <p class="newstitle ">Кримінальне <br>право</p>
+                                    <p class="text ">Справи про економічні,<br> службові та господарські злочини – наша основна спеціалізація</p>
                                 </div>
                             </div>
-                            <div style="background:#223A76; height: 271px; margin-top: 29px; " class="col-lg-6 col-md-6 newsright">
-                                <p>&nbsp;
-                                </p>
-                                <p class="titlenew">Податкове право
-                                </p>
-                                <p style="color:white;">Фіскальні служби не страшні, коли є ми:</p>
-                                <ul style="padding-left:50px; color:white;">
-                                    <li>Оптимізація податків</li>
-                                    <li>Оцінка податкових ризиків</li>
-                                    <li>Супровід податкових перевірок</li>
-                                    <li>Оскарження податкових повідомлень-рішень</li>
+                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
+                                <div style="background:#223A76;" class="fd">
+                                    <p class="non7866">&nbsp;</p>
+                                    <p class="titlenew ">Податкове право</p>
+                                    <p class="liuli" style="color:white; ">Фіскальні служби не страшні, коли є ми:</p>
+                                    <ul class="liuli" style="padding-left:50px; color:white; ">
+                                        <li>Оптимізація податків</li>
+                                        <li>Оцінка податкових ризиків</li>
+                                        <li>Супровід податкових перевірок</li>
+                                        <li>Оскарження податкових повідомлень-рішень</li>
 
-                                </ul>
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
+                                    </ul>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                </div>
                             </div>
                         </div>
 
 
 
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 newsleft">
-                                <div class="col-lg-6 col-md-6 newsleft">
-                                    <img style="width:100%;" src="img/kartinka2.svg" alt="картинка2">
+                        <div class="onpad"></div>
+                        <div style="padding-top:25px; " class="row ">
+                            <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
+                                <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                    <img class="practicimg" src="img/kartinka2.svg " alt="картинка2 ">
                                 </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <p class="newstitle">Корпоративне <br>право</p>
-                                    <p class="text">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори та конфлікти.
 
+                                <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                    <p class="newstitle ">Корпоративне <br>право</p>
+                                    <p class="text nonetable">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори та конфлікти.</p>
+                                    <p class="text onetable">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
+                                <div class="heicart" style="background:white;">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                        <img class="practicimg" src="img/kartinka3.svg " alt="картинка2 ">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                        <p class="newstitle ">Адміністративне <br>право</p>
+                                        <p class="text ">Визнані лідери в галузі адміністративного права та антикорупційного законодавства.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style="padding-top:25px; " class="row ">
+
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 newsleft  practiccart witeblue">
+
+
+
+                                <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                        <img class="practicimg" src="img/kartinkamed.svg " alt="картинка2 ">
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                        <p class="newstitle ">Медичне <br>право</p>
+                                        <p class="text nonetable">Допоможемо відкрити клініку та захистити її:</p>
+                                        <p class="text">Консультації з усіх питань медичного права</br>
+                                            Правовий аналіз медичної документації</p>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="posobsl onpoint" style="padding-left:15px; width:356px; height:185px">
+                                    <p class="non7866">&nbsp;</p>
+                                    <p class="titlenew ">Медичне право</p>
+                                    <p class="liuli" style="color:white; ">Допоможемо відкрити клініку та захистити її: </p>
+                                    <ul class="liuli" style="padding-left:50px; color:white; ">
+                                        <li>Консультації з усіх питань медичного права</li>
+                                        <li>Правовий аналіз медичної документації</li>
+                                        <li>Встановлення факту лікарської помилки</li>
+                                        <li>Супровід судових спорів </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
+                                <div class="heicart" style="background:white;">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                        <img class="practicimg" src="img/kartinka4.svg " alt="миниатюра ">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                        <p class="newstitle ">Держзакупівлі <br>та тендери </p>
+                                        <p class="text nonetable">Забезпечимо повний юридичний супровід участі в тендерах та державних закупівлях. Організуємо та проведемо тендер з врахуванням всіх нюансів.</p>
+                                        <p class="text onetable">Забезпечимо повний юридичний супровід участі в тендерах та державних закупівлях.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style="padding-top:25px; " class="row ">
+                            <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
+                                <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                    <img class="practicimg" src="img/kartinka5.svg " alt="картинка2 ">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                    <p class="newstitle ">Юридичний <br>супровід<br> договорів </p>
+                                    <p class="text ">Захистимо ваші права та інтереси під час укладання угод та оформлення договорів.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 newsleft">
-                                <div class="col-lg-6 col-md-6 newsleft">
-                                    <img style="width:100%;" src="img/kartinka3.svg" alt="картинка2">
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <p class="newstitle">Адміністративне <br>право</p>
-                                    <p class="text">Визнані лідери в галузі адміністративного права та антикорупційного законодавства.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div style="background:#223A76;height: 271px; margin-top: 29px; " class="col-lg-6 col-md-6 newsright">
-                                <p>&nbsp;
-                                </p>
-                                <p class="titlenew">Медичне право
-                                </p>
-                                <p style="color:white;">Допоможемо відкрити клініку та захистити її: </p>
-                                <ul style="padding-left:50px; color:white;">
-                                    <li>Консультації з усіх питань медичного права</li>
-                                    <li>Правовий аналіз медичної документації</li>
-                                    <li>Встановлення факту лікарської помилки</li>
-                                    <li>Супровід судових спорів </li>
-
-                                </ul>
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                            </div>
-                            <div class="col-lg-6 col-md-6 newsleft">
-                                <div class="col-lg-6 col-md-6 newsleft">
-                                    <img style="width:100%;" src="img/kartinka4.svg" alt="миниатюра">
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <p class="newstitle">Держзакупівлі <br>та тендери </p>
-                                    <p class="text">Забезпечимо повний юридичний супровід участі в тендерах та державних закупівлях. Організуємо та проведемо тендер з врахуванням всіх нюансів.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 newsleft">
-                                <div class="col-lg-6 col-md-6 newsleft">
-                                    <img style="width:100%;" src="img/kartinka5.svg" alt="картинка2">
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <p class="newstitle">Юридичний <br>супровід<br> договорів </p>
-                                    <p class="text">Захистимо ваші права та інтереси під час укладання угод та оформлення договорів.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 newsleft">
+                            <div class="col-lg-6 col-md-6 newsleft ">
                                 <P>&nbsp;</P>
                                 <P>&nbsp;</P>
                                 <P>&nbsp;</P>
-                                <a style="float:right; border:1px solid #B49A67;" href="#"><span style="color: #B49A67; padding:20px; ">Весь список послуг</span></a>
+                                <a style="float:right; border:1px solid #B49A67; " href="# "><span style="color: #B49A67; padding:20px; ">Весь список послуг</span></a>
 
                             </div>
                         </div>
-
+                        <div style="height:50px;"></div>
 
 
 
@@ -972,15 +1024,15 @@
 
 
 
-    <section style="padding-top:44px;" id="mu-reservation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mu-reservation-area">
+    <section style="padding-top:44px; " id="mu-reservation ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="mu-reservation-area ">
 
 
-                        <div class="mu-title">
-                            <p style="float:left;" class="titleheading">Наші клієнти</p><span style="float:right;" class="btn"><a href="">Детальніше</a></span>
+                        <div class="mu-title ">
+                            <p style="float:left; " class="titleheading ">Наші клієнти</p><span style="float:right; " class="btn "><a href=" ">Детальніше</a></span>
                         </div>
 
 
@@ -993,24 +1045,29 @@
         </div>
         </div>
     </section>
-    <section class="sectionourclient" id="mu-reservation">
+    <section class="sectionourclient " id="mu-reservation ">
 
-        <div class="container">
-            <div class="row">
-                <div style="padding-top:250px;" class="col-12">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-1">
-                        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M11.6381 15.4656C11.6381 16.6802 11.1429 17.7328 10.1524 18.6235C9.16191 19.5142 8.00635 20 6.60317 20C4.45714 20 2.80635 19.2713 1.65079 17.8947C0.577778 16.5182 0 14.5749 0 12.1457C0 9.87854 0.990476 7.61134 2.97143 5.26316C4.95238 2.91498 7.26349 1.21457 10.0698 0L11.3905 2.02429C9.16191 3.07692 7.42857 4.2915 6.19048 5.66802C4.95238 7.04453 4.20952 8.74494 4.04444 10.6883H5.69524C6.93333 10.6883 7.84127 10.8502 8.66667 11.0931C9.40952 11.336 10.0698 11.7409 10.4825 12.2267C10.8952 12.7126 11.2254 13.1984 11.3905 13.7652C11.5556 14.251 11.6381 14.8178 11.6381 15.4656ZM26 15.4656C26 16.6802 25.5048 17.7328 24.5143 18.6235C23.5238 19.5142 22.3683 20 20.9651 20C18.819 20 17.1683 19.2713 16.0127 17.8947C14.8571 16.5182 14.2794 14.5749 14.2794 12.1457C14.2794 9.87854 15.2698 7.61134 17.2508 5.26316C19.2317 2.91498 21.6254 1.21457 24.3492 0L25.6698 2.02429C23.4413 3.07692 21.7905 4.2915 20.5524 5.66802C19.3143 7.04453 18.5714 8.74494 18.4063 10.6883H20.0571C21.2952 10.6883 22.2032 10.8502 23.0286 11.0931C23.7714 11.336 24.4317 11.7409 24.8444 12.2267C25.2571 12.7126 25.5873 13.1984 25.7524 13.7652C25.9175 14.251 26 14.8178 26 15.4656Z" fill="#B49A67">
+        <div class="container ">
+            <div class="row ">
+                <div style="padding-top:250px; " class="col-12 ">
+                    <div class="col-md-1 "></div>
+                    <div class="col-md-1 comentstokate">
+                        <svg width="26 " height="20 " viewBox="0 0 26 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+      <path d="M11.6381 15.4656C11.6381 16.6802 11.1429 17.7328 10.1524 18.6235C9.16191 19.5142 8.00635 20 6.60317 20C4.45714 20 2.80635 19.2713 1.65079 17.8947C0.577778 16.5182 0 14.5749 0 12.1457C0 9.87854 0.990476 7.61134 2.97143 5.26316C4.95238
+                                    2.91498 7.26349 1.21457 10.0698 0L11.3905 2.02429C9.16191 3.07692 7.42857 4.2915 6.19048 5.66802C4.95238 7.04453 4.20952 8.74494 4.04444 10.6883H5.69524C6.93333 10.6883 7.84127 10.8502 8.66667 11.0931C9.40952 11.336 10.0698
+                                    11.7409 10.4825 12.2267C10.8952 12.7126 11.2254 13.1984 11.3905 13.7652C11.5556 14.251 11.6381 14.8178 11.6381 15.4656ZM26 15.4656C26 16.6802 25.5048 17.7328 24.5143 18.6235C23.5238 19.5142 22.3683 20 20.9651 20C18.819
+                                    20 17.1683 19.2713 16.0127 17.8947C14.8571 16.5182 14.2794 14.5749 14.2794 12.1457C14.2794 9.87854 15.2698 7.61134 17.2508 5.26316C19.2317 2.91498 21.6254 1.21457 24.3492 0L25.6698 2.02429C23.4413 3.07692 21.7905 4.2915
+                                    20.5524 5.66802C19.3143 7.04453 18.5714 8.74494 18.4063 10.6883H20.0571C21.2952 10.6883 22.2032 10.8502 23.0286 11.0931C23.7714 11.336 24.4317 11.7409 24.8444 12.2267C25.2571 12.7126 25.5873 13.1984 25.7524 13.7652C25.9175
+                                    14.251 26 14.8178 26 15.4656Z " fill="#B49A67 ">
       </svg>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 comentstokate">
                         Мені складно і страшно уявити останні півтора року без юридичної підтримки «Тарасов та партнери», і якими були б наслідки. Крім захисту в складних і стресових питаннях, я отримала ще й супровід, який, як виявилося, був необхідним. Для мене неможливо співробітництво
                         з адвокатом без довіри, йому доводиться довіряти моменти, які надалі впливають на все життя. Продовжуючи співпрацювати і довіряти «Тарасов та партнери» рекомендую всім, кому потрібен юридичний захист та підтримка.</div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2"><img src="img/roundpfoto.svg" alt="фото девушки">
+                    <div class="col-md-1 comentstokate"></div>
+                    <div class="col-md-2 comentstokate"><img src="img/roundpfoto.svg " alt="фото девушки ">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 comentstokate">
                         <p>Катерина Сушко Засновник, дизайнер ТМ СathyТelle
                         </p>
                     </div>
@@ -1023,55 +1080,53 @@
 
 
 
-    <div style="height:450px;"></div>
+    <div class="comentsto"></div>
 
 
 
 
 
-    <section style=" padding-bottom:53.35px;" id="mu-reservation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mu-reservation-area">
-                        <p style="float:right;"></p>
-                        <div class="mu-title">
-                            <h2 class="titleheading">Публікації</h2>
+    <section style=" padding-bottom:53.35px; " id="mu-reservation ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="mu-reservation-area ">
+                        <p style="float:right; "></p>
+                        <div id="pubcil" class="mu-title ">
+                            <h2 class="titleheading ">Публікації</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section style="background-image: url(img/public.svg);" id="mu-reservation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-8 col-sm-12 order-sm-first">
-                        <div class="newsone" style="background: url(img/news1.svg) no-repeat;"></div>
-                        <p class="headnews notpc">Тримання під вартою підозрюваних</p>
-                        <p class="textnews notpc">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила
+    <section style="background-image: url(img/public.svg); " id="mu-reservation ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8 order-sm-first ">
+                        <div class="newsone " style="background: url(img/news1.svg) no-repeat; "></div>
+                        <p class="headnews notpc ">Тримання під вартою підозрюваних</p>
+                        <p class="textnews notpc ">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила
                             щодо визначення запобіжного заходу. У багатьох випадках утримання під вартою в СІЗО достатньо було б замінити домашнім арештом. Чому ініціатива міністра юстиції Дениса Малюськи щодо «фільтрування» СІЗО законодавчо необгрунтована,
                             та як варто проводити там «ревізії», розповів виданню ГолосUA керуючий партнер ЮК “Тарасов та партнери”, адвокат Андрей Тарасов.
                         </p>
-                        <p class="textnews notpc"> &nbsp;</p>
-                        <p class="textnews notpc"> &nbsp;</p>
 
-                        <p style="float:right;"><a class="textbutton notpc" href="#">Детальніше на сторінці ЗМІ</a></p>
 
+
+                        <p style="float:right; "><a class="textbutton notpc " href="# ">Детальніше на сторінці ЗМІ</a></p>
+                        <p class="textnews notpc "> &nbsp;</p>
+                        <p class="textnews notpc "> &nbsp;</p>
                     </div>
 
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-3 onpc">
-                        <div class="cards">
-                            <div style="background: url(img/novin1.svg) no-repeat; " class="cardss"></div>
-                            <div class="card-bodys">
-                                <p style="font-weight: 450; padding-right:15px;
-        font-size: 19px;
-        line-height: 21px;
-        color: #FFFFFF;" class="card-texts">Адвокатського полку прибуло! Наш заступник директора, юрист Євгеній Назаренко став адвокатом!</p>
-                                <div style="padding-bottom:49px; padding-left: 9%;"><span style="color:white;">12-02-2020</span>
-                                    <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right;" href="">Детальніше</a></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 order-sm-3 onpc ">
+                        <div class="cards ">
+                            <div style="background: url(img/novin1.svg) no-repeat; " class="cardss "></div>
+                            <div class="card-bodys ">
+                                <p style="font-weight: 450; padding-right:15px; font-size: 19px; line-height: 21px; color: #FFFFFF; " class="card-texts ">Адвокатського полку прибуло! Наш заступник директора, юрист Євгеній Назаренко став адвокатом!</p>
+                                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
+                                    <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
 
                             </div>
                         </div>
@@ -1082,72 +1137,74 @@
             </div>
         </div>
     </section>
-    <section style="padding-top:33px; padding-bottom:53.35px;" id="mu-reservation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-sm-12 order-sm-first">
+    <section style="padding-top:33px; padding-bottom:53.35px; " id="mu-reservation ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-8 order-sm-first ">
                     <p> &nbsp;</p>
-                    <p class="headnews ontpc">Тримання під вартою підозрюваних</p>
-                    <p class="textnews ontpc">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила щодо
+                    <p class="headnews ontpc ">Тримання під вартою підозрюваних</p>
+                    <p class="textnews ontpc ">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила щодо
                         визначення запобіжного заходу. У багатьох випадках утримання під вартою в СІЗО достатньо було б замінити домашнім арештом. Чому ініціатива міністра юстиції Дениса Малюськи щодо «фільтрування» СІЗО законодавчо необгрунтована, та
                         як варто проводити там «ревізії», розповів виданню ГолосUA керуючий партнер ЮК “Тарасов та партнери”, адвокат Андрей Тарасов.
                     </p>
                     <p> &nbsp;</p>
+
+                    <p style="float:left; ">12-02-2020</p>
+                    <p style="float:right; "><a style="color:#B49A67; padding:3px 15px; border:1px solid #B49A67; " class="textbutton onpcs " href="# ">Детальніше на сторінці ЗМІ</a></p>
                     <p> &nbsp;</p>
                     <p> &nbsp;</p>
-                    <p>12-02-2020</p>
-                    <p style="float:right;"><a class="textbutton onpc" href="#">Детальніше на сторінці ЗМІ</a></p>
+                    <p> &nbsp;</p>
 
                 </div>
 
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4">
-                    <div class="cards">
-                        <div style="background: url(img/new1.svg) no-repeat; " class="cardss"></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 ">
+                    <div class="cards ">
+                        <div style="background: url(img/new1.svg) no-repeat; " class="cardss "></div>
 
-                        <div class="card-bodys">
-                            <p class="card-texts">Асоційований партнер, адвокат Євгеній Назаренко вберіг нашого клієнта від збитків на 8 000 000 гривень</p>
-                            <div style="padding-bottom:49px; padding-left: 9%;"><span style="color:white;">06-02-2020</span>
-                                <a class="btnssa" style="margin-right: 21px; margin-bottom:20px; float: right;" href="">Детальніше</a></div>
+                        <div class="card-bodys ">
+                            <p class="card-texts ">Асоційований партнер, адвокат Євгеній Назаренко вберіг нашого клієнта від збитків на 8 000 000 гривень</p>
+                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
+                                <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
+        <div class="container ">
+            <div class="row ">
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4">
-                    <div class="cards">
-                        <div style="background: url(img/new2.svg) no-repeat; " class="cardss"></div>
-                        <div class="card-bodys">
-                            <p class="card-texts">Пральні закриваються? Що несе Закон «Про запобігання та протидію відмиванню доходів, одержаних злочинним шляхом»?</p>
-                            <div style="padding-bottom:49px; padding-left: 9%;"><span style="color:white;">11-02-2020</span>
-                                <a class="btnssa" style="margin-right: 21px; margin-bottom:20px; float: right;" href="">Детальніше</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 ">
+                    <div class="cards ">
+                        <div style="background: url(img/new2.svg) no-repeat; " class="cardss "></div>
+                        <div class="card-bodys ">
+                            <p class="card-texts ">Пральні закриваються? Що несе Закон «Про запобігання та протидію відмиванню доходів, одержаних злочинним шляхом»?</p>
+                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">11-02-2020</span>
+                                <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4">
-                    <div class="cards">
-                        <div style="background: url(img/new3.svg) no-repeat; " class="cardss"></div>
-                        <div class="card-bodys">
-                            <p class="card-texts">Аквізиція - сучасна інквізиція? Хоч остання і лишилася в Серед- ньовіччі, для деяких підприємців аквізиція нічим не краща.</p>
-                            <div style="padding-bottom:49px; padding-left: 9%;"><span style="color:white;">31-01-2020</span>
-                                <a class="btnssa" style="margin-right: 21px; margin-bottom:20px; float: right;" href="">Детальніше</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 ">
+                    <div class="cards ">
+                        <div style="background: url(img/new3.svg) no-repeat; " class="cardss "></div>
+                        <div class="card-bodys ">
+                            <p class="card-texts ">Аквізиція - сучасна інквізиція? Хоч остання і лишилася в Серед- ньовіччі, для деяких підприємців аквізиція нічим не краща.</p>
+                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
+                                <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4">
-                    <div class="cards">
-                        <div style="background: url(img/new4.svg) no-repeat; " class="cardss"></div>
-                        <div class="card-bodys">
-                            <p class="card-texts">Ринок землі Вчора Верховна рада проголосу- вала за законопроєкт про лібера- лізацію українського ринку землі.</p>
-                            <div style="padding-bottom:49px; padding-left: 9%;"><span style="color:white;">14-11-2019</span>
-                                <a class="btnssa" style="margin-right: 21px; margin-bottom:20px; float: right;" href="">Детальніше</a></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 ">
+                    <div class="cards ">
+                        <div style="background: url(img/new4.svg) no-repeat; " class="cardss "></div>
+                        <div class="card-bodys ">
+                            <p class="card-texts ">Ринок землі Вчора Верховна рада проголосу- вала за законопроєкт про лібера- лізацію українського ринку землі.</p>
+                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">14-11-2019</span>
+                                <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
                     </div>
@@ -1161,14 +1218,14 @@
     </section>
 
     </section>
-    <section id="form" style="padding-bottom:53.35px; padding-top:108px;" id="mu-reservation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mu-reservation-area">
-                        <p style="float:right;"></p>
-                        <div class="mu-title">
-                            <h2 class="titleheading">Контакти</h2>
+    <section id="form " style="padding-bottom:53.35px; padding-top:108px; " id="mu-reservation ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="mu-reservation-area ">
+                        <p style="float:right; "></p>
+                        <div class="mu-title ">
+                            <h2 class="titleheading ">Контакти</h2>
                         </div>
                     </div>
                 </div>
@@ -1179,79 +1236,110 @@
     <section>
 
 
-        <footer style="background:#223A76; height: 540px;">
+        <footer style="background:#223A76; height: 600px; ">
 
             <div class="col-lg-2 ">
             </div>
-            <div style="background-image: url(img/footer.svg); " class="col-lg-8">
-                <div class="col-lg-6 col-sm-6 ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8267255966094!2d30.51046142941182!3d50.43686095622045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfaf14001c15%3A0x2a4f35c88a6b513a!2z0KLQsNGA0LDRgdC-0LIg0ZYg0L_QsNGA0YLQvdC10YDQuA!5e0!3m2!1suk!2sua!4v1623319923758!5m2!1suk!2sua"
-                        width="490" height="540" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div style="background-image: url(img/footer.svg); " class="col-lg-8 ">
+                <div class="col-lg-6 col-sm-6 mapsg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8267255966094!2d30.51046142941182!3d50.43686095622045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfaf14001c15%3A0x2a4f35c88a6b513a!2z0KLQsNGA0LDRgdC-0LIg0ZYg0L_QsNGA0YLQvdC10YDQuA!5e0!3m2!1suk!2sua!4v1623319923758!5m2!1suk!2sua "
+                        width="100%" height="600 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
                 </div>
-                <div class="col-lg-6 col-sm-6">
-                    <p class="contact">Київ, вул. Володимирська,<br> 81-Б, офіс 26
+                <div class="col-lg-6 col-sm-6 contacts">
+                    <p class="contact ">Київ, вул. Володимирська,<br> 81-Б, офіс 26
                         <br><br>
-                        <a class="contact" href="tel:+380442997077">+38 (044) 299 70 77</a><br>
-                        <a class="contact" href="mailto:info@tarp.com.ua">info@tarp.com.ua</a> <span class="iconsfooter">
-    <a class="iconcsf" target="_blank" href="https://twitter.com/tarasovp"><svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path style="fill:#ffffff;" d="M19.419 2.41232C18.6751 2.71766 17.9311 2.9105 17.1872 2.98684C18.0278 2.50473 18.5952 1.82576 18.8894 0.945913C18.1203 1.37981 17.3007 1.68113 16.4306 1.84183C15.6615 1.0584 14.7158 0.668701 13.5978 0.668701C12.526 0.668701 11.6139 1.03028 10.8574 1.75344C10.1008 2.47661 9.72253 3.34842 9.72253 4.3729C9.72253 4.65011 9.75616 4.93134 9.8192 5.2206C8.23464 5.14427 6.75095 4.7626 5.35974 4.07961C3.97272 3.39663 2.79165 2.48464 1.82495 1.34365C1.47189 1.91816 1.29536 2.54089 1.29536 3.21584C1.29536 3.85061 1.45087 4.44119 1.7619 4.98357C2.07293 5.52594 2.49324 5.96787 3.02282 6.30133C2.40077 6.27722 1.81654 6.12054 1.27014 5.83127V5.87546C1.27014 6.77138 1.56436 7.55481 2.15279 8.23377C2.74122 8.90873 3.48096 9.3386 4.38042 9.51136C4.04417 9.59573 3.70372 9.6359 3.35907 9.6359C3.13631 9.6359 2.89253 9.61582 2.62773 9.57966C2.87572 10.3229 3.33385 10.9296 3.99373 11.4076C4.65782 11.8857 5.41017 12.1308 6.25079 12.1469C4.84276 13.2035 3.23718 13.7298 1.43826 13.7298C1.09361 13.7298 0.782583 13.7137 0.500977 13.6856C2.29989 14.7945 4.28375 15.3489 6.45254 15.3489C7.82694 15.3489 9.12149 15.14 10.3278 14.7221C11.5341 14.3043 12.568 13.7459 13.4254 13.0468C14.2829 12.3478 15.0184 11.5442 15.6405 10.6323C16.2625 9.72027 16.7207 8.77213 17.0275 7.78381C17.3301 6.79147 17.4814 5.80315 17.4814 4.80679C17.4814 4.59386 17.4772 4.43316 17.4688 4.32468C18.2338 3.79838 18.881 3.15959 19.419 2.41232Z" fill="#223A76">
+                        <a class="contact " href="tel:+380442997077 ">+38 (044) 299 70 77</a><br>
+                        <a class="contact " href="mailto:info@tarp.com.ua ">info@tarp.com.ua</a> <span class="iconsfooter ">
+    <a class="iconcsf " target="_blank " href="https://twitter.com/tarasovp "><svg width="20 " height="16 " viewBox="0 0 20 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+    <path style="fill:#ffffff; " d="M19.419 2.41232C18.6751 2.71766 17.9311 2.9105 17.1872 2.98684C18.0278 2.50473 18.5952 1.82576 18.8894 0.945913C18.1203 1.37981 17.3007 1.68113 16.4306 1.84183C15.6615 1.0584 14.7158 0.668701 13.5978 0.668701C12.526
+                                    0.668701 11.6139 1.03028 10.8574 1.75344C10.1008 2.47661 9.72253 3.34842 9.72253 4.3729C9.72253 4.65011 9.75616 4.93134 9.8192 5.2206C8.23464 5.14427 6.75095 4.7626 5.35974 4.07961C3.97272 3.39663 2.79165 2.48464 1.82495
+                                    1.34365C1.47189 1.91816 1.29536 2.54089 1.29536 3.21584C1.29536 3.85061 1.45087 4.44119 1.7619 4.98357C2.07293 5.52594 2.49324 5.96787 3.02282 6.30133C2.40077 6.27722 1.81654 6.12054 1.27014 5.83127V5.87546C1.27014 6.77138
+                                    1.56436 7.55481 2.15279 8.23377C2.74122 8.90873 3.48096 9.3386 4.38042 9.51136C4.04417 9.59573 3.70372 9.6359 3.35907 9.6359C3.13631 9.6359 2.89253 9.61582 2.62773 9.57966C2.87572 10.3229 3.33385 10.9296 3.99373 11.4076C4.65782
+                                    11.8857 5.41017 12.1308 6.25079 12.1469C4.84276 13.2035 3.23718 13.7298 1.43826 13.7298C1.09361 13.7298 0.782583 13.7137 0.500977 13.6856C2.29989 14.7945 4.28375 15.3489 6.45254 15.3489C7.82694 15.3489 9.12149 15.14 10.3278
+                                    14.7221C11.5341 14.3043 12.568 13.7459 13.4254 13.0468C14.2829 12.3478 15.0184 11.5442 15.6405 10.6323C16.2625 9.72027 16.7207 8.77213 17.0275 7.78381C17.3301 6.79147 17.4814 5.80315 17.4814 4.80679C17.4814 4.59386 17.4772
+                                    4.43316 17.4688 4.32468C18.2338 3.79838 18.881 3.15959 19.419 2.41232Z " fill="#223A76 ">
     </svg>&nbsp;
     </a>
-    <a class="iconcsf" target="_blank" href="https://www.facebook.com/Tarasov.and.partners"><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path style="fill:#ffffff;" d="M6.54134 6.38895V4.18692C6.54134 3.57792 7.06929 3.08591 7.72276 3.08591H8.90417V0.333374H6.54134C4.58463 0.333374 2.9971 1.81286 2.9971 3.63641V6.38895H0.634277V9.14148H2.9971V17.9496H6.54134V9.14148H8.90417L10.0856 6.38895H6.54134Z" fill="#223A76">
+    <a class="iconcsf " target="_blank " href="https://www.facebook.com/Tarasov.and.partners "><svg width="11 " height="18 " viewBox="0 0 11 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+    <path style="fill:#ffffff; " d="M6.54134 6.38895V4.18692C6.54134 3.57792 7.06929 3.08591 7.72276 3.08591H8.90417V0.333374H6.54134C4.58463 0.333374 2.9971 1.81286 2.9971 3.63641V6.38895H0.634277V9.14148H2.9971V17.9496H6.54134V9.14148H8.90417L10.0856
+                                    6.38895H6.54134Z " fill="#223A76 ">
     </svg>&nbsp;
     </a>
-    <a class="iconcsf" target="_blank" href="https://www.instagram.com/"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path style="fill:#ffffff;" d="M9.81717 0.333374C11.2963 0.333374 12.7755 0.333374 14.2546 0.333374C16.9993 0.341232 19.0044 2.25079 19.0126 4.86758C19.0208 7.72012 19.0208 10.5727 19.0126 13.4331C19.0044 16.0106 16.9993 17.9358 14.3204 17.9437C11.321 17.9516 8.32157 17.9516 5.32216 17.9437C2.63502 17.9358 0.613502 16.0184 0.605284 13.4566C0.597067 10.5805 0.597067 7.71226 0.605284 4.84401C0.605284 2.25079 2.61859 0.341232 5.3386 0.333374C6.83419 0.333374 8.32157 0.333374 9.81717 0.333374ZM9.82538 1.81072C8.34622 1.81072 6.86706 1.80287 5.3879 1.81072C3.42391 1.81858 2.15018 3.02875 2.14197 4.90687C2.13375 7.73584 2.13375 10.5648 2.14197 13.3938C2.14197 15.2483 3.42391 16.4585 5.36325 16.4663C8.32157 16.4742 11.2799 16.4742 14.2382 16.4663C16.1776 16.4663 17.4595 15.2405 17.4595 13.3938C17.4677 10.5491 17.4677 7.71226 17.4595 4.86758C17.4513 3.04447 16.1776 1.82644 14.2546 1.81858C12.7837 1.80287 11.3045 1.81072 9.82538 1.81072Z" fill="#223A76">
-    <path style="fill:#ffffff;" d="M9.78424 13.5352C7.25323 13.5274 5.19884 11.5471 5.20706 9.12674C5.21527 6.68282 7.29432 4.71826 9.84998 4.73398C12.381 4.75756 14.4272 6.73783 14.4107 9.15817C14.3861 11.5864 12.3235 13.5431 9.78424 13.5352ZM9.80067 12.0579C11.5264 12.0579 12.8658 10.7613 12.8658 9.11102C12.8576 7.50794 11.5099 6.21919 9.83354 6.21133C8.10785 6.20347 6.75196 7.49222 6.75196 9.14245C6.74374 10.7613 8.10785 12.0657 9.80067 12.0579Z" fill="#223A76">
-    <path style="fill:#ffffff;" d="M14.7725 5.45657C14.1315 5.44871 13.6467 4.96936 13.6549 4.34856C13.6631 3.74347 14.189 3.25626 14.8136 3.27198C15.4381 3.28769 15.9558 3.79848 15.9476 4.38785C15.9312 4.99293 15.4134 5.46443 14.7725 5.45657Z" fill="#223A76">
-    </svg>&nbsp;
+    <a class="iconcsf " target="_blank " href="https://www.instagram.com/ "><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path style="fill:#ffffff; " d="M9.81765 0.333374C11.2968 0.333374 12.776 0.333374 14.2551 0.333374C16.9998 0.341232 19.0049 2.25079 19.0131 4.86758C19.0213 7.72012 19.0213 10.5727 19.0131 13.4331C19.0049 16.0106 16.9998 17.9358 14.3209 17.9437C11.3215 17.9516 8.32206 17.9516 5.32265 17.9437C2.63551 17.9358 0.61399 16.0184 0.605773 13.4566C0.597555 10.5805 0.597555 7.71226 0.605773 4.84401C0.605773 2.25079 2.61907 0.341232 5.33909 0.333374C6.83468 0.333374 8.32206 0.333374 9.81765 0.333374ZM9.82587 1.81072C8.34671 1.81072 6.86755 1.80287 5.38839 1.81072C3.42439 1.81858 2.15067 3.02875 2.14246 4.90687C2.13424 7.73584 2.13424 10.5648 2.14246 13.3938C2.14246 15.2483 3.42439 16.4585 5.36374 16.4663C8.32206 16.4742 11.2804 16.4742 14.2387 16.4663C16.178 16.4663 17.46 15.2405 17.46 13.3938C17.4682 10.5491 17.4682 7.71226 17.46 4.86758C17.4518 3.04447 16.178 1.82644 14.2551 1.81858C12.7842 1.80287 11.305 1.81072 9.82587 1.81072Z" fill="#223A76"/>
+        <path style="fill:#ffffff; " d="M9.78472 13.5352C7.25372 13.5274 5.19933 11.5471 5.20754 9.12674C5.21576 6.68282 7.2948 4.71826 9.85046 4.73398C12.3815 4.75756 14.4276 6.73783 14.4112 9.15817C14.3866 11.5864 12.3239 13.5431 9.78472 13.5352ZM9.80116 12.0579C11.5268 12.0579 12.8663 10.7613 12.8663 9.11102C12.8581 7.50794 11.5104 6.21919 9.83403 6.21133C8.10834 6.20347 6.75245 7.49222 6.75245 9.14245C6.74423 10.7613 8.10834 12.0657 9.80116 12.0579Z" fill="#223A76"/>
+        <path style="fill:#ffffff; " d="M14.773 5.45657C14.132 5.44871 13.6472 4.96936 13.6554 4.34856C13.6636 3.74347 14.1895 3.25626 14.8141 3.27198C15.4386 3.28769 15.9563 3.79848 15.9481 4.38785C15.9316 4.99293 15.4139 5.46443 14.773 5.45657Z" fill="#223A76"/>
+        </svg>
+        &nbsp;
     </a>
-    <a class="iconcsf" target="_blank" href="https://www.youtube.com/user/TarasovAndPartners"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path style="fill:#ffffff;" d="M9.91376 5.19458C9.42658 4.91334 8.80151 5.25261 8.80151 5.80615V12.471C8.80151 13.029 9.42658 13.3638 9.91376 13.087L15.6681 9.75682C16.146 9.48005 16.146 8.80598 15.6681 8.52921L9.91376 5.19458ZM10.2723 11.2166V7.06501L13.8572 9.14525L10.2723 11.2166Z" fill="#223A76">
-    <path style="fill:#ffffff;" d="M19.6853 0.82883C15.1214 0.172616 8.75126 0.172616 4.18735 0.82883C2.36271 1.09221 0.924138 2.48499 0.611605 4.29292C0.0279026 7.64988 0.0279026 10.6408 0.611605 13.9933C0.924138 15.8012 2.36271 17.194 4.18735 17.4574C6.47161 17.7877 9.21087 17.9529 11.9501 17.9529C14.6802 17.9529 17.4103 17.7877 19.6899 17.4574C21.5146 17.194 22.9531 15.8012 23.2657 13.9933C23.8494 10.6363 23.8494 7.64542 23.2657 4.29292C22.9486 2.48052 21.51 1.08774 19.6853 0.82883ZM21.8133 13.7522C21.6065 14.9486 20.6643 15.8682 19.4693 16.0378C15.0387 16.6762 8.84318 16.6762 4.39877 16.0378C3.20379 15.8637 2.2616 14.9486 2.05477 13.7522C1.49405 10.5203 1.49405 7.76148 2.05477 4.52505C2.2616 3.32869 3.20379 2.4091 4.39877 2.23947C6.62328 1.91806 9.27981 1.76181 11.9363 1.76181C14.5929 1.76181 17.254 1.92252 19.4693 2.23947C20.6643 2.41356 21.6065 3.32869 21.8133 4.52505C22.3786 7.76148 22.3786 10.5203 21.8133 13.7522Z" fill="#223A76">
-    </svg>&nbsp;
+    <a class="iconcsf " target="_blank " href="https://www.youtube.com/user/TarasovAndPartners "><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path style="fill:#ffffff; " d="M9.9145 5.19458C9.42731 4.91334 8.80225 5.25261 8.80225 5.80615V12.471C8.80225 13.029 9.42731 13.3638 9.9145 13.087L15.6688 9.75682C16.1468 9.48005 16.1468 8.80598 15.6688 8.52921L9.9145 5.19458ZM10.273 11.2166V7.06501L13.8579 9.14525L10.273 11.2166Z" fill="#223A76"/>
+        <path style="fill:#ffffff; " d="M19.6858 0.82883C15.1219 0.172616 8.75175 0.172616 4.18784 0.82883C2.3632 1.09221 0.924626 2.48499 0.612093 4.29292C0.0283909 7.64988 0.0283909 10.6408 0.612093 13.9933C0.924626 15.8012 2.3632 17.194 4.18784 17.4574C6.47209 17.7877 9.21136 17.9529 11.9506 17.9529C14.6807 17.9529 17.4108 17.7877 19.6904 17.4574C21.5151 17.194 22.9536 15.8012 23.2662 13.9933C23.8499 10.6363 23.8499 7.64542 23.2662 4.29292C22.949 2.48052 21.5105 1.08774 19.6858 0.82883ZM21.8138 13.7522C21.607 14.9486 20.6648 15.8682 19.4698 16.0378C15.0392 16.6762 8.84367 16.6762 4.39926 16.0378C3.20428 15.8637 2.26209 14.9486 2.05526 13.7522C1.49454 10.5203 1.49454 7.76148 2.05526 4.52505C2.26209 3.32869 3.20428 2.4091 4.39926 2.23947C6.62376 1.91806 9.2803 1.76181 11.9368 1.76181C14.5934 1.76181 17.2545 1.92252 19.4698 2.23947C20.6648 2.41356 21.607 3.32869 21.8138 4.52505C22.3791 7.76148 22.3791 10.5203 21.8138 13.7522Z" fill="#223A76"/>
+        </svg>
+        &nbsp;
     </a>
     </span></p>
-                    <svg width="133" height="1" viewBox="0 0 133 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0.543457" y1="0.58117" x2="132.894" y2="0.58117" stroke="white" stroke-width="0.83766">
+                    <p class="iconfooters"><span>
+        <a class="iconcsf " target="_blank " href="https://twitter.com/tarasovp "><svg width="20 " height="16 " viewBox="0 0 20 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+        <path style="fill:#ffffff; " d="M19.419 2.41232C18.6751 2.71766 17.9311 2.9105 17.1872 2.98684C18.0278 2.50473 18.5952 1.82576 18.8894 0.945913C18.1203 1.37981 17.3007 1.68113 16.4306 1.84183C15.6615 1.0584 14.7158 0.668701 13.5978 0.668701C12.526
+                                        0.668701 11.6139 1.03028 10.8574 1.75344C10.1008 2.47661 9.72253 3.34842 9.72253 4.3729C9.72253 4.65011 9.75616 4.93134 9.8192 5.2206C8.23464 5.14427 6.75095 4.7626 5.35974 4.07961C3.97272 3.39663 2.79165 2.48464 1.82495
+                                        1.34365C1.47189 1.91816 1.29536 2.54089 1.29536 3.21584C1.29536 3.85061 1.45087 4.44119 1.7619 4.98357C2.07293 5.52594 2.49324 5.96787 3.02282 6.30133C2.40077 6.27722 1.81654 6.12054 1.27014 5.83127V5.87546C1.27014 6.77138
+                                        1.56436 7.55481 2.15279 8.23377C2.74122 8.90873 3.48096 9.3386 4.38042 9.51136C4.04417 9.59573 3.70372 9.6359 3.35907 9.6359C3.13631 9.6359 2.89253 9.61582 2.62773 9.57966C2.87572 10.3229 3.33385 10.9296 3.99373 11.4076C4.65782
+                                        11.8857 5.41017 12.1308 6.25079 12.1469C4.84276 13.2035 3.23718 13.7298 1.43826 13.7298C1.09361 13.7298 0.782583 13.7137 0.500977 13.6856C2.29989 14.7945 4.28375 15.3489 6.45254 15.3489C7.82694 15.3489 9.12149 15.14 10.3278
+                                        14.7221C11.5341 14.3043 12.568 13.7459 13.4254 13.0468C14.2829 12.3478 15.0184 11.5442 15.6405 10.6323C16.2625 9.72027 16.7207 8.77213 17.0275 7.78381C17.3301 6.79147 17.4814 5.80315 17.4814 4.80679C17.4814 4.59386 17.4772
+                                        4.43316 17.4688 4.32468C18.2338 3.79838 18.881 3.15959 19.419 2.41232Z " fill="#223A76 ">
+        </svg>&nbsp;
+        </a>
+        <a class="iconcsf " target="_blank " href="https://www.facebook.com/Tarasov.and.partners "><svg width="11 " height="18 " viewBox="0 0 11 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+        <path style="fill:#ffffff; " d="M6.54134 6.38895V4.18692C6.54134 3.57792 7.06929 3.08591 7.72276 3.08591H8.90417V0.333374H6.54134C4.58463 0.333374 2.9971 1.81286 2.9971 3.63641V6.38895H0.634277V9.14148H2.9971V17.9496H6.54134V9.14148H8.90417L10.0856
+                                        6.38895H6.54134Z " fill="#223A76 ">
+        </svg>&nbsp;
+        </a>
+        <a class="iconcsf " target="_blank " href="https://www.instagram.com/ "><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path style="fill:#ffffff; " d="M9.81765 0.333374C11.2968 0.333374 12.776 0.333374 14.2551 0.333374C16.9998 0.341232 19.0049 2.25079 19.0131 4.86758C19.0213 7.72012 19.0213 10.5727 19.0131 13.4331C19.0049 16.0106 16.9998 17.9358 14.3209 17.9437C11.3215 17.9516 8.32206 17.9516 5.32265 17.9437C2.63551 17.9358 0.61399 16.0184 0.605773 13.4566C0.597555 10.5805 0.597555 7.71226 0.605773 4.84401C0.605773 2.25079 2.61907 0.341232 5.33909 0.333374C6.83468 0.333374 8.32206 0.333374 9.81765 0.333374ZM9.82587 1.81072C8.34671 1.81072 6.86755 1.80287 5.38839 1.81072C3.42439 1.81858 2.15067 3.02875 2.14246 4.90687C2.13424 7.73584 2.13424 10.5648 2.14246 13.3938C2.14246 15.2483 3.42439 16.4585 5.36374 16.4663C8.32206 16.4742 11.2804 16.4742 14.2387 16.4663C16.178 16.4663 17.46 15.2405 17.46 13.3938C17.4682 10.5491 17.4682 7.71226 17.46 4.86758C17.4518 3.04447 16.178 1.82644 14.2551 1.81858C12.7842 1.80287 11.305 1.81072 9.82587 1.81072Z" fill="#223A76"/>
+            <path style="fill:#ffffff; " d="M9.78472 13.5352C7.25372 13.5274 5.19933 11.5471 5.20754 9.12674C5.21576 6.68282 7.2948 4.71826 9.85046 4.73398C12.3815 4.75756 14.4276 6.73783 14.4112 9.15817C14.3866 11.5864 12.3239 13.5431 9.78472 13.5352ZM9.80116 12.0579C11.5268 12.0579 12.8663 10.7613 12.8663 9.11102C12.8581 7.50794 11.5104 6.21919 9.83403 6.21133C8.10834 6.20347 6.75245 7.49222 6.75245 9.14245C6.74423 10.7613 8.10834 12.0657 9.80116 12.0579Z" fill="#223A76"/>
+            <path style="fill:#ffffff; " d="M14.773 5.45657C14.132 5.44871 13.6472 4.96936 13.6554 4.34856C13.6636 3.74347 14.1895 3.25626 14.8141 3.27198C15.4386 3.28769 15.9563 3.79848 15.9481 4.38785C15.9316 4.99293 15.4139 5.46443 14.773 5.45657Z" fill="#223A76"/>
+            </svg>
+            &nbsp;
+        </a>
+        <a class="iconcsf " target="_blank " href="https://www.youtube.com/user/TarasovAndPartners "><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path style="fill:#ffffff; " d="M9.9145 5.19458C9.42731 4.91334 8.80225 5.25261 8.80225 5.80615V12.471C8.80225 13.029 9.42731 13.3638 9.9145 13.087L15.6688 9.75682C16.1468 9.48005 16.1468 8.80598 15.6688 8.52921L9.9145 5.19458ZM10.273 11.2166V7.06501L13.8579 9.14525L10.273 11.2166Z" fill="#223A76"/>
+            <path style="fill:#ffffff; " d="M19.6858 0.82883C15.1219 0.172616 8.75175 0.172616 4.18784 0.82883C2.3632 1.09221 0.924626 2.48499 0.612093 4.29292C0.0283909 7.64988 0.0283909 10.6408 0.612093 13.9933C0.924626 15.8012 2.3632 17.194 4.18784 17.4574C6.47209 17.7877 9.21136 17.9529 11.9506 17.9529C14.6807 17.9529 17.4108 17.7877 19.6904 17.4574C21.5151 17.194 22.9536 15.8012 23.2662 13.9933C23.8499 10.6363 23.8499 7.64542 23.2662 4.29292C22.949 2.48052 21.5105 1.08774 19.6858 0.82883ZM21.8138 13.7522C21.607 14.9486 20.6648 15.8682 19.4698 16.0378C15.0392 16.6762 8.84367 16.6762 4.39926 16.0378C3.20428 15.8637 2.26209 14.9486 2.05526 13.7522C1.49454 10.5203 1.49454 7.76148 2.05526 4.52505C2.26209 3.32869 3.20428 2.4091 4.39926 2.23947C6.62376 1.91806 9.2803 1.76181 11.9368 1.76181C14.5934 1.76181 17.2545 1.92252 19.4698 2.23947C20.6648 2.41356 21.607 3.32869 21.8138 4.52505C22.3791 7.76148 22.3791 10.5203 21.8138 13.7522Z" fill="#223A76"/>
+            </svg>
+            &nbsp;
+        </a>
+        </span></p>
+                    <svg width="133 " height="1 " viewBox="0 0 133 1 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+    <line x1="0.543457 " y1="0.58117 " x2="132.894 " y2="0.58117 " stroke="white " stroke-width="0.83766 ">
     </svg>
-                    <p></p>
-                    <div style="padding-top: 45px;">
-                        <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M50.2639 0.491084C49.617 -0.155882 48.5573 -0.155882 47.8991 0.491084L35.0267 13.3635H5.84631C3.07997 13.3635 0.837891 15.6056 0.837891 18.3719V41.7519C0.837891 44.5183 3.07997 46.7604 5.84631 46.7604H7.63104V55.3271C7.63104 56.0075 8.04376 56.621 8.66842 56.8776C9.30423 57.1341 10.0293 56.978 10.4978 56.4983L20.0238 46.7604H39.4774C42.2438 46.7604 44.4858 44.5183 44.4858 41.7519V22.8114L57.3471 9.93903C57.9941 9.29206 57.9941 8.23238 57.3471 7.57425L50.2639 0.491084ZM34.9152 27.6525L30.1968 22.9341L44.3631 8.7678L49.0815 13.4862L34.9152 27.6525ZM28.4121 25.8678L31.9704 29.4261L25.8688 31.9694L28.4121 25.8678ZM41.1395 41.7519C41.1395 42.6778 40.3921 43.4251 39.4663 43.4251H19.3211C18.8749 43.4251 18.4398 43.6036 18.1275 43.9271L10.9663 51.2445V45.0983C10.9663 44.1725 10.2189 43.4251 9.29308 43.4251H5.84631C4.92047 43.4251 4.17312 42.6778 4.17312 41.7519V18.3719C4.17312 17.4461 4.92047 16.6987 5.84631 16.6987H31.6915L26.6496 21.7406C26.5158 21.8745 26.3708 22.0752 26.2815 22.2983L21.6635 33.3972H12.6506C11.7248 33.3972 10.9774 34.1445 10.9774 35.0703C10.9774 35.9962 11.7248 36.7435 12.6506 36.7435H22.779C22.9909 36.7435 23.2252 36.6989 23.4371 36.6097L35.551 31.5678C35.7518 31.4897 35.9526 31.3559 36.1087 31.1997L41.1506 26.1578V41.7519H41.1395ZM51.4463 11.1214L46.7279 6.40302L49.0927 4.03825L53.8111 8.75664L51.4463 11.1214Z" fill="white">
+                    <p class="notpc"></p>
+                    <div style="padding-top: 45px; ">
+                        <svg width="58 " height="57 " viewBox="0 0 58 57 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+    <path d="M50.2639 0.491084C49.617 -0.155882 48.5573 -0.155882 47.8991 0.491084L35.0267 13.3635H5.84631C3.07997 13.3635 0.837891 15.6056 0.837891 18.3719V41.7519C0.837891 44.5183 3.07997 46.7604 5.84631 46.7604H7.63104V55.3271C7.63104 56.0075 8.04376
+                                    56.621 8.66842 56.8776C9.30423 57.1341 10.0293 56.978 10.4978 56.4983L20.0238 46.7604H39.4774C42.2438 46.7604 44.4858 44.5183 44.4858 41.7519V22.8114L57.3471 9.93903C57.9941 9.29206 57.9941 8.23238 57.3471 7.57425L50.2639
+                                    0.491084ZM34.9152 27.6525L30.1968 22.9341L44.3631 8.7678L49.0815 13.4862L34.9152 27.6525ZM28.4121 25.8678L31.9704 29.4261L25.8688 31.9694L28.4121 25.8678ZM41.1395 41.7519C41.1395 42.6778 40.3921 43.4251 39.4663 43.4251H19.3211C18.8749
+                                    43.4251 18.4398 43.6036 18.1275 43.9271L10.9663 51.2445V45.0983C10.9663 44.1725 10.2189 43.4251 9.29308 43.4251H5.84631C4.92047 43.4251 4.17312 42.6778 4.17312 41.7519V18.3719C4.17312 17.4461 4.92047 16.6987 5.84631 16.6987H31.6915L26.6496
+                                    21.7406C26.5158 21.8745 26.3708 22.0752 26.2815 22.2983L21.6635 33.3972H12.6506C11.7248 33.3972 10.9774 34.1445 10.9774 35.0703C10.9774 35.9962 11.7248 36.7435 12.6506 36.7435H22.779C22.9909 36.7435 23.2252 36.6989 23.4371
+                                    36.6097L35.551 31.5678C35.7518 31.4897 35.9526 31.3559 36.1087 31.1997L41.1506 26.1578V41.7519H41.1395ZM51.4463 11.1214L46.7279 6.40302L49.0927 4.03825L53.8111 8.75664L51.4463 11.1214Z " fill="white ">
     </svg>
 
-                        <form method="POST" action="{{ route('forms')}}">
+                        <form method="POST " action="{{ route( 'forms')}} ">
 
-                            <p class="zapis">Записатися на<br>консультацію:</p>
+                            <p class="zapis ">Записатися на<br>консультацію:</p>
                     </div>
-                    <div style="padding-right: 0px; padding-left: 0px;" class="col-lg-6 col-sm-6">
+                    <div style="padding-right: 0px; padding-left: 0px; " class="col-lg-6 col-sm-6 ">
                         <p></p>
-                        <p style="z-index: 999; font-style: normal;
-    font-weight: 100;
-    font-size: 17px;
-    line-height: 19px;
-    color: #FFFFFF;">Ваше ім'я</p>
+                        <p style="z-index: 999; font-style: normal; font-weight: 100; font-size: 17px; line-height: 19px; color: #FFFFFF; ">Ваше ім'я</p>
 
-                        <input style="background-color: #5B7BBB; border:none;" placeholder="   Іван Іваниченківський" type="text">
+                        <input class="phonesfooter" style="background-color: #5B7BBB; border:none; " placeholder=" Іван Іваниченківський " type="text ">
                         <p></p>
-                        <p style="padding-top:10px;"><button style="background-color: #5b7bbb00; border:white solid 1px;; color:white; padding-left:12px; padding-right:12px; padding-top:4px; padding-bottom:4px;" value="Відправити" type="submit">Відправити</button></p>
-                        <p style="font-family: Futura PT; margin-top: 28px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 17px;
-    color: #64759F;">© Copyright Tarasov &amp; Partners 2020</p>
+                        <p style="padding-top:10px; "><button style="background-color: #5b7bbb00; border:white solid 1px;; color:white; padding-left:12px; padding-right:12px; padding-top:4px; padding-bottom:4px; " value="Відправити " type="submit ">Відправити</button></p>
+                        <p style="font-family: Futura PT; margin-top: 8px; font-style: normal; font-weight: normal; font-size: 13px; line-height: 17px; color: #64759F; ">© Copyright Tarasov &amp; Partners 2020</p>
                     </div>
-                    <div style="padding-right: 0px; padding-left: 0px; margin-left:-50px; margin-top: -24px;" class="col-lg-6">
+                    <div style="padding-right: 0px; padding-left: 0px; margin-left:-50px; margin-top: -24px; " class="col-lg-6 ">
                         <p>&nbsp;</p>
-                        <p style="z-index: 999; font-style: normal;
-    font-weight: 100;
-    font-size: 17px;
-    line-height: 19px;
-    color: #FFFFFF;">Номер телефону</p>
-                        <input style="background-color: #5B7BBB; border:none;" placeholder="   +__(___)___ __ __" type="phone">
+                        <p style="z-index: 999; font-style: normal; font-weight: 100; font-size: 17px; line-height: 19px; color: #FFFFFF; ">Номер телефону</p>
+                        <input class="phonesfooter" style="background-color: #5B7BBB; border:none; " placeholder=" +__(___)___ __ __ " type="phone ">
                     </div>
                 </div>
                 </form>
@@ -1264,43 +1352,23 @@
 
 
 
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js "></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js "></script>
     <!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <script type="text/javascript " src="assets/js/slick.js "></script>
     <!-- Counter -->
 
     <!-- Gallery Lightbox -->
-    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript " src="assets/js/jquery.magnific-popup.min.js "></script>
     <!-- Date Picker -->
-    <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript " src="assets/js/bootstrap-datepicker.js "></script>
     <!-- Ajax contact form  -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript " src="assets/js/app.js "></script>
 
     <!-- Custom js -->
 
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {
-            myFunction()
-        };
 
-        // Get the navbar
-        var navbar = document.getElementById("mu-header");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
     <script>
         //window.location.href1 = 'http://specific-page.com';
 

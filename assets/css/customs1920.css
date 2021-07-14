@@ -1,0 +1,152 @@
+@media screen and (max-width: 1961px) {
+    .btnssa {
+        color: white;
+        border: 1px solid;
+        padding: 3px 15px;
+    }
+    .titlenew {
+        font-weight: 450;
+        font-size: 27px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .titlecartwidth {
+        font-weight: 490;
+        font-size: 37.3153px;
+    }
+    .heicart {
+        height: 234px;
+    }
+    .onetable {
+        display: none;
+    }
+    .nonetable {
+        display: block;
+    }
+    .newstitle {
+        padding-top: 14px;
+        padding-left: 3px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .on768 {
+        display: none;
+    }
+    .abownas {
+        display: none;
+    }
+    .iconsfooter {
+        padding-left: 120px;
+    }
+    .iconfooters {
+        display: none;
+    }
+    .cardss {
+        height: 165px;
+        width: 320px;
+    }
+    .card-bodys {
+        background: #223A76;
+        width: 320px;
+        height: 158px;
+    }
+    .newsone {
+        width: 664px;
+        height: 324px;
+    }
+    .comentsto {
+        height: 450px;
+    }
+    .practic {
+        width: 1010px;
+    }
+    .practicfirst {
+        padding-right: 0px;
+        height: 290px;
+        width: 520px;
+        padding-left: 0px;
+    }
+    .practictwo {
+        background: #223A76;
+        height: 290px;
+        width: 490px;
+    }
+    .practictwotwo {
+        padding-right: -15px;
+        height: 234px;
+        width: 491px;
+    }
+    .practicimg {
+        width: 100%;
+        height: 234px;
+    }
+    .practiccart {
+        padding-right: -15px;
+        height: 234px;
+        width: 491px;
+    }
+    .practiccarts {
+        height: 234px;
+        width: 520px;
+        padding-left: 30px;
+    }
+    .practicscar {
+        padding-left: 15px;
+        height: 234px;
+        width: 491px;
+    }
+    .practictextcart {
+        height: 234px !important;
+    }
+    .fd {
+        height: 234px;
+        padding-left: 15px;
+    }
+    .rychka {
+        height: 291px;
+        width: 320px;
+    }
+    .card:hover {
+        width: 320px;
+        height: 431px;
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .rychka:hover {
+        height: 291px;
+        width: 320px;
+    }
+    .glyshkova {
+        height: 295px;
+        width: 320px;
+    }
+    .glyshkova:hover {
+        height: 295px;
+        width: 320px;
+    }
+    .milian {
+        height: 295px;
+        width: 320px;
+    }
+    .milian:hover {
+        height: 295px;
+        width: 320px;
+    }
+    .tarasov {
+        height: 295px;
+        width: 320px;
+    }
+    .tarasov:hover {
+        height: 295px;
+        width: 320px;
+    }
+    .nazarenko {
+        height: 295px;
+        width: 320px;
+    }
+    .nazarenko:hover {
+        height: 295px;
+        width: 320px;
+    }
+}

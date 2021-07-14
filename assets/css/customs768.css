@@ -1,74 +1,110 @@
 @media screen and (max-width: 769px) {
-    .card:hover {
-        width: 320px;
-        height: 431px;
-        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    #mu-reservation\>div>div>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first {
+        width: 100% !important;
     }
-    .rychka:hover {
-        height: 291px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/ruch2-320x295.jpg);
+    .onpc {
+        display: none;
     }
-    .glyshkova {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/glu1-320-295.png);
+    .witeblue {
+        background: white;
     }
-    .glyshkova:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/glu2-320x295.jpg);
+    .witeblue:hover {
+        background: #223A76;
     }
-    .milian {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/mil1-320-295.png);
+    .onpoint {
+        opacity: 0;
     }
-    .milian:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/mil2-320x295.jpg);
-    }
-    .tarasov {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/tar1-320-295.png);
-    }
-    .tarasov:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/tar2-320x295.jpg);
-    }
-    .nazarenko {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/naz1-320-295.png);
-    }
-    .nazarenko:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/naz2-320x295.jpg);
-    }
-    .card-body {
-        width: 320px;
-        height: 141px;
+    .posobsl {
         position: absolute;
-        top: 290;
+        z-index: 9999999;
     }
-    .contcomand {
-        padding-right: 2px;
-        padding-left: 2px;
-        margin-right: 2px;
-        margin-left: 2px;
+    .onpoint:hover {
+        opacity: 1;
+        z-index: 9999999;
+        background: #223A76;
+    }
+    .non7866 {
+        display: none;
+    }
+    .titlenew {
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+    .liuli {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .liul {
+        padding-top: 15px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .titlecartwidth {
+        padding-top: 15px;
+        font-weight: 450;
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .heicart {
+        height: 185px;
+    }
+    .onetable {
+        display: block;
+    }
+    .nonetable {
+        display: none;
+    }
+    .text {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .newstitle {
+        padding-top: 14px;
+        padding-left: 3px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 23px;
+    }
+    .onpad {
+        display: none;
+        height: 50px;
+    }
+    .col-md-glyshkova {
+        display: none;
+    }
+    .nenadonamob {
+        display: none;
+    }
+    .texton768 {
+        float: right;
+        padding-left: 50%;
+        margin-top: -66px;
+    }
+    .lefter {
+        margin-left: 20px !important;
+    }
+    .on768 {
+        display: block;
+    }
+    .abownas {
+        display: block;
+        float: right;
+        margin-top: -57px;
+    }
+    .abownas a {
+        padding: 3px 15px;
+        border: 1px solid #B49A67;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: rgba(161, 117, 117, 0) !important;
+    }
+    #mu-header>nav>div>div.navbar-header>button {
+        display: block;
+        position: absolute;
+        right: 19px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -77,41 +113,239 @@
         margin-right: 45px;
         margin-left: -118px;
     }
-    .infoicons .col-lg-3 {
+    #top-menu {
         display: none;
     }
-    .col-md-titleaboutus {
+    .phonesfooter {
+        width: 167px;
+    }
+    .iconfooters {
+        display: block;
+    }
+    .iconsfooter {
         display: none;
+    }
+    .contacts {
+        padding-left: 2px;
+    }
+    .mapsg {
+        padding-left: 0px;
+    }
+    .cardss {
+        height: 165px;
+        width: 290px;
+    }
+    .card-bodys {
+        background: #223A76;
+        width: 290px;
+        height: 158px;
+    }
+    .newsone {
+        width: 100%;
+        height: 320px;
+    }
+    .order-sm-first {
+        width: 100% !important;
+    }
+    .comentsto {
+        height: 70px !important;
+    }
+    .comentstokate {
+        display: none;
+    }
+    .rychka {
+        height: 291px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/ruch1-290x295.png);
+    }
+    .rychka:hover {
+        height: 291px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/ruch2-290x295jpg.jpg);
+    }
+    .glyshkova {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/glu1-290x295.png);
+    }
+    .glyshkova:hover {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/glu2-290x295jpg.jpg);
+    }
+    .milian {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/mil1-290x295.png);
+    }
+    .milian:hover {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/mil2-290x295jpg.jpg);
+    }
+    .tarasov {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/tar1-290x295.png);
+    }
+    .tarasov:hover {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/tar2-290x295jpg.jpg);
+    }
+    .nazarenko {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/naz1-290x295.png);
+    }
+    .nazarenko:hover {
+        height: 295px;
+        width: 290px;
+        ​​​​​​​background-repeat: no-repeat;
+        background-image: url(/img/comand/290x295/naz2-290x295jpg.jpg);
+    }
+    .card-body {
+        width: 290px;
+        height: 141px;
+        position: absolute;
+        top: 290;
+        z-index: 999999;
+    }
+    .contcomand {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .container {
+        width: 730px;
+    }
+    .container>.navbar-header,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container-fluid>.navbar-collapse {
+        margin-right: 45px;
+        margin-left: -118px;
+    }
+    .infoicons {
+        display: none !important;
+    }
+    .infoiconss {
+        display: block !important;
+    }
+    .butonas {
+        display: none;
+    }
+    .practic {
+        width: 727px;
+    }
+    .practicfirst {
+        padding-right: 0px;
+        height: 290px;
+        width: 371px;
+        padding-left: 0px;
+    }
+    .practictwo {
+        background: #223A76;
+        height: 290px;
+        width: 356px;
+    }
+    .practictwotwo {
+        padding-right: -15px;
+        height: 185px;
+        width: 356px;
+    }
+    .practicimg {
+        width: 100%;
+        height: 185px;
+    }
+    .practiccart {
+        padding-right: -15px;
+        height: 185px;
+        width: 356px;
+    }
+    .practiccarts {
+        height: 185px;
+        width: 356px;
+        padding-left: 17px;
+    }
+    .practicscar {
+        padding-left: 15px;
+        height: 185px;
+        width: 356px;
+    }
+    .practictextcart {
+        height: 185px !important;
+    }
+    .fd {
+        height: 185px;
+        padding-left: 15px;
+    }
+    .card-body {
+        width: 290px !important;
+        height: 141px;
+    }
+    .rychka {
+        height: 291px;
+        width: 290px;
+    }
+    .card:hover {
+        width: 290px;
+        height: 295px;
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .rychka:hover {
+        height: 291px;
+        width: 290px;
+    }
+    .glyshkova {
+        height: 295px;
+        width: 290px;
+    }
+    .glyshkova:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .milian {
+        height: 295px;
+        width: 290px;
+    }
+    .milian:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .tarasov {
+        height: 295px;
+        width: 290px;
+    }
+    .tarasov:hover {
+        height: 295px;
+        width: 290px;
+    }
+    .nazarenko {
+        height: 295px;
+        width: 290px;
+    }
+    .nazarenko:hover {
+        height: 295px;
+        width: 290px;
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: -43px !important;
+        margin-left: -16px !important;
     }
-    .col-md-glyshkova {
-        display: none;
+    .navbar-right {
+        float: right !important;
+        margin-right: 56px !important;
+        margin-top: 7px;
     }
-    .newsmob {
-        display: block;
-    }
-    .notpc {
-        display: none;
-    }
-    .notpc {
-        display: block;
-    }
-    .navbar>.container .navbar-brand,
-    .navbar>.container-fluid .navbar-brand {
-        margin-left: 0px;
-    }
-    .hone {
-        font-weight: 450;
-        font-size: 85px;
-        line-height: 76px;
-    }
-}
-
-.btnssa {
-    color: #ffffff;
-    padding: 3px 15px;
-    border: 2px solid #ffffff;
 }
