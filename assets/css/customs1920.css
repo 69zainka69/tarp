@@ -1,4 +1,10 @@
 @media screen and (max-width: 1961px) {
+    .on480left {
+        display: none;
+    }
+    .on480right {
+        display: none;
+    }
     .news320 {
         display: none;
     }

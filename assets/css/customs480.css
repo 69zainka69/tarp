@@ -1,4 +1,10 @@
 @media screen and (max-width: 481px) {
+    .on480left {
+        display: none !important;
+    }
+    .on480right {
+        display: none !important;
+    }
     .dooble {
         display: block !important;
     }
