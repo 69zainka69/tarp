@@ -1,4 +1,28 @@
 @media screen and (max-width: 1961px) {
+    .news320 {
+        display: none;
+    }
+    .heigclient {
+        display: none;
+    }
+    .divesnews {
+        display: none;
+    }
+    .comandatextc {
+        display: none;
+    }
+    .butomzaps {
+        display: none;
+    }
+    .dooble {
+        display: none !important;
+    }
+    .yridconsoult {
+        display: none;
+    }
+    .telph {
+        display: none;
+    }
     .titleheading {
         font-style: normal;
         font-weight: 450;

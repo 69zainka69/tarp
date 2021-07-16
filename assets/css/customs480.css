@@ -1,4 +1,91 @@
 @media screen and (max-width: 481px) {
+    .dooble {
+        display: block !important;
+    }
+    .telehponn {
+        display: none;
+    }
+    .contact {
+        padding-top: 9px !important;
+        font-weight: 450;
+        font-size: 27px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding-bottom: 9.92px !important;
+    }
+    .mapsg {
+        display: none;
+    }
+    .on480right {
+        float: right;
+        width: 48%;
+    }
+    .on480left {
+        float: left;
+        width: 48%;
+    }
+    .butallposlygi {
+        text-align: center;
+    }
+    .butallposlyg {
+        float: none !important;
+    }
+    .divesnew {
+        padding-top: 25px;
+        width: 176px;
+    }
+    .buttnew {
+        padding-left: 47px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height */
+        color: #223A76;
+    }
+    .titnew {
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 23px;
+        color: #223A76;
+    }
+    .sss {
+        display: none !important;
+    }
+    .texnew {
+        font-size: 15px;
+        line-height: 17px;
+        /* or 113% */
+        color: #223A76;
+    }
+    .butomzaps {
+        display: block;
+        border: solid 2px #223A76;
+        padding: 26px 103px;
+        height: 58.26px;
+        text-align: center;
+        color: #223A76;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 17px;
+        padding-top: 10px;
+    }
+    .butomzaps:hover {
+        border: solid 2px #223A76;
+        color: #ffffff;
+        background-color: #223A76;
+    }
+    .butomzaps:active {
+        border: solid 2px #223A76;
+        color: #ffffff;
+        background-color: #B49A67;
+    }
+    .butomzap {
+        display: none;
+    }
+    .telph {
+        display: none !important;
+    }
     .titleheading {
         font-weight: 450;
         font-size: 40px;
@@ -115,7 +202,7 @@
         display: none;
     }
     .texton768 {
-        display: none;
+        display: none !important;
     }
     .lefter {
         margin-left: 20px !important;
@@ -124,7 +211,7 @@
         display: none;
     }
     .on768 {
-        display: block;
+        display: none;
     }
     .abownas {
         display: none;
@@ -166,18 +253,21 @@
     .mapsg {
         padding-left: 0px;
     }
+    .cards {
+        width: 212px !important;
+    }
     .cardss {
         height: 165px;
-        width: 354px;
+        width: 212px;
     }
     .card-bodys {
         background: #223A76;
-        width: 354px;
-        height: 158px;
+        width: 212px;
+        height: 220px;
     }
     .newsone {
-        width: 100%;
-        height: 320px;
+        width: 400px;
+        height: 194px;
     }
     .order-sm-first {
         width: 100% !important;
@@ -241,8 +331,11 @@
         margin-right: 2px;
         margin-left: 2px;
     }
+    #mu-reservation>div>div>div>div>div:nth-child(6) {
+        display: none;
+    }
     .container {
-        width: 440px;
+        width: 436px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -261,7 +354,8 @@
         display: block;
     }
     .practic {
-        width: 727px;
+        width: 440px;
+        background: #FFFFFF;
     }
     .practicfirst {
         padding-right: 0px;
@@ -269,33 +363,41 @@
         width: 440px;
         padding-left: 0px;
     }
+    .yridconsoult {
+        display: block;
+        background-color: white;
+    }
     .practictwo {
+        display: none;
         background: #223A76;
         height: 200px;
         width: 440px;
     }
     .practictwotwo {
+        display: none;
         padding-right: -15px;
         height: 185px;
         width: 356px;
     }
     .practicimg {
-        width: 100%;
+        width: 185px;
         height: 185px;
     }
     .practiccart {
+        display: none;
         padding-right: -15px;
         height: 185px;
         width: 356px;
     }
     .practiccarts {
+        display: none;
         height: 185px;
         width: 356px;
         padding-left: 17px;
     }
     #mu-reservation>div>div>div>div>p {
         position: absolute;
-        right: -27px;
+        right: -1px;
         top: 151px;
     }
     .practicscar {

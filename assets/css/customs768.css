@@ -1,4 +1,19 @@
 @media screen and (max-width: 769px) {
+    .telph {
+        display: block !important;
+        width: 600px;
+        display: block !important;
+        /* padding-left: 5px; */
+        padding-top: 19px;
+        color: #223A76;
+    }
+    .telph a {
+        padding-left: 74px;
+        color: #223A76;
+    }
+    .telph a:hover {
+        color: #ffffff;
+    }
     .ollpublic {
         display: block;
     }

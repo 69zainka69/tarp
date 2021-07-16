@@ -1,0 +1,494 @@
+@media screen and (max-width: 322px) {
+    .news320 {
+        display: block;
+    }
+    #mu-reservation\ ssse {
+        display: none !important;
+    }
+    .heigclient {
+        display: block;
+        height: 50px;
+    }
+    .newsleftle {
+        width: 30% !important;
+    }
+    .newsrightri {
+        width: 68% !important;
+    }
+    #mu-reservation>div>div>div>div>p {
+        display: none;
+    }
+    .texnew {
+        opacity: 0;
+    }
+    .comandatextc {
+        display: block;
+        font-weight: 450;
+        font-size: 30px;
+        line-height: 38px;
+        color: #223A76;
+    }
+    .card-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .leftcomandas {
+        width: 52% !important;
+    }
+    .mu-about-us-right p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .heidingnum1 {
+        font-size: 35px !important;
+        line-height: 19px !important;
+    }
+    .heidingnum2 {
+        font-size: 35px !important;
+        line-height: 19px !important;
+    }
+    .butomzaps {
+        display: block;
+    }
+    .benerslide {
+        height: 582px !important;
+        background-image: url(img/backslide.svg) center !important;
+    }
+    .dooble {
+        display: block !important;
+    }
+    .telehponn {
+        display: none;
+    }
+    .contact {
+        padding-top: 9px !important;
+        font-weight: 450;
+        font-size: 27px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding-bottom: 9.92px !important;
+    }
+    .mapsg {
+        display: none;
+    }
+    .on480right {
+        float: right;
+        width: 48%;
+    }
+    .on480left {
+        float: left;
+        width: 48%;
+    }
+    .butallposlygi {
+        text-align: center;
+    }
+    .butallposlyg {
+        float: none !important;
+    }
+    .divesnews {
+        display: block;
+        padding-top: 25px;
+        width: 149px;
+    }
+    .divesnew {
+        display: none;
+        padding-top: 25px;
+        width: 164px;
+    }
+    .buttnew {
+        padding: 5px;
+        border: 1px solid #223A76;
+        float: right;
+        padding-left: 0px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height */
+        color: #223A76;
+    }
+    .titnew {
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 22px;
+        color: #223A76;
+    }
+    .sss {
+        display: none !important;
+    }
+    .texnew {
+        font-size: 15px;
+        line-height: 17px;
+        /* or 113% */
+        color: #223A76;
+    }
+    .butomzaps {
+        border: solid 2px #223A76;
+        padding: 26px 22px;
+        height: 77.26px;
+        text-align: center;
+        color: #223A76;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 17px;
+        padding-top: 10px;
+    }
+    .butomzaps:hover {
+        border: solid 2px #223A76;
+        color: #ffffff;
+        background-color: #223A76;
+    }
+    .butomzaps:active {
+        border: solid 2px #223A76;
+        color: #ffffff;
+        background-color: #B49A67;
+    }
+    .butomzap {
+        display: none;
+    }
+    .telph {
+        display: none !important;
+    }
+    .titleheading {
+        font-weight: 450;
+        font-size: 30px;
+        line-height: 30px;
+        color: #223A76;
+    }
+    .mu-gallery-area {
+        display: none;
+    }
+    .bottkomand {
+        float: right;
+        padding-top: 0px !important;
+        margin-top: -42px;
+        margin-left: 15px;
+        position: absolute;
+        right: 15px;
+    }
+    .iconnumber {
+        display: block;
+    }
+    .infoiconss420 {
+        display: block;
+    }
+    .hone {
+        font-weight: 450 !important;
+        font-size: 50px !important;
+        line-height: 50px !important;
+        color: #223A76;
+    }
+    .ollpublic {
+        display: block;
+    }
+    .hree {
+        display: block;
+        height: 1px;
+        background-color: rgb(114, 114, 114);
+    }
+    #mu-reservation\>div>div>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first {
+        width: 100% !important;
+    }
+    .onpc {
+        display: none;
+    }
+    .witeblue {
+        background: white;
+    }
+    .witeblue:hover {
+        background: #223A76;
+    }
+    .onpoint {
+        opacity: 0;
+    }
+    .posobsl {
+        position: absolute;
+        z-index: 9999999;
+    }
+    .onpoint:hover {
+        opacity: 1;
+        z-index: 9999999;
+        background: #223A76;
+    }
+    .non7866 {
+        display: none;
+    }
+    .titlenew {
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+    .liuli {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .liul {
+        padding-top: 15px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .titlecartwidth {
+        padding-top: 15px;
+        font-weight: 450;
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .heicart {
+        height: 185px;
+    }
+    .onetable {
+        display: block;
+    }
+    .nonetable {
+        display: none;
+    }
+    .text {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .newstitle {
+        padding-top: 14px;
+        padding-left: 3px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 23px;
+    }
+    .onpad {
+        display: none;
+        height: 50px;
+    }
+    .col-md-glyshkova {
+        display: none;
+    }
+    .nenadonamob {
+        display: none;
+    }
+    .texton768 {
+        display: none !important;
+    }
+    .lefter {
+        margin-left: 20px !important;
+    }
+    #mu-about-us>div.container>div>div>div>div.infoiconss>svg {
+        display: none;
+    }
+    .on768 {
+        display: none;
+    }
+    .abownas {
+        display: none;
+    }
+    .abownas a {
+        padding: 3px 15px;
+        border: 1px solid #B49A67;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: rgba(161, 117, 117, 0) !important;
+    }
+    #mu-header>nav>div>div.navbar-header>button {
+        display: block;
+        position: absolute;
+        right: 19px;
+    }
+    .container>.navbar-header,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container-fluid>.navbar-collapse {
+        margin-right: 45px;
+        margin-left: -118px;
+    }
+    #top-menu {
+        display: none;
+    }
+    .phonesfooter {
+        width: 167px;
+    }
+    .iconfooters {
+        display: block;
+    }
+    .iconsfooter {
+        display: none;
+    }
+    .contacts {
+        padding-left: 2px;
+    }
+    .mapsg {
+        padding-left: 0px;
+    }
+    .cards {
+        width: 280px !important;
+    }
+    .cardss {
+        height: 165px;
+        width: 280px;
+    }
+    .card-bodys {
+        background: #223A76;
+        width: 280px;
+        height: 156px;
+    }
+    .newsone {
+        display: none;
+        width: 400px;
+        height: 194px;
+    }
+    .order-sm-first {
+        width: 100% !important;
+    }
+    .comentsto {
+        height: 70px !important;
+    }
+    .comentstokate {
+        display: none;
+    }
+    .rychka {
+        height: 153px;
+        width: 130px;
+    }
+    .rychka:hover {
+        height: 153px;
+        width: 130px;
+    }
+    .glyshkova {
+        height: 153px;
+        width: 130px;
+    }
+    .glyshkova:hover {
+        height: 153px;
+        width: 130px;
+    }
+    .milian {
+        height: 153px;
+        width: 130px;
+    }
+    .milian:hover {
+        height: 153px;
+        width: 130px;
+    }
+    .tarasov {
+        height: 153px;
+        width: 130px;
+    }
+    .tarasov:hover {
+        height: 153px;
+        width: 130px;
+    }
+    .nazarenko {
+        height: 153px;
+        width: 130px;
+    }
+    .nazarenko:hover {
+        height: 153px;
+        width: 130px;
+    }
+    .card-body {
+        width: 130px !important;
+        height: 147px !important;
+        position: absolute;
+        top: 290;
+        z-index: 999999;
+    }
+    .contcomand {
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(6) {
+        display: none;
+    }
+    .container {
+        width: 305px;
+    }
+    .container>.navbar-header,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container-fluid>.navbar-collapse {
+        margin-right: 45px;
+        margin-left: -118px;
+    }
+    .infoicons {
+        display: none !important;
+    }
+    .infoiconss {
+        display: none !important;
+    }
+    .butonas {
+        display: block;
+    }
+    .practic {
+        width: 440px;
+        background: #FFFFFF;
+    }
+    .practicfirst {
+        padding-right: 0px;
+        height: 169px;
+        width: 305px;
+        padding-left: 0px;
+    }
+    .yridconsoult {
+        display: block;
+        background-color: white;
+    }
+    .practictwo {
+        display: none;
+        background: #223A76;
+        height: 200px;
+        width: 440px;
+    }
+    .practictwotwo {
+        display: none;
+        padding-right: -15px;
+        height: 185px;
+        width: 356px;
+    }
+    .practicimg {
+        width: 140px;
+        height: 140px;
+    }
+    .practiccart {
+        display: none;
+        padding-right: -15px;
+        height: 185px;
+        width: 356px;
+    }
+    .practiccarts {
+        display: none;
+        height: 185px;
+        width: 356px;
+        padding-left: 17px;
+    }
+    #mu-reservation>div>div>div>div>p {
+        position: absolute;
+        right: -1px;
+        top: 151px;
+    }
+    .practicscar {
+        padding-left: 15px;
+        height: 185px;
+        width: 356px;
+    }
+    .practictextcart {
+        height: 185px !important;
+    }
+    .fd {
+        height: 185px;
+        padding-left: 15px;
+    }
+    .card:hover {
+        width: 129px;
+        height: 153px;
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -2px !important;
+    }
+    .navbar-right {
+        float: right !important;
+        margin-right: 56px !important;
+        margin-top: 7px;
+    }
+}
