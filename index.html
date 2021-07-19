@@ -51,6 +51,26 @@
             margin-top: -2px;
         }
         
+        select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            border: none;
+            position: relative;
+            outline: none;
+        }
+        
+        select:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5px;
+            padding-top: 50px;
+        }
+        
+        .lang:focus-visible {
+            border: none;
+        }
+        
         .lang {
             font-style: normal;
             font-weight: 450;
@@ -211,6 +231,10 @@
             padding-bottom: 8px;
         }
         
+        .lang-active {
+            display: none;
+        }
+        
         .textkomand {
             width: auto;
             height: 279px;
@@ -220,7 +244,7 @@
             background-image: url(img/comand/320x295/ruch1-320-295.png);
         }
         
-        .rychka:hover {
+        .card:hover .rychka {
             background-image: url(img/comand/320x295/ruch2-320x295.jpg);
         }
         
@@ -228,7 +252,7 @@
             background-image: url(img/comand/320x295/glu1-320-295.png);
         }
         
-        .glyshkova:hover {
+        .card:hover .glyshkova {
             background-image: url(img/comand/320x295/glu2-320x295.jpg);
         }
         
@@ -236,7 +260,7 @@
             background-image: url(img/comand/320x295/mil1-320-295.png);
         }
         
-        .milian:hover {
+        .card:hover .milian {
             background-image: url(img/comand/320x295/mil2-320x295.jpg);
         }
         
@@ -244,7 +268,7 @@
             background-image: url(img/comand/320x295/tar1-320-295.png);
         }
         
-        .tarasov:hover {
+        .card:hover .tarasov {
             background-image: url(img/comand/320x295/tar2-320x295.jpg);
         }
         
@@ -252,7 +276,7 @@
             background-image: url(img/comand/320x295/naz1-320-295.png);
         }
         
-        .nazarenko:hover {
+        .card:hover .nazarenko {
             background-image: url(img/comand/320x295/naz2-320x295.jpg);
         }
         
@@ -274,10 +298,6 @@
             appearance: none;
         }
         
-        .benerslide {
-            width: 100%;
-        }
-        
         .hone {
             text-align: left;
             font-weight: 450;
@@ -289,7 +309,7 @@
         .nazva {
             position: absolute;
             top: 16%;
-            left: 17%;
+            left: 17.5%;
         }
         
         .butomzap {
@@ -354,7 +374,7 @@
         
         .detail {
             padding-left: 22px;
-            padding-right: 22px;
+            padding-right: 16px;
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -475,6 +495,7 @@
         }
         
         .benerslide {
+            top: 0;
             background-size: cover;
             background-image: url(img/backslide.svg);
             width: 100%;
@@ -528,31 +549,31 @@
             .rychka {
                 background-image: url(img/comand/210x186/ruch1-210x186.png);
             }
-            .rychka:hover {
+            .card:hover .rychka {
                 background-image: url(img/comand/210x186/ruch2-210x186.jpg);
             }
             .glyshkova {
                 background-image: url(img/comand/210x186/glu1-320-295.png);
             }
-            .glyshkova:hover {
+            .card:hover .glyshkova {
                 background-image: url(img/comand/210x186/glu2-320x295.jpg);
             }
             .milian {
                 background-image: url(img/comand/210x186/mil1-210x186.png);
             }
-            .milian:hover {
+            .card:hover .milian {
                 background-image: url(img/comand/210x186/mil2-210x186.jpg);
             }
             .tarasov {
                 background-image: url(img/comand/210x186/tar1-210x186.png);
             }
-            .tarasov:hover {
+            .card:hover .tarasov {
                 background-image: url(img/comand/210x186/tar2-210x186.jpg);
             }
             .nazarenko {
                 background-image: url(img/comand/210x186/naz1-210x186.png);
             }
-            .nazarenko:hover {
+            .card:hover .nazarenko {
                 background-image: url(img/comand/210x186/naz2-210x186.jpg);
             }
         }
@@ -561,19 +582,19 @@
             .rychka {
                 background-image: url(img/comand/130x153/ruch1-130x153.png);
             }
-            .rychka:hover {
+            .card:hover .rychka {
                 background-image: url(img/comand/130x153/ruch2-130x153.jpg);
             }
             .glyshkova {
                 background-image: url(img/comand/130x153/glu1-320-295.png);
             }
-            .glyshkova:hover {
+            .card:hover .glyshkova {
                 background-image: url(img/comand/130x153/glu2-320x295.jpg);
             }
             .milian {
                 background-image: url(img/comand/130x153/mil1-130x153.png);
             }
-            .milian:hover {
+            .card:hover .milian {
                 background-image: url(img/comand/130x153/mil2-130x153.jpg);
             }
             .tarasov {
@@ -588,6 +609,10 @@
             .nazarenko:hover {
                 background-image: url(img/comand/130x153/naz2-130x153.jpg);
             }
+        }
+        
+        select::after {
+            background-color: red;
         }
     </style>
 </head>
@@ -605,12 +630,14 @@
             <div class="container">
                 <div class="navbar-header">
                     <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed block-btn" id="block1" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+
 
                     <a class="navbar-brand" href=""><img src="img/logo.svg" alt="Logo img"></a>
                     <p class="telph"><a href="tel:+380442997077">+38 (044) 299 70 77</a></p>
@@ -625,9 +652,9 @@
                         <li><a id="men" href="#pubcil">Публікації</a></li>
                         <li><a id="men" href="#mu-contact">Контакти</a></li>
                         <li class="lang" style="padding-top:12px;">
-                            <select class="lang" style="lang" onchange="window.location.href = this.options[this.selectedIndex].value">								
-                    <option  class="lang" value="">&nbsp;&nbsp;&nbsp;&nbsp;UA&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                                    <option class="lang" value="">&nbsp;&nbsp;&nbsp;&nbsp;EN&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <select class="lang" onchange="window.location.href = this.options[this.selectedIndex].value">								
+                                    <option class="lang-active" value="">&nbsp;&nbsp;&nbsp;&nbsp;UA&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                    <option style="padding-top:50px;" class="lang" value="">&nbsp;&nbsp;&nbsp;&nbsp;EN&nbsp;&nbsp;&nbsp;&nbsp;</option>
                                     <option class="lang" value="">&nbsp;&nbsp;&nbsp;&nbsp;RU&nbsp;&nbsp;&nbsp;&nbsp;</option>
                                 </select></li>
                     </ul>
@@ -635,14 +662,54 @@
             </div>
         </nav>
     </header>
+    <script>
+        $(document).on('click', '.custom-close', function(e) {
+            e.preventDefault();
+            $("#mobmenu").removeClass("active")
+        });
+        $(document).on('click', '.block-btn', function(e) {
+            e.preventDefault();
+            var id = $(this).attr('id');
+            var block = $('div[data-block-visible="' + id + '"]');
+            block.toggleClass('active');
+        });
+    </script>
 
 
+    <div class="hide-block" data-block-visible="block1" id="mobmenu" style="position:absolute; top:0; z-index:0; width:100%;">
+        <div style="height:70px;">
+            <div style="position:absolute; top:10px; left:5%"><img src="img/logo.svg" alt="Logo img"> </div>
+            <div style="position:absolute; top:10px; right:25px;"><button style="float:right; border:none; background:none;" class="custom-close"><svg width="35" height="35" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.53023 0.763195C3.76168 -0.0301516 2.49551 -0.0502496 1.70216 0.718305C0.908813 1.48686 0.888715 2.75303 1.65727 3.54638L4.53023 0.763195ZM35.5635 38.5464C36.3321 39.3397 37.5982 39.3598 38.3916 38.5913C39.1849 37.8227 39.205 36.5565 38.4365 35.7632L35.5635 38.5464ZM37.3427 3.54638C38.1113 2.75303 38.0912 1.48686 37.2978 0.718305C36.5045 -0.0502496 35.2383 -0.0301516 34.4698 0.763195L37.3427 3.54638ZM0.56352 35.7632C-0.205035 36.5565 -0.184937 37.8227 0.60841 38.5913C1.40176 39.3598 2.66793 39.3397 3.43648 38.5464L0.56352 35.7632ZM1.65727 3.54638L35.5635 38.5464L38.4365 35.7632L4.53023 0.763195L1.65727 3.54638ZM34.4698 0.763195L0.56352 35.7632L3.43648 38.5464L37.3427 3.54638L34.4698 0.763195Z" fill="#B49A67"/>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div style="width:50%; float:left;" class="col-sm-6 col-md-6 col-6">
 
+                <p class="mobmenu"> <a href="https://new-partner.vm.ua/tarp/ua/about/">Про нас</a></p>
+                <p class="mobmenu"> <a href="#mu-restaurant-menu">Команда</a></p>
+                <p class="mobmenu"> <a href="https://new-partner.vm.ua/tarp/ua/praktiki/yuridicheskiy-autsyursing/">Практики</a></p>
+                <p class="mobmenu"> <a id="men" href="#mu-gallery">Наші клієнти</a></p>
+                <p class="mobmenu"> <a id="men" href="#pubcil">Публікації</a></p>
+                <p class="mobmenu"> <a id="men" href="#mu-contact">Контакти</a></p>
+                <p class="mobmenu">&nbsp;</p>
+                <p class="mobmenu">&nbsp;</p>
+            </div>
+            <div style="width:50%; float:right;" class="col-sm-6 col-md-6 col-6">
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang"><a href="">UA</a></p>
+                <p class="moblang"><a href="">EN</a></p>
+                <p class="moblang"><a href="">RU</a></p>
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang">&nbsp;</p>
+            </div>
+        </div>
+    </div>
 
-
-    <style>
-
-    </style>
 
     <section id="mu-slider">
         <div class="mu-slider-area">
@@ -655,7 +722,7 @@
                     <div class="nazva">
                         <h1 class="hone">Ваш <br> юридичний<br> відділ</h1>
                         <a href="#form">
-                            <p style="padding-top:50px;">
+                            <p style="padding-top:40px;">
                                 <p class="butomzap">Записатися на <br> консультацію
                                 </p>
                                 <p>
@@ -705,7 +772,7 @@
             </div>
         </div>
     </section>
-    <section id="mu-about-us">
+    <section class="abousa" id="mu-about-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -766,7 +833,7 @@
                                     <img src="img/photo1.svg" alt="img">
                                 </div>
                             </div>
-                            <div style="padding-top:40px; text-align:center; padding-left: 107px;" class="col-lg-9 none480">
+                            <div style="padding-top:32px; text-align:center; padding-left: 107px;" class="col-lg-9 none480">
 
                                 <div class="col-lg-4">
                                     <div class="mu-about-us-right">
@@ -774,17 +841,17 @@
                                         <p>Років на ринку юридичніх послуг</p>
                                     </div>
                                 </div>
-                                <div style="padding-left: 50px;" class="col-lg-4">
+                                <div style="padding-left: 6px;" class="col-lg-4">
                                     <p class="heidingnum2">15</p>
                                     <p>багатопрофільних юристів та адвокатів</p>
                                 </div>
 
-                                <div style="padding-left: 50px;" class="col-lg-4">
+                                <div style="padding-left: -6px;" class="col-lg-4">
                                     <p class="heidingnum1">24/7</p>
                                     <p style="text-align:center;">Цілодобова юридична підтримка без вихідних</p>
                                 </div>
 
-                                <svg style="padding-top:25px; padding-bottom:25px;" width="100%" viewBox="0 0 566 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg style="padding-top:32px; padding-bottom:25px;" width="100%" viewBox="0 0 566 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                              <line y1="0.758358" x2="565.585" y2="0.758358" stroke="#B49A67" stroke-width="1.40003">
                                     </svg>
 
@@ -855,7 +922,7 @@
             </div>
         </div>
         </div>
-        <div class="butonas" style="text-align:center; padding-top: 79px;">
+        <div class="butonas">
             <p class="btn"><a class="detail" href="">Детальніше про нас</a></p>
 
     </section>
@@ -1015,16 +1082,23 @@
 
     </section>
 
-    <section style="background: #F8F8F8;" id="mu-reservation">
-        <div class="container">
+    <section style="background: #ffffff;" id="mu-reservation">
+        <div class="container practiccont">
             <div class="row">
                 <div style="padding-top: 128px; z-index:3;" class="col-lg-12 col-md-12 col-sm-12 ">
                     <div class="mu-reservation-area">
-                        <p style="float:right;" class="btn"><a href="">Весь список послуг</a></p>
+                        <div style="float:right; padding-right:63px; padding-top:26px;">
+                            <p class="buttonposlyg" class="btn"><a href="">Весь список послуг</a></p>
+                        </div>
                         <div class="mu-title">
                             <h2 class="titleheading">Практики</h2>
                             <p>&nbsp;</p>
                         </div>
+
+
+
+
+
 
                         <div class="row practic" style="color: #FFFFFF;">
                             <div style="background-image: url(img/image1.svg); background-position: center;" class="col-lg-6 col-md-6 col-sm-6 practicfirst">
@@ -1147,7 +1221,7 @@
                                     <li>Навчальні семінари для персоналу</li>
                                 </ul>
                                 <p>&nbsp;</p>
-                                <p>&nbsp;</p>
+                                <p class="batcartyn"><a href="">Дізнатися більше</a></p>
                             </div>
                         </div>
                         <div style="padding-top:15px; " class="row">
@@ -1163,7 +1237,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
                                 <div style="background:#223A76;" class="fd">
-                                    <p class="non7866">&nbsp;</p>
+
                                     <p class="titlenew ">Податкове право</p>
                                     <p class="liuli" style="color:white; ">Фіскальні служби не страшні, коли є ми:</p>
                                     <ul class="liuli" style="padding-left:50px; color:white; ">
@@ -1173,7 +1247,7 @@
                                         <li>Оскарження податкових повідомлень-рішень</li>
 
                                     </ul>
-                                    <p>&nbsp;</p>
+                                    <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
                                     <p>&nbsp;</p>
                                 </div>
                             </div>
@@ -1286,12 +1360,11 @@
                                 <P>&nbsp;</P>
                                 <P>&nbsp;</P>
                                 <P>&nbsp;</P>
-                                <p class="butallposlygi"><a class="butallposlyg" style="float:right; border:1px solid #B49A67; " href="# "><span style="color: #B49A67; padding:20px; ">Весь список послуг</span></a>
+                                <p class="butallposlygi"><a class="butallposlyg" style="float:right; border:1px solid #B49A67; " href="# ">Весь список послуг</a>
                                 </p>
                             </div>
                         </div>
                         <div style="height:50px;"></div>
-
 
 
 

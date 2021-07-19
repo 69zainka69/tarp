@@ -1,4 +1,143 @@
 @media screen and (max-width: 1961px) {
+    .mobmenu a:hover {
+        color: #B49A67;
+    }
+    .mobmenu a {
+        color: #223A76;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .moblang {
+        text-align: right;
+        padding-right: 50px;
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .mobmenu {
+        padding-left: 10%;
+    }
+    .active {
+        background-color: white;
+        z-index: 99999999999 !important;
+        display: block !important;
+    }
+    .hide-block {
+        display: none;
+    }
+    .practiccont {
+        padding-left: 98px;
+    }
+    .batcartyny:hover a {
+        color: #B49A67;
+    }
+    .liul li {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .liuli {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .liuli li {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .batcartyny {
+        text-align: right;
+        padding-right: 25px;
+    }
+    .batcartyny a {
+        color: white;
+    }
+    .batcartyn a {
+        padding: 3px 15px;
+        border: solid 1px white;
+        color: white;
+    }
+    .batcartyn:hover a {
+        color: #223a76;
+        background: white;
+    }
+    .batcartyn {
+        text-align: right;
+    }
+    .btn:hover {
+        background: #B49A67;
+    }
+    .btn:hover a {
+        color: white;
+    }
+    .butallposlyg {
+        padding: 3px 15px;
+        color: #B49A67;
+    }
+    .butallposlyg:hover {
+        color: #FFFFFF;
+        background: #B49A67;
+    }
+    .butallposlyg:hover span {
+        color: #FFFFFF;
+        background: #B49A67;
+    }
+    .buttonposlyg a {
+        color: #B49A67;
+    }
+    .buttonposlyg {
+        border: 1px solid #B49A67;
+        padding: 3px 15px;
+    }
+    .buttonposlyg:hover {
+        color: #FFFFFF;
+        background: #B49A67;
+    }
+    .buttonposlyg:hover a {
+        color: #FFFFFF;
+        background: #B49A67;
+    }
+    .card:hover .card-body {
+        background-color: #223A76;
+    }
+    .card-body:hover {
+        background-color: #223A76;
+    }
+    .bottkomand a:hover {
+        background: #B49A67;
+    }
+    .bottkomand a:hover span {
+        color: #FFFFFF;
+    }
+    .heidingnum1 {
+        margin: 0 0 0px;
+    }
+    .heidingnum2 {
+        margin: 0 0 0px;
+    }
+    .abousa {
+        padding-top: 22px;
+    }
+    .navbar-right {
+        margin-right: -182px !important;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -45px !important;
+    }
+    .butonas {
+        text-align: center;
+        padding-top: 70px;
+        padding-left: 26px;
+    }
     .on480left {
         display: none;
     }
@@ -56,6 +195,7 @@
         padding: 3px 15px;
     }
     .titlenew {
+        padding-top: 15px;
         font-weight: 450;
         font-size: 27px;
         line-height: 30px;
