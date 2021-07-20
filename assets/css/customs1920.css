@@ -1,4 +1,13 @@
 @media screen and (max-width: 1965px) {
+    #mu-reservation\ ssse>div:nth-child(1)>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first>p:nth-child(7)>a:hover {
+        color: white !important;
+        background: #B49A67;
+    }
+    .cards:hover .btnssa {
+        color: #B49A67;
+        background: white;
+        ;
+    }
     input:focus {
         color: white;
     }
