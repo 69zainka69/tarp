@@ -826,10 +826,10 @@
             <div class="mu-top-slider ">
 
                 <!-- Top slider single slide -->
-                <div class="mu-top-slider-single benerslide">
+                <div id="menu" class="mu-top-slider-single benerslide">
                     <div class="nazva">
                         <h1 class="hone">Ваш <br> юридичний<br> відділ</h1>
-                        <a href="#form">
+                        <a class="clicks" href="#form">
                             <p style="padding-top:40px;">
                                 <p class="butomzap">Записатися на <br> консультацію
                                 </p>
@@ -1697,7 +1697,25 @@
                                 <img src="img/rodos.svg"></p>
                             <a class="arrow arrow-prev" href="#target-item-1"></a>
                             <a class="arrow arrow-next" href="#target-item-3"></a>
-                            <div class="comentsto"></div>
+                            <div style="padding-top:80px;">
+                                <div class="col-sm-1"><img src="img/kavich.svg">
+                                </div>
+                                <div class="col-sm-5">
+                                    <p class="textcomentos">Червоною лінією юридичної компанії «Тарасов та партнери» є чесність, порядність, обов’язковість співробітників, засновників і Партнерів. Сподіваємося, що наше взаємне співробітництво триватиме як можна довше, і ми,
+                                        і наші клієнти будемо мати в особі Юридичної компанії «Тарасов та партнери» професійний юридичний сервіс та захист наших інтересів.</p>
+                                </div>
+                                <div class="col-sm-1"> </div>
+                                <div class="col-sm-1">
+                                    <img src="img/koment2.svg">
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <p style="padding-left:15px; padding-top:25px;font-size: 17px;
+                                    line-height: 19px;
+                                    color: #223A76;">Олег Коломієць<br> Директор ТОВ
+                                        <<БАКЛЕР ГРУП>></p>
+                                </div>
+                            </div>
 
                         </div>
                         <div class="carousel-item item-3">
@@ -2019,7 +2037,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8267255966094!2d30.51046142941182!3d50.43686095622045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfaf14001c15%3A0x2a4f35c88a6b513a!2z0KLQsNGA0LDRgdC-0LIg0ZYg0L_QsNGA0YLQvdC10YDQuA!5e0!3m2!1suk!2sua!4v1623319923758!5m2!1suk!2sua "
                         width="100%" height="540 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
                 </div>
-                <div class="col-lg-5 col-sm-5 contacts">
+                <div id="form" class="col-lg-5 col-sm-5 contacts">
                     <p style="padding-top:45px;" class="contact">Київ, вул. Володимирська,<br> 81-Б, офіс 26
                         <br><br>
                         <a class="contact " href="tel:+380442997077 ">+38 (044) 299 70 77</a><br>
@@ -2170,6 +2188,25 @@
         });
     </script>
 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({
+                    scrollTop: top
+                }, 3500);
+            });
+        });
+    </script>
 </body>
 
 </html>
