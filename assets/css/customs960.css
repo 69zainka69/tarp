@@ -1,4 +1,7 @@
 @media screen and (max-width: 961px) {
+    .allrepublicpc {
+        display: none !important;
+    }
     .phonesfooter {
         width: 167px;
     }

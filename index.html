@@ -36,6 +36,77 @@
     <link rel="stylesheet" type="text/css" href="assets/css/customs480.css">
     <link rel="stylesheet" type="text/css" href="assets/css/customs320.css">
     <style>
+        /*карусель*/
+        
+        .carousel-wrapper {
+            position: relative;
+        }
+        
+        .carousel-wrapper .carousel-item {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 25px 50px;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .carousel-wrapper .carousel-item .arrow {
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 50px;
+            height: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .carousel-wrapper .carousel-item .arrow.arrow-prev {
+            left: 0;
+            margin-top: 75px;
+            background: url("img/left.svg") 50% 50%/20px no-repeat;
+        }
+        
+        .carousel-wrapper .carousel-item .arrow.arrow-next {
+            right: 0;
+            margin-top: 75px;
+            background: url("img/right.svg") 50% 50%/20px no-repeat;
+        }
+        
+        .carousel-wrapper .carousel-item {
+            color: white;
+        }
+        
+        .carousel-wrapper [id^="target-item"] {
+            display: none;
+        }
+        
+        .carousel-wrapper .item-1 {
+            z-index: 2;
+            opacity: 1;
+        }
+        
+        .carousel-wrapper .item-3 {
+            background-size: cover;
+        }
+        
+        .carousel-wrapper *:target~.item-1 {
+            opacity: 0;
+        }
+        
+        .carousel-wrapper #target-item-1:target~.item-1 {
+            opacity: 1;
+        }
+        
+        .carousel-wrapper #target-item-2:target~.item-2,
+        .carousel-wrapper #target-item-3:target~.item-3,
+        .carousel-wrapper #target-item-4:target~.item-4 {
+            z-index: 3;
+            opacity: 1;
+        }
+        /*Конец карусели*/
+        
         .btn-det {
             z-index: 99;
         }
@@ -201,7 +272,7 @@
         }
         
         .coomandos {
-            padding-top: 140px;
+            padding-top: 167px;
             padding-bottom: 30px;
         }
         
@@ -215,8 +286,8 @@
             font-size: 17px;
             line-height: 22px;
             text-align: center;
-            padding-left: 18px;
-            padding-right: 18px;
+            padding-left: 15px;
+            padding-right: 15px;
             padding-top: 8px;
             padding-bottom: 8px;
             color: #B49A67;
@@ -235,8 +306,7 @@
         }
         
         .textkomand {
-            width: auto;
-            height: 279px;
+            padding-left: 69px;
         }
         
         .rychka {
@@ -388,12 +458,10 @@
         }
         
         .contact {
-            padding-top: 41px;
             font-weight: 450;
             font-size: 27px;
             line-height: 30px;
             color: #FFFFFF;
-            padding-bottom: 39.92px;
         }
         
         .zapis {
@@ -482,6 +550,7 @@
             padding-left: 0px !important;
             padding-top: 15px;
             padding: 0px;
+            margin-left: -3px;
         }
         
         #mu-reservation>div>div>div>div>div:nth-child(4)>div.col-lg-6.col-md-6.newsleft>div:nth-child(2) {
@@ -508,8 +577,7 @@
         .infoiconss {
             display: none;
         }
-        
-        @media screen and (max-width: 1961px) {
+        /*  @media screen and (max-width: 1961px) {
             .sectionourclient {
                 background: url(img/backback.svg) no-repeat center;
                 height: 200px;
@@ -542,7 +610,7 @@
                 background-image: url(img/backback320.svg);
                 height: 353px;
             }
-        }
+        }*/
         
         @media screen and (max-width: 485px) {
             .rychka {
@@ -969,7 +1037,7 @@
 
     <section id="mu-gallery" style="height: 1151px;">
         <div class="container contcomand">
-            <div style="padding-left:62px;" class="row lefter">
+            <div style="padding-left:72px;" class="row lefter">
                 <div class="coomandos" class="col-lg-12">
                     <div class="textkomand on768" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
                         <h3 class="titleaboutus">Команда</h3>
@@ -1059,7 +1127,7 @@
                                     </div>
                                 </div>
 
-                                <div class="textkomand nenadonamob" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
+                                <div class="textkomand nenadonamob mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
                                     <h3 class="titleaboutus">Команда</h3>
                                     <p class="textaboutus">Наша основна мета - забезпечити керівництву підприємства та його власнику оперативну та постійну юридичну підтримку, стати вашим юридичним відділом.</p>
                                     <p class="bottkomand"><a href=""><span>Вся команда</span></a></p>
@@ -1068,12 +1136,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <div style="padding-bottom:60px;" class="col-lg-12">
+                        <div style="padding-bottom:198px; padding-top:263px; z-index:-1;"></div>
+                        <div style="padding-left: 0px;" class="col-lg-12">
                             <div class="mu-gallery-area">
                                 <div class="mu-gallery-content">
                                     <div class="mu-gallery-body">
@@ -1125,14 +1189,14 @@
     <section style="background: #ffffff;" id="mu-reservation">
         <div class="container practiccont">
             <div class="row">
-                <div style="padding-top: 128px; z-index:3;" class="col-lg-12 col-md-12 col-sm-12 ">
+                <div style="padding-top:17px; z-index:3;" class="col-lg-12 col-md-12 col-sm-12 ">
                     <div class="mu-reservation-area">
-                        <div style="float:right; padding-right:63px; padding-top:26px;">
+                        <div style="float:right; padding-right:61px; padding-top:33px;">
                             <p class="buttonposlyg" class="btn"><a href="">Весь список послуг</a></p>
                         </div>
                         <div class="mu-title">
                             <h2 class="titleheading">Практики</h2>
-                            <p>&nbsp;</p>
+                            <div style="width:100%; height:28px;"></div>
                         </div>
 
 
@@ -1249,69 +1313,131 @@
 
 
 
-                            <div class="col-lg-6 col-md-6 col-sm-6 practictwo">
+                            <div style="padding-left:5px;" class="col-lg-6 col-md-6 col-sm-6 practictwo">
 
-                                <p class="titlecartwidth" style="text-align:center;">Юридичний аутсорсинг
+                                <p class="titlecartwidth" style="text-align:center; padding-top:29px; padding-right:17px;">Юридичний аутсорсинг
                                 </p>
-                                <ul class="liul" style="padding-left:50px;">
+                                <ul class="liul" style="padding-left:58px;">
                                     <li>Повний юридичний супровід вашого бізнесу 24/7</li>
                                     <li>Індивідуальні пакети послуг</li>
                                     <li>Широкий спектр практик </li>
                                     <li>Персональний адвокат та оперативний виїзд у будь-яку точку світу</li>
                                     <li>Навчальні семінари для персоналу</li>
                                 </ul>
-                                <p>&nbsp;</p>
+
                                 <p class="batcartyn"><a href="">Дізнатися більше</a></p>
                             </div>
                         </div>
-                        <div style="padding-top:15px; " class="row">
+                        <div style="padding-top:30px; " class="row">
                             <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practictwotwo">
-                                <div class="col-lg-6 col-md-6 col-sm-6 newsleft">
-                                    <img class="practicimg" src="img/image2.svg" alt="миниатюра">
-                                </div>
+                                <div class="nothoverpractics">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft">
+                                        <img class="practicimg" src="img/image2.svg" alt="миниатюра">
+                                    </div>
 
-                                <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
-                                    <p class="newstitle ">Кримінальне <br>право</p>
-                                    <p class="text ">Справи про економічні,<br> службові та господарські злочини – наша основна спеціалізація</p>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                        <p class="newstitle ">Кримінальне <br>право</p>
+                                        <p class="text ">Справи про економічні,<br> службові та господарські злочини – наша основна спеціалізація</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
+                            <div style="padding-left: 0px;" class="hoverpracticks">
                                 <div style="background:#223A76;" class="fd">
-
-                                    <p class="titlenew ">Податкове право</p>
-                                    <p class="liuli" style="color:white; ">Фіскальні служби не страшні, коли є ми:</p>
+                                    <p class="titlenew ">Кримінальне</p>
+                                    <p class="liuli" style="color:white; ">Один із основних напрямків нашої роботи справи про:</p>
                                     <ul class="liuli" style="padding-left:50px; color:white; ">
-                                        <li>Оптимізація податків</li>
-                                        <li>Оцінка податкових ризиків</li>
-                                        <li>Супровід податкових перевірок</li>
-                                        <li>Оскарження податкових повідомлень-рішень</li>
-
+                                        <li>Економічні та службові злочини</li>
+                                        <li>Шахрайство</li>
+                                        <li>Відмивання доходів</li>
+                                        <li>Кіберзлочинність</li>
                                     </ul>
                                     <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
                                     <p>&nbsp;</p>
                                 </div>
+                            </div>
+
+
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
+
+
+
+                                <div class="nothoverpractics">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft">
+                                        <img class="practicimg" src="img/image556.svg" alt="миниатюра">
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                        <p class="newstitle ">Податкове <br>право</p>
+                                        <p class="text ">Оптимізуємо ваші податки, попередимо ризики, супроводимо перевірки та оскаржимо неправомірні податкові повідомлення-рішення</p>
+                                    </div>
+                                </div>
+
+                                <div class="hoverpracticks">
+                                    <div style="background:#223A76;" class="fd">
+                                        <p class="titlenew ">Податкове право</p>
+                                        <p class="liuli" style="color:white; ">Фіскальні служби не страшні, коли є ми:</p>
+                                        <ul class="liuli" style="padding-left:50px; color:white; ">
+                                            <li>Оптимізація податків</li>
+                                            <li>Оцінка податкових ризиків</li>
+                                            <li>Супровід податкових перевірок</li>
+                                            <li>Оскарження податкових повідомлень-рішень</li>
+                                        </ul>
+                                        <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
 
 
 
                         <div class="onpad"></div>
-                        <div style="padding-top:25px; " class="row ">
+                        <div style="padding-top:29px; " class="row ">
+
+
+
                             <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
-                                <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
-                                    <img class="practicimg" src="img/kartinka2.svg " alt="картинка2 ">
+
+                                <div class="nothoverpractics">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                        <img class="practicimg" src="img/kartinka2.svg " alt="картинка2 ">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                        <p class="newstitle ">Корпоративне <br>право</p>
+                                        <p class="text nonetable">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори та конфлікти.</p>
+                                        <p class="text onetable">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори.</p>
+                                    </div>
+                                </div>
+                                <div class="hoverpracticks">
+                                    <div style="background:#223A76;" class="fd">
+                                        <p class="titlenew ">Корпоративне право</p>
+                                        <p class="liuli" style="color:white; ">Допоможемо організувати та структурувати бізнес:</p>
+                                        <ul class="liuli" style="padding-left:50px; color:white; ">
+                                            <li>Аудит внутрішнього документообігу</li>
+                                            <li>Супровід угод з активами компанії</li>
+                                            <li>Супровід корпоративних спорів та конфліктів</li>
+                                            <li>Реорганізація та ліквідація підприємств</li>
+                                        </ul>
+                                        <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
+                                        <p>&nbsp;</p>
+                                    </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
-                                    <p class="newstitle ">Корпоративне <br>право</p>
-                                    <p class="text nonetable">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори та конфлікти.</p>
-                                    <p class="text onetable">Допоможемо організувати та структурувати бізнес, захистити ваші активи та інтереси, супроводимо корпоративні спори.</p>
-                                </div>
+
+
                             </div>
 
-                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
-                                <div class="heicart" style="background:white;">
 
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
+
+                                <div class="nothoverpractics">
                                     <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
                                         <img class="practicimg" src="img/kartinka3.svg " alt="картинка2 ">
                                     </div>
@@ -1320,7 +1446,25 @@
                                         <p class="text ">Визнані лідери в галузі адміністративного права та антикорупційного законодавства.
                                         </p>
                                     </div>
+
                                 </div>
+
+                                <div class="hoverpracticks">
+                                    <div style="background:#223A76;" class="fd">
+                                        <p class="titlenew ">Адміністративне право</p>
+                                        <p class="liuli" style="color:white; ">Одні з кращих у галузі адміністративного права та антикорупційного законодавства:</p>
+                                        <ul class="liuli" style="padding-left:50px; color:white; ">
+                                            <li>Заповнення декларацій</li>
+                                            <li>Захист інтересів та репутації на суді</li>
+                                            <li>Оскарження протоколів про адмінправопорушення</li>
+                                        </ul>
+                                        <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
 
@@ -1332,19 +1476,33 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 newsleft  practiccart witeblue">
 
 
+                                <div class="nothoverpractics">
+                                    <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                            <img class="practicimg" src="img/kartinkamed.svg " alt="картинка2 ">
+                                        </div>
 
-                                <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
-                                        <img class="practicimg" src="img/kartinkamed.svg " alt="картинка2 ">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
+                                            <p class="newstitle ">Медичне <br>право</p>
+                                            <p class="text">Забезпечимо надійну юридичну підтримку медичної установи та приватних лікарів.</p>
+
+                                            </ul>
+                                        </div>
                                     </div>
-
-                                    <div class="col-lg-6 col-md-6 col-sm-6 practictextcart">
-                                        <p class="newstitle ">Медичне <br>право</p>
-                                        <p class="text nonetable">Допоможемо відкрити клініку та захистити її:</p>
-                                        <p class="text">Консультації з усіх питань медичного права</br>
-                                            Правовий аналіз медичної документації</p>
+                                </div>
+                                <div class="hoverpracticks">
+                                    <div style="background:#223A76;" class="fd">
+                                        <p class="titlenew ">Медичне право</p>
+                                        <p class="liuli" style="color:white; ">Допоможемо відкрити клініку та захистити її:</p>
+                                        <ul class="liuli" style="padding-left:50px; color:white; ">
+                                            <li>Консультації з усіх питань медичного права</li>
+                                            <li>Правовий аналіз медичної документації</li>
+                                            <li>Встановлення факту лікарської помилки</li>
+                                            <li>Супровід судових спорів</li>
 
                                         </ul>
+                                        <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
+                                        <p>&nbsp;</p>
                                     </div>
                                 </div>
 
@@ -1371,7 +1529,8 @@
 
 
                             <div class="col-lg-6 col-md-6 col-sm-6 newsright practiccarts">
-                                <div class="heicart" style="background:white;">
+
+                                <div class="nothoverpractics">
                                     <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
                                         <img class="practicimg" src="img/kartinka4.svg " alt="миниатюра ">
                                     </div>
@@ -1381,26 +1540,63 @@
                                         <p class="text onetable">Забезпечимо повний юридичний супровід участі в тендерах та державних закупівлях.</p>
                                     </div>
                                 </div>
+                                <div class="hoverpracticks">
+                                    <div style="background:#223A76;" class="fd">
+                                        <p class="titlenew ">Держзакупівлі та тендери</p>
+                                        <p class="liuli" style="color:white; ">Повний юридичний супровід тендерів:</p>
+                                        <ul class="liuli" style="padding-left:50px; color:white; ">
+                                            <li>Розробка та експертиза тендерної документації</li>
+                                            <li>Організація та проведення тендерів</li>
+                                            <li>Повна юридична підтримка участі в держзакупівлях</li>
+                                            <li>Оскарження тендерної процедури держзакупівель</li>
+
+                                        </ul>
+                                        <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
 
 
-                        <div style="padding-top:25px; " class="row ">
-                            <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
-                                <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
-                                    <img class="practicimg" src="img/kartinka5.svg " alt="картинка2 ">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 ">
-                                    <p class="newstitle ">Юридичний <br>супровід<br> договорів </p>
-                                    <p class="text ">Захистимо ваші права та інтереси під час укладання угод та оформлення договорів.
-                                    </p>
+                        <div style="padding-top:27px; " class="row ">
+                            <div class="nothoverpractics">
+                                <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 newsleft ">
+                                        <img class="practicimg" src="img/kartinka5.svg " alt="картинка2 ">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                        <p class="newstitle ">Юридичний <br>супровід<br> договорів </p>
+                                        <p class="text ">Захистимо ваші права та інтереси під час укладання угод та оформлення договорів.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <div style="padding-left: 0px;" class="hoverpracticks">
+                                <div style="background:#223A76;" class="fd">
+                                    <p class="titlenew ">Юридичний супровід договорів</p>
+                                    <p class="liuli" style="color:white; ">Захистимо ваші права та інтереси під час укладання угод:</p>
+                                    <ul class="liuli" style="padding-left:50px; color:white; ">
+                                        <li>Аналіз та експертиза договорів та контрактів</li>
+                                        <li>Доопрацювання та внесення змін</li>
+                                        <li>Оскарження умов договору</li>
+                                        <li>Супровід переговорів та укладання угод</li>
+
+                                    </ul>
+                                    <p class="batcartyny"><a href="">Дізнатися більше ></a></p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+
+
+
                             <div class="col-lg-6 col-md-6 newsleft ">
                                 <P>&nbsp;</P>
                                 <P>&nbsp;</P>
                                 <P>&nbsp;</P>
-                                <p class="butallposlygi"><a class="butallposlyg" style="float:right; border:1px solid #B49A67; " href="# ">Весь список послуг</a>
+                                <p style="padding-right:21px;" class="butallposlygi"><a class="butallposlyg" style="float:right; border:1px solid #B49A67; " href="# ">Весь список послуг</a>
                                 </p>
                             </div>
                         </div>
@@ -1421,18 +1617,19 @@
 
 
 
-
+    <div style="width:100%; height:38px;"></div>
 
 
     <section style="padding-top:44px; " id="mu-reservation ">
         <div class="container ">
             <div class="row ">
-                <div class="col-lg-12 ">
+                <div style="padding-left:103px;" class="col-lg-12 ">
                     <div class="mu-reservation-area ">
 
 
                         <div class="mu-title ">
-                            <p style="float:left; " class="titleheading ">Наші клієнти</p><span style="float:right; " class="btn "><a href=" ">Детальніше</a></span>
+                            <p style="float:left; " class="titleheading ">Наші клієнти</p>
+                            <p style="padding-right:50px; padding-top: 38px; float:right; "><span class="btnses"><a href=" ">Детальніше</a></span></p>
                         </div>
 
 
@@ -1445,32 +1642,87 @@
         </div>
         </div>
     </section>
+    <div style="width:100%; height:27px;"></div>
     <div class="heigclient"></div>
-    <section class="sectionourclient " id="mu-reservation ">
 
+
+
+
+
+    <section class="sectionourclient " id="mu-reservation ">
         <div class="container ">
             <div class="row ">
-                <div style="padding-top:250px; " class="col-12 ">
-                    <div class="col-md-1 "></div>
-                    <div class="col-md-1 comentstokate">
-                        <svg width="26 " height="20 " viewBox="0 0 26 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-      <path d="M11.6381 15.4656C11.6381 16.6802 11.1429 17.7328 10.1524 18.6235C9.16191 19.5142 8.00635 20 6.60317 20C4.45714 20 2.80635 19.2713 1.65079 17.8947C0.577778 16.5182 0 14.5749 0 12.1457C0 9.87854 0.990476 7.61134 2.97143 5.26316C4.95238
-                                    2.91498 7.26349 1.21457 10.0698 0L11.3905 2.02429C9.16191 3.07692 7.42857 4.2915 6.19048 5.66802C4.95238 7.04453 4.20952 8.74494 4.04444 10.6883H5.69524C6.93333 10.6883 7.84127 10.8502 8.66667 11.0931C9.40952 11.336 10.0698
-                                    11.7409 10.4825 12.2267C10.8952 12.7126 11.2254 13.1984 11.3905 13.7652C11.5556 14.251 11.6381 14.8178 11.6381 15.4656ZM26 15.4656C26 16.6802 25.5048 17.7328 24.5143 18.6235C23.5238 19.5142 22.3683 20 20.9651 20C18.819
-                                    20 17.1683 19.2713 16.0127 17.8947C14.8571 16.5182 14.2794 14.5749 14.2794 12.1457C14.2794 9.87854 15.2698 7.61134 17.2508 5.26316C19.2317 2.91498 21.6254 1.21457 24.3492 0L25.6698 2.02429C23.4413 3.07692 21.7905 4.2915
-                                    20.5524 5.66802C19.3143 7.04453 18.5714 8.74494 18.4063 10.6883H20.0571C21.2952 10.6883 22.2032 10.8502 23.0286 11.0931C23.7714 11.336 24.4317 11.7409 24.8444 12.2267C25.2571 12.7126 25.5873 13.1984 25.7524 13.7652C25.9175
-                                    14.251 26 14.8178 26 15.4656Z " fill="#B49A67 ">
-      </svg>
-                    </div>
-                    <div class="col-md-5 comentstokate">
-                        Мені складно і страшно уявити останні півтора року без юридичної підтримки «Тарасов та партнери», і якими були б наслідки. Крім захисту в складних і стресових питаннях, я отримала ще й супровід, який, як виявилося, був необхідним. Для мене неможливо співробітництво
-                        з адвокатом без довіри, йому доводиться довіряти моменти, які надалі впливають на все життя. Продовжуючи співпрацювати і довіряти «Тарасов та партнери» рекомендую всім, кому потрібен юридичний захист та підтримка.</div>
-                    <div class="col-md-1 comentstokate"></div>
-                    <div class="col-md-2 comentstokate"><img src="img/roundpfoto.svg " alt="фото девушки ">
-                    </div>
-                    <div class="col-md-2 comentstokate">
-                        <p>Катерина Сушко Засновник, дизайнер ТМ СathyТelle
-                        </p>
+                <div class="col-12 ">
+
+                    <div class="carousel-wrapper">
+                        <span id="target-item-1"></span>
+                        <span id="target-item-2"></span>
+                        <span id="target-item-3"></span>
+                        <span id="target-item-4"></span>
+                        <div class="carousel-item item-1">
+                            <p class="klient">
+                                <img src="img/rodos.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/peniy.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/krka.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/vaimo.svg">
+                            </p>
+                            <a class="arrow arrow-prev" href="#target-item-4"></a>
+                            <a class="arrow arrow-next" href="#target-item-2"></a>
+                            <div style="padding-top:80px;">
+                                <div class="col-sm-1"><img src="img/kavich.svg">
+                                </div>
+                                <div class="col-sm-5">
+                                    <p class="textcomentos">Мені складно і страшно уявити останні півтора року без юридичної підтримки «Тарасов та партнери», і якими були б наслідки. Крім захисту в складних і стресових питаннях, я отримала ще й супровід, який, як виявилося,
+                                        був необхідним. Для мене неможливо співробітництво з адвокатом без довіри, йому доводиться довіряти моменти, які надалі впливають на все життя. Продовжуючи співпрацювати і довіряти «Тарасов та партнери» рекомендую
+                                        всім, кому потрібен юридичний захист та підтримка.</p>
+                                </div>
+                                <div class="col-sm-1"> </div>
+                                <div class="col-sm-1">
+                                    <img src="img/koment1.svg">
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <p style="padding-left:15px; padding-top:25px;font-size: 17px;
+                                    line-height: 19px;
+                                    color: #223A76;">Катерина Сушко<br> Засновник, дизайнер ТМ СathyТelle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item item-2 light">
+                            <p class="klient">
+                                <img src="img/peniy.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/krka.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/vaimo.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/rodos.svg"></p>
+                            <a class="arrow arrow-prev" href="#target-item-1"></a>
+                            <a class="arrow arrow-next" href="#target-item-3"></a>
+                            <div class="comentsto"></div>
+
+                        </div>
+                        <div class="carousel-item item-3">
+                            <p class="klient">
+                                <img src="img/krka.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/vaimo.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/rodos.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/peniy.svg"></p>
+                            <a class="arrow arrow-prev" href="#target-item-2"></a>
+                            <a class="arrow arrow-next" href="#target-item-4"></a>
+                            <div class="comentsto"></div>
+
+                        </div>
+                        <div class="carousel-item item-4">
+                            <p class="klient">
+                                <img src="img/vaimo.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/rodos.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/peniy.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <img src="img/krka.svg">
+                            </p>
+                            <a class="arrow arrow-prev" href="#target-item-3"></a>
+                            <a class="arrow arrow-next" href="#target-item-1"></a>
+                            <div class="comentsto"></div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -1479,33 +1731,31 @@
     </section>
 
 
-
-
-    <div class="comentsto"></div>
-
-
-
-
-
-    <section style=" padding-bottom:53.35px; " id="mu-reservation ">
+    <section style=" padding-bottom:27px; padding-top:347px;" id="mu-reservation ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 ">
                     <div class="mu-reservation-area ">
                         <p style="float:right; "></p>
-                        <div id="pubcil" class="mu-title ">
+                        <div style="padding-left: 88px;" id="pubcil" class="mu-title ">
+                            <div style="float: right;
+                            padding-top: 33px;
+                            padding-right: 58px;">
+                                <p class="btnses"><a href="">Всі публікації</a></p>
+                            </div>
                             <h2 class="titleheading ">Публікації</h2>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section style="background-image: url(img/public.svg); " id="mu-reservation ">
+    <section style="background-image: url(img/public.svg); height:320px;" id="mu-reservation ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 ">
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-8 order-sm-first ">
+                    <div style="padding-left: 71px;" class="col-lg-8 col-md-8 col-sm-8 col-8 order-sm-first ">
                         <div class="newsone" style="background: url(img/news1.svg) center; "></div>
                         <p class="headnews notpc ">Тримання під вартою підозрюваних</p>
                         <p class="textnews notpc ">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила
@@ -1522,12 +1772,14 @@
 
 
 
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 order-sm-3 onpc ">
+                    <div style="padding-left: 2px;" class="col-lg-4 col-md-4 col-sm-4 col-4 order-sm-3 onpc ">
                         <div class="cards ">
-                            <div style="background: url(img/novin1.svg) center; " class="cardss "></div>
-                            <div class="card-bodys ">
+                            <div style="background: url(img/novin1.svg) center; " class="cardss ">
+                                <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                            </div>
+                            <div class="card-bodys" style="background: #132356;">
                                 <p style="font-weight: 450; padding-right:15px; font-size: 19px; line-height: 21px; color: #FFFFFF; " class="card-texts ">Адвокатського полку прибуло! Наш заступник директора, юрист Євгеній Назаренко став адвокатом!</p>
-                                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
+                                <div style="padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
                                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
 
                             </div>
@@ -1542,18 +1794,18 @@
     <section style="padding-top:33px; padding-bottom:53.35px; " id="mu-reservation ssse">
         <div class="container ">
             <div class="row ">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-8 order-sm-first ">
-                    <p> &nbsp;</p>
+                <div style="padding-left: 145px; width: 718px;" class="col-lg-8 col-md-8 col-sm-8 col-8 order-sm-first ">
+
                     <p class="headnews ontpc ">Тримання під вартою підозрюваних</p>
+                    <div style="height:20px;"></div>
                     <p class="textnews ontpc ">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила щодо
                         визначення запобіжного заходу. У багатьох випадках утримання під вартою в СІЗО достатньо було б замінити домашнім арештом. Чому ініціатива міністра юстиції Дениса Малюськи щодо «фільтрування» СІЗО законодавчо необгрунтована, та
                         як варто проводити там «ревізії», розповів виданню ГолосUA керуючий партнер ЮК “Тарасов та партнери”, адвокат Андрей Тарасов.
                     </p>
                     <p> &nbsp;</p>
-
+                    <p></p>
                     <p style="float:left; ">12-02-2020</p>
                     <p style="float:right; "><a style="color:#B49A67; padding:3px 15px; border:1px solid #B49A67; " class="textbutton onpcs " href="# ">Детальніше на сторінці ЗМІ</a></p>
-                    <p> &nbsp;</p>
                     <p> &nbsp;</p>
                     <div class="hree"></div>
                     <p> &nbsp;</p>
@@ -1564,10 +1816,12 @@
                 <div class="on480left">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-4 order-sm-3">
                         <div class="cards ">
-                            <div style="background: url(img/novin1.svg) center; " class="cardss "></div>
+                            <div style="background: url(img/novin1.svg) center; " class="cardss ">
+                                <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                            </div>
                             <div class="card-bodys ">
                                 <p style="font-weight: 450; padding-right:15px; font-size: 19px; line-height: 21px; color: #FFFFFF; " class="card-texts ">Адвокатського полку прибуло! Наш заступник директора, юрист Євгеній Назаренко став адвокатом!</p>
-                                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
+                                <div style="padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
                                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             </div>
                         </div>
@@ -1577,7 +1831,7 @@
                             <div style="background: url(img/new3.svg) center; " class="cardss "></div>
                             <div class="card-bodys ">
                                 <p class="card-texts ">Аквізиція - сучасна інквізиція? Хоч остання і лишилася в Серед- ньовіччі, для деяких підприємців аквізиція нічим не краща.</p>
-                                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
+                                <div style="padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
                                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                                 <p>&nbsp;</p>
                             </div>
@@ -1591,11 +1845,13 @@
                 <div class="on480right">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 ">
                         <div class="cards ">
-                            <div style="background: url(img/new1.svg) center; " class="cardss "></div>
+                            <div style="background: url(img/new1.svg) center; " class="cardss ">
+                                <div style="display:none;" class="cardsshover"><img src="img/shadow.svg"></div>
+                            </div>
 
                             <div class="card-bodys ">
                                 <p class="card-texts ">Асоційований партнер, адвокат Євгеній Назаренко вберіг нашого клієнта від збитків на 8 000 000 гривень</p>
-                                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
+                                <div style="padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
                                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                                 <p>&nbsp;</p>
                             </div>
@@ -1606,7 +1862,7 @@
                             <div style="background: url(img/new4.svg) center; " class="cardss "></div>
                             <div class="card-bodys ">
                                 <p class="card-texts ">Ринок землі Вчора Верховна рада проголосу- вала за законопроєкт про лібера- лізацію українського ринку землі.</p>
-                                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">14-11-2019</span>
+                                <div style="padding-left: 9%; "><span style="color:white; ">14-11-2019</span>
                                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                                 <p>&nbsp;</p>
                             </div>
@@ -1619,22 +1875,26 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-4 order-sm-3 on768">
                     <div class="cards ">
-                        <div style="background: url(img/novin1.svg) center; " class="cardss "></div>
+                        <div style="background: url(img/novin1.svg) center; " class="cardss ">
+                            <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                        </div>
                         <div class="card-bodys ">
                             <p style="font-weight: 450; padding-right:15px; font-size: 19px; line-height: 21px; color: #FFFFFF; " class="card-texts ">Адвокатського полку прибуло! Наш заступник директора, юрист Євгеній Назаренко став адвокатом!</p>
-                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
+                            <div style="padding-left: 9%; "><span style="color:white; ">12-02-2020</span>
                                 <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 sss">
+                <div style="padding-left: 62px;" class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 sss">
                     <div class="cards ">
-                        <div style="background: url(img/new1.svg) center; " class="cardss "></div>
+                        <div style="background: url(img/new1.svg) center; " class="cardss ">
+                            <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                        </div>
 
                         <div class="card-bodys ">
                             <p class="card-texts ">Асоційований партнер, адвокат Євгеній Назаренко вберіг нашого клієнта від збитків на 8 000 000 гривень</p>
-                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
+                            <div style="padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
                                 <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
@@ -1648,37 +1908,41 @@
                 <div style="padding-top:5px;"></div>
                 <div class="hree"></div>
                 <div style="padding-top:5px;"></div>
-
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 onpc">
+                <div style="padding-left: 88px;" class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 onpc">
                     <div class="cards ">
-                        <div style="background: url(img/new2.svg) center; " class="cardss "></div>
-                        <div class="card-bodys ">
+                        <div style="background: url(img/new2.svg) center; " class="cardss">
+                            <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                        </div>
+                        <div class="card-bodys" style="background: #B49A67;">
                             <p class="card-texts ">Пральні закриваються? Що несе Закон «Про запобігання та протидію відмиванню доходів, одержаних злочинним шляхом»?</p>
-                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">11-02-2020</span>
+                            <div style="padding-left: 9%; "><span style="color:white; ">11-02-2020</span>
                                 <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 sss">
+                <div style="padding-left: 43px;" class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 sss">
                     <div class="cards ">
-                        <div style="background: url(img/new3.svg) center; " class="cardss "></div>
-                        <div class="card-bodys ">
+                        <div style="background: url(img/new3.svg) center; " class="cardss">
+                            <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                        </div>
+                        <div class="card-bodys" style="background: #B49A67;">
                             <p class="card-texts ">Аквізиція - сучасна інквізиція? Хоч остання і лишилася в Серед- ньовіччі, для деяких підприємців аквізиція нічим не краща.</p>
-                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
+                            <div style="padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
                                 <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 sss">
+                <div style="padding-left:0px;" class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 sss">
                     <div class="cards ">
-                        <div style="background: url(img/new4.svg) center; " class="cardss "></div>
-                        <div class="card-bodys ">
+                        <div style="background: url(img/new4.svg) center; " class="cardss">
+                            <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
+                        </div>
+                        <div class="card-bodys" style="background: #999999;">
                             <p class="card-texts ">Ринок землі Вчора Верховна рада проголосу- вала за законопроєкт про лібера- лізацію українського ринку землі.</p>
-                            <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">14-11-2019</span>
+                            <div style="padding-left: 9%; "><span style="color:white; ">14-11-2019</span>
                                 <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                             <p>&nbsp;</p>
                         </div>
@@ -1706,7 +1970,7 @@
 
             <div class="card-bodys ">
                 <p class="card-texts ">Асоційований партнер, адвокат Євгеній Назаренко вберіг нашого клієнта від збитків на 8 000 000 гривень</p>
-                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
+                <div style="padding-left: 9%; "><span style="color:white; ">06-02-2020</span>
                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                 <p>&nbsp;</p>
             </div>
@@ -1716,29 +1980,26 @@
             <div style="background: url(img/new3.svg) center; " class="cardss "></div>
             <div class="card-bodys ">
                 <p class="card-texts ">Аквізиція - сучасна інквізиція? Хоч остання і лишилася в Серед- ньовіччі, для деяких підприємців аквізиція нічим не краща.</p>
-                <div style="padding-bottom:49px; padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
+                <div style="padding-left: 9%; "><span style="color:white; ">31-01-2020</span>
                     <a class="btnssa " style="margin-right: 21px; margin-bottom:20px; float: right; " href=" ">Детальніше</a></div>
                 <p>&nbsp;</p>
             </div>
         </div>
-
-
-
+    </section>
+    <div class="allrepublicpc" style="float:right;">
+        <p class="btnses"><a href="">Всі публікації</a></p>
+    </div>
 
 
     </section>
-
-
-
-    </section>
-    <section id="form " style="padding-bottom:53.35px; padding-top:108px; " id="mu-reservation ">
+    <section id="form " style="padding-bottom:26.35px; padding-top:91px; " id="mu-reservation ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 ">
                     <div class="mu-reservation-area ">
                         <p style="float:right; "></p>
                         <div class="mu-title ">
-                            <h2 class="titleheading ">Контакти</h2>
+                            <h2 class="titleheading" style="margin-left: 72px;">Контакти</h2>
                         </div>
                     </div>
                 </div>
@@ -1749,17 +2010,17 @@
     <section>
 
 
-        <footer style="background:#223A76; height: 600px; ">
+        <footer style="background:#223A76; height: 540px; ">
 
             <div class="col-lg-2 ">
             </div>
             <div style="background-image: url(img/footer.svg); " class="col-lg-8 ">
-                <div class="col-lg-6 col-sm-6 mapsg">
+                <div class="col-lg-5 col-sm-5 mapsg">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8267255966094!2d30.51046142941182!3d50.43686095622045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfaf14001c15%3A0x2a4f35c88a6b513a!2z0KLQsNGA0LDRgdC-0LIg0ZYg0L_QsNGA0YLQvdC10YDQuA!5e0!3m2!1suk!2sua!4v1623319923758!5m2!1suk!2sua "
-                        width="100%" height="600 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+                        width="100%" height="540 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
                 </div>
-                <div class="col-lg-6 col-sm-6 contacts">
-                    <p class="contact ">Київ, вул. Володимирська,<br> 81-Б, офіс 26
+                <div class="col-lg-5 col-sm-5 contacts">
+                    <p style="padding-top:45px;" class="contact">Київ, вул. Володимирська,<br> 81-Б, офіс 26
                         <br><br>
                         <a class="contact " href="tel:+380442997077 ">+38 (044) 299 70 77</a><br>
                         <a class="contact " href="mailto:info@tarp.com.ua ">info@tarp.com.ua</a> <span class="iconsfooter ">
@@ -1826,7 +2087,7 @@
     <line x1="0.543457 " y1="0.58117 " x2="132.894 " y2="0.58117 " stroke="white " stroke-width="0.83766 ">
     </svg>
                     <p class="notpc"></p>
-                    <div style="padding-top: 45px; ">
+                    <div style="padding-top: 15px; ">
                         <svg width="58 " height="57 " viewBox="0 0 58 57 " fill="none " xmlns="http://www.w3.org/2000/svg ">
     <path d="M50.2639 0.491084C49.617 -0.155882 48.5573 -0.155882 47.8991 0.491084L35.0267 13.3635H5.84631C3.07997 13.3635 0.837891 15.6056 0.837891 18.3719V41.7519C0.837891 44.5183 3.07997 46.7604 5.84631 46.7604H7.63104V55.3271C7.63104 56.0075 8.04376
                                     56.621 8.66842 56.8776C9.30423 57.1341 10.0293 56.978 10.4978 56.4983L20.0238 46.7604H39.4774C42.2438 46.7604 44.4858 44.5183 44.4858 41.7519V22.8114L57.3471 9.93903C57.9941 9.29206 57.9941 8.23238 57.3471 7.57425L50.2639
@@ -1844,28 +2105,35 @@
                         <p></p>
                         <p style="z-index: 999; font-style: normal; font-weight: 100; font-size: 17px; line-height: 19px; color: #FFFFFF; ">Ваше ім'я</p>
 
-                        <input class="phonesfooter" style="background-color: #5B7BBB; border:none; " placeholder=" Іван Іваниченківський " type="text ">
+                        <input class="namesfooter" style="background-color: #5B7BBB; border:none; " placeholder=" Іван Іваниченківський " type="text ">
                         <p></p>
                         <p class="dooble" style="z-index: 999; font-style: normal; font-weight: 100; font-size: 17px; line-height: 19px; color: #FFFFFF; ">Номер телефону</p>
                         <input class="phonesfooter dooble" style="background-color: #5B7BBB; border:none; " placeholder=" +__(___)___ __ __ " type="phone ">
                         <p class="dooble"></p>
                         <p style="padding-top:10px; "><button style="background-color: #5b7bbb00; border:white solid 1px;; color:white; padding-left:12px; padding-right:12px; padding-top:4px; padding-bottom:4px; " value="Відправити " type="submit ">Відправити</button></p>
-                        <p style="font-family: Futura PT; margin-top: 8px; font-style: normal; font-weight: normal;width: 200px; font-size: 13px; line-height: 17px; color: #64759F; ">© Copyright Tarasov &amp; Partners 2020</p>
+
                     </div>
                     <div style="padding-right: 0px; padding-left: 0px; margin-left:-50px; margin-top: -24px; " class="col-lg-6 telehponn">
                         <p>&nbsp;</p>
                         <p style="z-index: 999; font-style: normal; font-weight: 100; font-size: 17px; line-height: 19px; color: #FFFFFF; ">Номер телефону</p>
                         <input class="phonesfooter" style="background-color: #5B7BBB; border:none; " placeholder=" +__(___)___ __ __ " type="phone ">
                     </div>
+                    <p class="copirites">© Copyright Tarasov &amp; Partners 2020</p>
                 </div>
                 </form>
+
             </div>
             <div class="col-lg-2 ">
             </div>
             </div>
         </footer>
     </section>
-
+    <script>
+        $('.phonesfooter').bind('keyup', function() {
+            var sanitized = $(this).val().replace(/[^0-9a-f]/g, '');
+            $(this).val('+' + sanitized);
+        });
+    </script>
 
 
     <script src="assets/js/jquery.min.js "></script>

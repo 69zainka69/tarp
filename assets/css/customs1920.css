@@ -1,4 +1,71 @@
-@media screen and (max-width: 1961px) {
+@media screen and (max-width: 1965px) {
+    input:focus {
+        color: white;
+    }
+    input {
+        color: white;
+    }
+    .copirites {
+        position: absolute;
+        bottom: -80px;
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: normal;
+        width: 200px;
+        font-size: 13px;
+        line-height: 17px;
+        color: #64759F;
+    }
+    .contacts {
+        position: absolute;
+        width: 100%;
+        padding-left: 701px;
+    }
+    .mapsg {
+        padding-left: 123px;
+        width: 628px;
+    }
+    .allrepublicpc {
+        display: block;
+        padding-right: 434px;
+        margin-top: -30px;
+    }
+    .cards:hover .cardsshover {
+        opacity: 1 !important;
+    }
+    .btnses:hover {
+        background: #B49A67;
+    }
+    .btnses:hover a {
+        color: white;
+        background: #B49A67;
+    }
+    .btnses a {
+        color: #B49A67;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .btnses {
+        padding: 6px 24px;
+        border: 2px solid #B49A67;
+    }
+    .card:hover .card-body {
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .hoverpracticks:hover {
+        opacity: 1;
+        width: 493px;
+        padding-left: 3px;
+        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    }
+    .hoverpracticks {
+        opacity: 0;
+        position: absolute;
+        width: 494px;
+        padding-left: 3px;
+    }
     .mobmenu a:hover {
         color: #B49A67;
     }
@@ -30,10 +97,13 @@
         display: none;
     }
     .practiccont {
-        padding-left: 98px;
+        padding-left: 103px;
     }
     .batcartyny:hover a {
         color: #B49A67;
+    }
+    .liul {
+        padding-top: 6px;
     }
     .liul li {
         font-style: normal;
@@ -61,7 +131,7 @@
         color: white;
     }
     .batcartyn a {
-        padding: 3px 15px;
+        padding: 5px 16px;
         border: solid 1px white;
         color: white;
     }
@@ -79,7 +149,7 @@
         color: white;
     }
     .butallposlyg {
-        padding: 3px 15px;
+        padding: 6px 25px;
         color: #B49A67;
     }
     .butallposlyg:hover {
@@ -94,8 +164,12 @@
         color: #B49A67;
     }
     .buttonposlyg {
-        border: 1px solid #B49A67;
-        padding: 3px 15px;
+        border: 2px solid #B49A67;
+        padding: 6px 15px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: center;
     }
     .buttonposlyg:hover {
         color: #FFFFFF;
@@ -173,7 +247,7 @@
         font-weight: 450;
         font-size: 60px;
         line-height: 77px;
-        margin-left: -8px;
+        margin-left: -15px;
         padding-top: 4px;
         color: #223A76;
     }
@@ -235,17 +309,21 @@
         display: none;
     }
     .cardss {
-        height: 165px;
+        height: 170px;
         width: 320px;
+    }
+    .card {
+        width: 320px !important;
+        height: 295px !important;
     }
     .card-bodys {
         background: #223A76;
         width: 320px;
-        height: 158px;
+        height: 150px;
     }
     .newsone {
         width: 664px;
-        height: 324px;
+        height: 320px;
     }
     .comentsto {
         height: 450px;
@@ -256,18 +334,18 @@
     .practicfirst {
         padding-right: 0px;
         height: 290px;
-        width: 520px;
+        width: 516px;
         padding-left: 0px;
     }
     .practictwo {
         background: #223A76;
         height: 290px;
-        width: 490px;
+        width: 494px;
     }
     .practictwotwo {
         padding-right: -15px;
         height: 234px;
-        width: 491px;
+        width: 494px;
     }
     .practicimg {
         width: 100%;
@@ -281,7 +359,7 @@
     .practiccarts {
         height: 234px;
         width: 520px;
-        padding-left: 30px;
+        padding-left: 22px;
     }
     .practicscar {
         padding-left: 15px;
@@ -296,7 +374,7 @@
         padding-left: 15px;
     }
     .rychka {
-        height: 291px;
+        height: 295px;
         width: 320px;
     }
     .card:hover {
