@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex">
     <title>Тарасов и Партнеры | юридические услуги</title>
-    <meta name="description" content="@yield('description')">
+    <meta name="description" content="Ваш юридический отдел! Юридическая компания «Тарасов и партнеры» — специалист по сопровождению деятельности предприятий. По сути, мы заменяем юридический отдел. Это не только экономически выгодно, но и эффективно.">
     <meta name="keywords" content="@yield('keywords')" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="img/ico.svg" type="image/x-icon">
@@ -28,6 +32,170 @@
     <!-- Main style sheet -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/customs1920.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/customs960.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/customs768.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/customs480.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/customs320.css">
+    <style>
+        .navbar-right {
+            margin-top: 8px;
+            margin-right: -64px;
+        }
+        
+        .lang {
+            font-style: normal;
+            font-weight: 450;
+            font-size: 14px;
+            line-height: 18px;
+            color: #B49A67;
+        }
+        
+        @media (max-width: 1920px) {
+            .navbar {
+                min-height: 63px;
+            }
+        }
+        
+        @media (max-width: 965px) {
+            .imagebig {
+                background-image: url(img/onas-left960.svg);
+            }
+            .navbar {
+                min-height: 63px;
+            }
+            .navbar-brand {
+                padding: 12px 0px;
+            }
+            .navbar-right {
+                float: right !important;
+                margin-right: -81px;
+                margin-top: 8px;
+            }
+        }
+        
+        .men a {
+            font-family: "Futura PT";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #223A76;
+        }
+        
+        .men a:hover {
+            color: #b49a67;
+        }
+        
+        .activ {
+            color: #b49a67;
+        }
+        
+        @media (min-width: 1970px) {
+            .navbar>.container .navbar-brand,
+            .navbar>.container-fluid .navbar-brand {
+                margin-left: -76px !important;
+            }
+            .navbar-right {
+                margin-right: 0px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .navbar>.container .navbar-brand,
+            .navbar>.container-fluid .navbar-brand {
+                margin-left: -7px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .newsmob {
+                display: block;
+            }
+            .navbar>.container .navbar-brand,
+            .navbar>.container-fluid .navbar-brand {
+                margin-left: 0px;
+            }
+            .hone {
+                font-weight: 450;
+                font-size: 85px;
+                line-height: 76px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hone {
+                font-weight: 450;
+                font-size: 60px;
+                line-height: 60px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hone {
+                font-weight: 450;
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .navbar>.container .navbar-brand,
+            .navbar>.container-fluid .navbar-brand {
+                margin-left: -7px;
+            }
+        }
+        
+        .navbar-default {
+            background-color: #E5E5E5;
+        }
+        
+        .lang {
+            background: #E5E5E5;
+            color: #B49A67;
+            border: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            padding-top: 4px;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        
+        .hr {
+            border: 1px solid #B49A67;
+        }
+        
+        .headerimg {
+            display: block;
+        }
+        
+        .headerimag {
+            display: none;
+        }
+        
+        .telph {
+            display: none;
+        }
+        
+        select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            border: none;
+            position: relative;
+            outline: none;
+        }
+        
+        select:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5px;
+            padding-top: 50px;
+        }
+        
+        .lang:focus-visible {
+            border: none;
+        }
+    </style>
+
+
 
 
     <style>
@@ -240,11 +408,8 @@
                     <span class="icon-bar"></span>
                   </button>
 
-                    <!-- LOGO -->
 
                     <a class="navbar-brand" href=""><img src="img/logo.svg" alt="Logo img"></a>
-
-
 
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -267,7 +432,72 @@
             </div>
         </nav>
     </header>
+    <script>
+        $(document).on('click', '.custom-close', function(e) {
+            e.preventDefault();
+            $("#mobmenu").removeClass("active")
+        });
+        $(document).on('click', '.block-btn', function(e) {
+            e.preventDefault();
+            var id = $(this).attr('id');
+            var block = $('div[data-block-visible="' + id + '"]');
+            block.toggleClass('active');
+        });
+    </script>
 
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+            $('#toTop').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+
+
+    <div id="toTop"></div>
+    <div class="hide-block" data-block-visible="block1" id="mobmenu" style="position: -webkit-sticky;
+    position: sticky; top:0; z-index:-1; width:100%;">
+        <div style="height:70px;">
+            <div style="position:absolute; top:10px; left:5%"><img src="img/logo.svg" alt="Logo img"> </div>
+            <div style="position:absolute; top:10px; right:25px;"><button style="float:right; border:none; background:none;" class="custom-close"><svg width="35" height="35" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.53023 0.763195C3.76168 -0.0301516 2.49551 -0.0502496 1.70216 0.718305C0.908813 1.48686 0.888715 2.75303 1.65727 3.54638L4.53023 0.763195ZM35.5635 38.5464C36.3321 39.3397 37.5982 39.3598 38.3916 38.5913C39.1849 37.8227 39.205 36.5565 38.4365 35.7632L35.5635 38.5464ZM37.3427 3.54638C38.1113 2.75303 38.0912 1.48686 37.2978 0.718305C36.5045 -0.0502496 35.2383 -0.0301516 34.4698 0.763195L37.3427 3.54638ZM0.56352 35.7632C-0.205035 36.5565 -0.184937 37.8227 0.60841 38.5913C1.40176 39.3598 2.66793 39.3397 3.43648 38.5464L0.56352 35.7632ZM1.65727 3.54638L35.5635 38.5464L38.4365 35.7632L4.53023 0.763195L1.65727 3.54638ZM34.4698 0.763195L0.56352 35.7632L3.43648 38.5464L37.3427 3.54638L34.4698 0.763195Z" fill="#B49A67"/>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div style="width:50%; float:left;" class="col-sm-6 col-md-6 col-6">
+
+                <p class="mobmenu"> <a href="https://new-partner.vm.ua/tarp/ua/about/">Про нас</a></p>
+                <p class="mobmenu"> <a href="#mu-restaurant-menu">Команда</a></p>
+                <p class="mobmenu"> <a href="https://new-partner.vm.ua/tarp/ua/praktiki/yuridicheskiy-autsyursing/">Практики</a></p>
+                <p class="mobmenu"> <a id="men" href="#mu-gallery">Наші клієнти</a></p>
+                <p class="mobmenu"> <a id="men" href="#pubcil">Публікації</a></p>
+                <p class="mobmenu"> <a id="men" href="#mu-contact">Контакти</a></p>
+                <p class="mobmenu">&nbsp;</p>
+                <p class="mobmenu">&nbsp;</p>
+            </div>
+            <div style="width:50%; float:right;" class="col-sm-6 col-md-6 col-6">
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang"><a href="">UA</a></p>
+                <p class="moblang"><a href="">EN</a></p>
+                <p class="moblang"><a href="">RU</a></p>
+                <p class="moblang">&nbsp;</p>
+                <p class="moblang">&nbsp;</p>
+            </div>
+        </div>
+    </div>
 
     <section id="mu-about-us">
         <div class="container">

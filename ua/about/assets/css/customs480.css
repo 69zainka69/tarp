@@ -1,20 +1,128 @@
 @media screen and (max-width: 481px) {
+    .padtop {
+        padding-top: 24px;
+        margin-left: 0px;
+    }
+    .imagebig {
+        display: none !important;
+    }
+    .small-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 24px;
+        color: #223A76;
+        margin-left: -4px;
+    }
+    .texts {
+        padding-bottom: 25px;
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .text-left {
+        padding-left: 31px;
+    }
+    .heading {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 40px;
+        line-height: 47px;
+        padding-top: 31px;
+        padding-bottom: 9px;
+    }
+    #mu-header>nav>div>div.navbar-header>a>img {
+        width: 236.03;
+        height: 52.54px;
+    }
+    .navbar {
+        min-height: 90px !important;
+    }
+    .nonepc480 {
+        padding-left: 7px;
+        width: 440px;
+        height: 164px;
+    }
+    .nonepc480 {
+        display: block !important;
+    }
+    .nonepc768 {
+        display: none !important;
+    }
+    .text-left {
+        width: 100%;
+    }
+    #mu-about-us>div>div>div>div:nth-child(2) {
+        display: none;
+    }
+    .container>.navbar-header,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container-fluid>.navbar-collapse {
+        margin-right: 45px;
+        margin-left: -116px;
+    }
+    .infoicons .col-lg-3 {
+        display: none;
+    }
+    .col-md-titleaboutus {
+        display: none;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -43px !important;
+    }
+    .notpc {
+        display: none;
+    }
+    .notpc {
+        display: block;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
     .hone {
         font-weight: 450;
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 85px;
+        line-height: 76px;
+    }
+    .btnssa {
+        color: #ffffff;
+        padding: 3px 15px;
+        border: 2px solid #ffffff;
+    }
+    .headerimg {
+        display: none !important;
+    }
+    .headerimag {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 480px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 137px !important;
+        margin-top: 10px;
+    }
+    #mu-header>nav>div>div.navbar-header>button {
+        display: block;
+        position: absolute;
+        right: 14px;
+        top: 7px;
+    }
+    #top-menu {
+        display: none;
     }
     .telph {
         display: none !important;
     }
-    .container {
-        width: 400px;
-    }
-    .navbar>.container .navbar-brand,
-    .navbar>.container-fluid .navbar-brand {
-        margin-left: 128px !important;
-    }
-    .navbar-toggle {
-        margin-right: -11%;
+    .breadc {
+        padding-left: 12px !important;
+        padding-top: 128px !important;
+        padding-bottom: 24px !important;
     }
 }

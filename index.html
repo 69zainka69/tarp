@@ -99,6 +99,21 @@
             opacity: 1;
         }
         
+        .vidprav {
+            background-color: #5b7bbb00;
+            border: white solid 1px;
+            color: white;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .vidprav:hover {
+            background: White;
+            color: #B49A67;
+        }
+        
         .carousel-wrapper #target-item-2:target~.item-2,
         .carousel-wrapper #target-item-3:target~.item-3,
         .carousel-wrapper #target-item-4:target~.item-4 {
@@ -114,12 +129,6 @@
         .navbar-right {
             margin-top: 9px;
             margin-right: -179px;
-        }
-        
-        .navbar>.container .navbar-brand,
-        .navbar>.container-fluid .navbar-brand {
-            margin-left: -48px;
-            margin-top: -2px;
         }
         
         select {
@@ -169,10 +178,6 @@
             }
             .navbar-brand {
                 padding: 12px 10px;
-            }
-            .navbar>.container .navbar-brand,
-            .navbar>.container-fluid .navbar-brand {
-                margin-left: -84px;
             }
             .navbar-right {
                 float: right !important;
@@ -271,11 +276,6 @@
             width: 100%;
         }
         
-        .coomandos {
-            padding-top: 167px;
-            padding-bottom: 30px;
-        }
-        
         .bottkomand {
             padding-top: 55px;
         }
@@ -303,10 +303,6 @@
         
         .lang-active {
             display: none;
-        }
-        
-        .textkomand {
-            padding-left: 69px;
         }
         
         .rychka {
@@ -577,40 +573,94 @@
         .infoiconss {
             display: none;
         }
-        /*  @media screen and (max-width: 1961px) {
+        
+        @media screen and (max-width: 1961px) {
             .sectionourclient {
-                background: url(img/backback.svg) no-repeat center;
                 height: 200px;
             }
         }
         
         @media screen and (max-width: 961px) {
             .sectionourclient {
-                background-image: url(img/backback960.svg);
                 height: 200px;
             }
         }
         
         @media screen and (max-width: 780px) {
             .sectionourclient {
-                background-image: url(img/backback780.svg);
                 height: 301px;
             }
         }
         
         @media screen and (max-width: 481px) {
             .sectionourclient {
-                background-image: url(img/backback480.svg);
                 height: 301px;
             }
         }
         
         @media screen and (max-width: 325px) {
             .sectionourclient {
-                background-image: url(img/backback320.svg);
                 height: 353px;
             }
-        }*/
+        }
+        
+        @media screen and (max-width: 962px) {
+            .rychka {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/ruch1-290x295.png) !important;
+            }
+            .card:hover {
+                width: 290px;
+                height: 431px;
+                box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+            }
+            .rychka:hover {
+                height: 291px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/ruch2-290x295jpg.jpg) !important;
+            }
+            .glyshkova {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/glu1-290x295.png) !important;
+            }
+            .glyshkova:hover {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/glu2-290x295jpg.jpg) !important;
+            }
+            .milian {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/mil1-290x295.png) !important;
+            }
+            .milian:hover {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/mil2-290x295jpg.jpg) !important;
+            }
+            .tarasov {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/tar1-290x295.png) !important;
+            }
+            .tarasov:hover {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/tar2-290x295jpg.jpg) !important;
+            }
+            .nazarenko {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/naz1-290x295.png) !important;
+            }
+            .nazarenko:hover {
+                height: 295px;
+                width: 290px;
+                background-image: url(/img/comand/290x295/naz2-290x295jpg.jpg) !important;
+            }
+        }
         
         @media screen and (max-width: 485px) {
             .rychka {
@@ -695,7 +745,6 @@
             padding: 15px;
             position: fixed;
             bottom: 10px;
-            /* отступ кнопки от нижнего края страницы*/
             right: 10px;
             cursor: pointer;
             display: none;
@@ -1037,7 +1086,7 @@
 
     <section id="mu-gallery" style="height: 1151px;">
         <div class="container contcomand">
-            <div style="padding-left:72px;" class="row lefter">
+            <div class="row lefter">
                 <div class="coomandos" class="col-lg-12">
                     <div class="textkomand on768" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
                         <h3 class="titleaboutus">Команда</h3>
@@ -1681,22 +1730,20 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <p style="padding-left:15px; padding-top:25px;font-size: 17px;
-                                    line-height: 19px;
-                                    color: #223A76;">Катерина Сушко<br> Засновник, дизайнер ТМ СathyТelle
+                                    <p class="texttocoments">Катерина Сушко<br> Засновник, дизайнер ТМ СathyТelle
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item item-2 light">
-                            <p class="klient">
+                            <p class="klient2">
                                 <img src="img/willer.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 <img src="img/paru.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 <img src="img/doc.svg"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                 <img src="img/mango.svg"></p>
                             <a class="arrow arrow-prev" href="#target-item-1"></a>
                             <a class="arrow arrow-next" href="#target-item-1"></a>
-                            <div style="padding-top:80px;">
+                            <div style="padding-top:48px;">
                                 <div class="col-sm-1"><img src="img/kavich.svg">
                                 </div>
                                 <div class="col-sm-5">
@@ -1709,9 +1756,7 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <p style="padding-left:15px; padding-top:25px;font-size: 17px;
-                                    line-height: 19px;
-                                    color: #223A76;">Олег Коломієць<br> Директор ТОВ «БАКЛЕР ГРУП»
+                                    <p class="texttocoments">Олег Коломієць<br> Директор ТОВ «БАКЛЕР ГРУП»
                                     </p>
                                 </div>
                             </div>
@@ -1903,7 +1948,7 @@
                 <div style="padding-top:5px;"></div>
                 <div class="hree"></div>
                 <div style="padding-top:5px;"></div>
-                <div style="padding-left: 88px;" class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 onpc">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 onpc ostpublicryad">
                     <div class="cards ">
                         <div style="background: url(img/new2.svg) center; " class="cardss">
                             <div style="opacity:0;" class="cardsshover"><img src="img/shadow.svg"></div>
@@ -2009,13 +2054,13 @@
 
             <div class="col-lg-2 ">
             </div>
-            <div style="background-image: url(img/footer.svg); " class="col-lg-8 ">
+            <div class="fotnotleft" style="background-image: url(img/footer.svg); " class="col-lg-8 ">
                 <div class="col-lg-5 col-sm-5 mapsg">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158.8267255966094!2d30.51046142941182!3d50.43686095622045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfaf14001c15%3A0x2a4f35c88a6b513a!2z0KLQsNGA0LDRgdC-0LIg0ZYg0L_QsNGA0YLQvdC10YDQuA!5e0!3m2!1suk!2sua!4v1623319923758!5m2!1suk!2sua "
                         width="100%" height="540 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
                 </div>
                 <div id="form" class="col-lg-5 col-sm-5 contacts">
-                    <p style="padding-top:45px;" class="contact">Київ, вул. Володимирська,<br> 81-Б, офіс 26
+                    <p class="contact conpadin">Київ, вул. Володимирська,<br> 81-Б, офіс 26
                         <br><br>
                         <a class="contact " href="tel:+380442997077 ">+38 (044) 299 70 77</a><br>
                         <a class="contact " href="mailto:info@tarp.com.ua ">info@tarp.com.ua</a> <span class="iconsfooter ">
@@ -2105,7 +2150,8 @@
                         <p class="dooble" style="z-index: 999; font-style: normal; font-weight: 100; font-size: 17px; line-height: 19px; color: #FFFFFF; ">Номер телефону</p>
                         <input class="phonesfooter dooble" style="background-color: #5B7BBB; border:none; " placeholder=" +__(___)___ __ __ " type="phone ">
                         <p class="dooble"></p>
-                        <p style="padding-top:10px; "><button style="background-color: #5b7bbb00; border:white solid 1px;; color:white; padding-left:12px; padding-right:12px; padding-top:4px; padding-bottom:4px; " value="Відправити " type="submit ">Відправити</button></p>
+                        <p style="padding-top:10px; ">
+                            <button class="vidprav" value="Відправити " type="submit ">Відправити</button></p>
 
                     </div>
                     <div style="padding-right: 0px; padding-left: 0px; margin-left:-50px; margin-top: -24px; " class="col-lg-6 telehponn">

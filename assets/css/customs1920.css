@@ -1,4 +1,32 @@
 @media screen and (max-width: 1965px) {
+    .ostpublicryad {
+        padding-left: 88px;
+    }
+    .texttocoments {
+        padding-left: 15px;
+        padding-top: 25px;
+        font-size: 17px;
+        line-height: 19px;
+        color: #223A76;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -45px;
+        margin-top: -2px;
+    }
+    .conpadin {
+        padding-top: 45px;
+    }
+    .coomandos {
+        padding-top: 167px;
+        padding-bottom: 30px;
+    }
+    .textkomand {
+        padding-left: 69px;
+    }
+    .lefter {
+        padding-left: 72px;
+    }
     #mu-reservation\ ssse>div:nth-child(1)>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first>p:nth-child(7)>a:hover {
         color: white !important;
         background: #B49A67;
@@ -6,7 +34,6 @@
     .cards:hover .btnssa {
         color: #B49A67;
         background: white;
-        ;
     }
     input:focus {
         color: white;
@@ -211,10 +238,6 @@
     }
     .navbar-right {
         margin-right: -182px !important;
-    }
-    .navbar>.container .navbar-brand,
-    .navbar>.container-fluid .navbar-brand {
-        margin-left: -45px !important;
     }
     .butonas {
         text-align: center;

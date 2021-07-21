@@ -1,81 +1,51 @@
-@media screen and (max-width: 769px) {
-    .card:hover {
-        width: 320px;
-        height: 431px;
-        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+@media screen and (max-width: 770px) {
+    .small-text {
+        font-style: normal;
+        font-weight: 380;
+        font-size: 25px;
+        line-height: 32px;
     }
-    .rychka:hover {
-        height: 291px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/ruch2-320x295.jpg);
+    .texts {
+        padding-bottom: 45px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 30px;
+        line-height: 38px;
     }
-    .glyshkova {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/glu1-320-295.png);
+    .text-left {
+        padding-left: 24px;
     }
-    .glyshkova:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/glu2-320x295.jpg);
+    .heading {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 50px;
+        line-height: 47px;
+        padding-top: 64px;
     }
-    .milian {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/mil1-320-295.png);
+    #mu-header>nav>div>div.navbar-header>a>img {
+        width: 236.03;
+        height: 52.54px;
     }
-    .milian:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/mil2-320x295.jpg);
+    .navbar {
+        min-height: 90px !important;
     }
-    .tarasov {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/tar1-320-295.png);
+    .nonepc768 {
+        display: block;
+        width: 708.16px;
+        height: 264.67px;
     }
-    .tarasov:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/tar2-320x295.jpg);
+    .text-left {
+        width: 100%;
     }
-    .nazarenko {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/naz1-320-295.png);
-    }
-    .nazarenko:hover {
-        height: 295px;
-        width: 320px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/320x295/naz2-320x295.jpg);
-    }
-    .card-body {
-        width: 320px;
-        height: 141px;
-        position: absolute;
-        top: 290;
-    }
-    .contcomand {
-        padding-right: 2px;
-        padding-left: 2px;
-        margin-right: 2px;
-        margin-left: 2px;
+    #mu-about-us>div>div>div>div:nth-child(2) {
+        display: none;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
     .container>.navbar-collapse,
     .container-fluid>.navbar-collapse {
         margin-right: 45px;
-        margin-left: -118px;
+        margin-left: -116px;
     }
     .infoicons .col-lg-3 {
         display: none;
@@ -86,12 +56,6 @@
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
         margin-left: -43px !important;
-    }
-    .col-md-glyshkova {
-        display: none;
-    }
-    .newsmob {
-        display: block;
     }
     .notpc {
         display: none;
@@ -108,10 +72,56 @@
         font-size: 85px;
         line-height: 76px;
     }
-}
-
-.btnssa {
-    color: #ffffff;
-    padding: 3px 15px;
-    border: 2px solid #ffffff;
+    .btnssa {
+        color: #ffffff;
+        padding: 3px 15px;
+        border: 2px solid #ffffff;
+    }
+    .headerimg {
+        display: none !important;
+    }
+    .headerimag {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        width: 742px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 155px !important;
+        margin-top: 10px;
+    }
+    #mu-header>nav>div>div.navbar-header>button {
+        display: block;
+        position: absolute;
+        right: 14px;
+        top: 7px;
+    }
+    #top-menu {
+        display: none;
+    }
+    .telph {
+        display: block !important;
+        padding-left: 63px;
+        padding-top: 27px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 28px;
+        line-height: 30px;
+        color: #223A76;
+    }
+    .telph a {
+        padding-left: 22px;
+        color: #223A76;
+    }
+    .telph a:hover {
+        color: #ffffff;
+    }
+    .breadc {
+        padding-left: 6px;
+        padding-bottom: 20px !important;
+        padding-top: 127px !important;
+    }
 }

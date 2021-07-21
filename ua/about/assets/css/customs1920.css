@@ -1,0 +1,163 @@
+@media screen and (max-width: 1961px) {
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -12px !important;
+    }
+    .nonepc768 {
+        display: none !important;
+    }
+    .navbar {
+        min-height: 63px !important;
+    }
+    .nonepc480 {
+        display: none;
+    }
+    .nonepc320 {
+        display: none;
+    }
+    .heading {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 60px;
+        line-height: 47px;
+        color: #223A76;
+        padding-bottom: 37px;
+    }
+    #toTop {
+        z-index: 99999999999999999;
+        background-repeat: no-repeat;
+        width: 10px;
+        background-image: url(img/totop.svg);
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+        display: none;
+        color: #333;
+        font-family: verdana;
+        font-size: 11px;
+    }
+    .mobmenu a:hover {
+        color: #B49A67;
+    }
+    .mobmenu a {
+        color: #223A76;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .moblang {
+        text-align: right;
+        padding-right: 50px;
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .mobmenu {
+        padding-left: 10%;
+    }
+    .active {
+        background-color: white;
+        z-index: 99999999999 !important;
+        display: block !important;
+    }
+    .hide-block {
+        display: none;
+    }
+    .copirate {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 17px;
+        color: #64759F;
+        text-align: center;
+        padding-top: 90px;
+    }
+    .small-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .texts {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .imagebig {
+        width: 496.55px;
+        height: 479px;
+        background-image: url(/img/onas-left.svg);
+    }
+    .padleft {
+        padding-left: 6px;
+    }
+    .divos {
+        width: 15px;
+        height: 69px;
+    }
+    .padtop {
+        padding-top: 43px;
+    }
+    .texts {
+        padding-bottom: 27px;
+    }
+    .nonepc {
+        display: none;
+    }
+    #mu-header>nav>div>div.navbar-header>a>img {
+        margin-left: -14px;
+        margin-top: -4px;
+    }
+    .nav>li>a {
+        padding: 10px 13px;
+    }
+    .container {
+        width: 1248px;
+    }
+    .text-left {
+        padding-left: 43px;
+        margin-top: -5px;
+    }
+    .butnser {
+        color: #B49A67;
+        border: 2px solid #B49A67;
+        padding: 3px 15px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        padding-left: 23px;
+        padding-right: 20px;
+    }
+    .butnser:hover {
+        background: #B49A67;
+        color: white;
+        border: 1px solid #B49A67;
+        padding: 3px 15px;
+    }
+    .breadc {
+        margin-left: 10px;
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 17px;
+        line-height: 22px;
+        color: #B49A67;
+        padding-bottom: 49px;
+        padding-top: 120px;
+    }
+    .breadc a {
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 17px;
+        line-height: 22px;
+        color: #B49A67;
+    }
+}

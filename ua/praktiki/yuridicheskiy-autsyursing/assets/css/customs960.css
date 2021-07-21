@@ -1,80 +1,40 @@
 @media screen and (max-width: 961px) {
-    .rychka {
-        height: 291px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/ruch1-290x295.png);
+    .copirate {
+        padding-top: 0px;
     }
-    .card:hover {
-        width: 290px;
-        height: 431px;
-        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
+    .padtop {
+        padding-top: 31px;
+        margin-left: -4px;
     }
-    .rychka:hover {
-        height: 291px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/ruch2-290x295jpg.jpg);
+    .small-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #223A76;
     }
-    .glyshkova {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/glu1-290x295.png);
+    .texts {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 22px;
+        line-height: 28px;
     }
-    .glyshkova:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/glu2-290x295jpg.jpg);
+    .text-left {
+        padding-left: 36px;
+        margin-top: -25px;
     }
-    .milian {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/mil1-290x295.png);
+    .imagebig {
+        width: 389px;
+        height: 375.25px;
+        margin-left: -4px;
     }
-    .milian:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/mil2-290x295jpg.jpg);
-    }
-    .tarasov {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/tar1-290x295.png);
-    }
-    .tarasov:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/tar2-290x295jpg.jpg);
-    }
-    .nazarenko {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/naz1-290x295.png);
-    }
-    .nazarenko:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/naz2-290x295jpg.jpg);
-    }
-    .card-body {
-        width: 290px;
-        height: 141px;
-        position: absolute;
-        top: 290;
-    }
-    .contcomand {
-        padding-right: 2px;
-        padding-left: 2px;
-        margin-right: 2px;
-        margin-left: 2px;
+    .breadc {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 26px;
+        color: #B49A67;
+        padding-top: 104px;
+        padding-bottom: 39px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -83,7 +43,25 @@
         margin-right: 45px;
         margin-left: -118px;
     }
+    .headerimg {
+        width: 418px;
+    }
     .infoicons .col-lg-3 {
+        display: none;
+    }
+    .imagess {
+        width: 389px;
+        height: 375px;
+    }
+    .container {
+        width: 917px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 114px;
+        margin-top: 2px;
+    }
+    .butom {
         display: none;
     }
 }

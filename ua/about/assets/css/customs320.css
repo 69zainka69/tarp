@@ -1,5 +1,135 @@
 @media screen and (max-width: 322px) {
+    #mu-header>nav>div>div.navbar-header>button>svg {
+        width: 30px;
+    }
+    .padtop {
+        padding-top: 16px;
+        margin-left: 0px;
+    }
+    .imagebig {
+        display: none !important;
+    }
+    .small-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .texts {
+        padding-bottom: 28px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .text-left {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .heading {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 40px;
+        line-height: 47px;
+        padding-top: 30px;
+        padding-bottom: 9px;
+    }
+    #mu-header>nav>div>div.navbar-header>a>img {
+        height: 44.74px;
+    }
+    .navbar {
+        min-height: 76px !important;
+    }
+    .nonepc320 {
+        display: block;
+        padding-left: 1px;
+        width: 275px;
+        height: 102.5px;
+        margin-left: -5px;
+    }
+    .nonepc480 {
+        display: none !important;
+    }
+    .nonepc768 {
+        display: none !important;
+    }
+    .text-left {
+        width: 100%;
+    }
+    #mu-about-us>div>div>div>div:nth-child(2) {
+        display: none;
+    }
+    .container>.navbar-header,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container-fluid>.navbar-collapse {
+        margin-right: 45px;
+        margin-left: -116px;
+    }
+    .infoicons .col-lg-3 {
+        display: none;
+    }
+    .col-md-titleaboutus {
+        display: none;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -43px !important;
+    }
+    .notpc {
+        display: none;
+    }
+    .notpc {
+        display: block;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    .hone {
+        font-weight: 450;
+        font-size: 85px;
+        line-height: 76px;
+    }
+    .btnssa {
+        color: #ffffff;
+        padding: 3px 15px;
+        border: 2px solid #ffffff;
+    }
+    .headerimg {
+        display: none !important;
+    }
+    .headerimag {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
     .container {
-        width: 300px;
+        width: 480px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 127px !important;
+        margin-top: 5px;
+    }
+    #mu-header>nav>div>div.navbar-header>button {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    #top-menu {
+        display: none;
+    }
+    .telph {
+        display: none !important;
+    }
+    .breadc {
+        padding-left: 2px !important;
+        padding-top: 114px !important;
+        padding-bottom: 18px !important;
+    }
+    .container {
+        width: 303px;
     }
 }

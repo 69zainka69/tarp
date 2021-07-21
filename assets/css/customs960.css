@@ -1,4 +1,67 @@
 @media screen and (max-width: 961px) {
+    .ostpublicryad {
+        padding-left: 18px;
+    }
+    #mu-reservation>div>div>div>div {
+        padding-left: 21px;
+    }
+    .texttocoments {
+        padding-left: 29px;
+        padding-top: 25px;
+        font-size: 17px;
+        line-height: 19px;
+        color: #223A76;
+    }
+    .fotnotleft {
+        padding-left: 0px;
+    }
+    .conpadin {
+        padding-top: 15px;
+    }
+    .contacts {
+        padding-left: 503px;
+        width: 98%;
+    }
+    .mapsg {
+        padding-left: 0px;
+        width: 480px;
+    }
+    #mu-gallery>div>div>div>div.mu-gallery-area>div.col-lg-12>div>div {
+        width: 920px;
+    }
+    .coomandos {
+        padding-top: 120px;
+        padding-left: 17px;
+    }
+    .mu-single-gallery {
+        margin-left: 15px !important;
+        width: 290px !important;
+        height: 195px !important;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .lefter {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .hoverpracticks:hover {
+        opacity: 1;
+        width: 450px !important;
+        padding-left: 3px;
+        box-shadow: 8px 15px 10px 5px rgb(0 0 0 / 20%);
+        margin-left: -6px;
+    }
+    .hoverpracticks {
+        opacity: 0;
+        position: absolute;
+        width: 450px;
+        height: 235px;
+        padding-left: 3px;
+    }
+    .practiccont {
+        padding-left: 15px !important;
+    }
     .allrepublicpc {
         display: none !important;
     }
@@ -10,9 +73,6 @@
     }
     .iconsfooter {
         display: none;
-    }
-    .contacts {
-        padding-left: 57px;
     }
     .mapsg {
         padding-left: 0px;
@@ -36,71 +96,6 @@
     .comentstokate {
         display: none;
     }
-    .rychka {
-        height: 291px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/ruch1-290x295.png);
-    }
-    .card:hover {
-        width: 290px;
-        height: 431px;
-        box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
-    }
-    .rychka:hover {
-        height: 291px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/ruch2-290x295jpg.jpg);
-    }
-    .glyshkova {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/glu1-290x295.png);
-    }
-    .glyshkova:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/glu2-290x295jpg.jpg);
-    }
-    .milian {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/mil1-290x295.png);
-    }
-    .milian:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/mil2-290x295jpg.jpg);
-    }
-    .tarasov {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/tar1-290x295.png);
-    }
-    .tarasov:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/tar2-290x295jpg.jpg);
-    }
-    .nazarenko {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/naz1-290x295.png);
-    }
-    .nazarenko:hover {
-        height: 295px;
-        width: 290px;
-        ​​​​​​​background-repeat: no-repeat;
-        background-image: url(/img/comand/290x295/naz2-290x295jpg.jpg);
-    }
     .card-body {
         width: 290px;
         height: 141px;
@@ -114,7 +109,7 @@
         margin-left: 2px;
     }
     .container {
-        width: 918px;
+        width: 960px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -137,13 +132,13 @@
     }
     .practicfirst {
         padding-right: 0px;
-        height: 234px;
+        height: 291px;
         width: 470px;
         padding-left: 0px;
     }
     .practictwo {
         background: #223A76;
-        height: 234px;
+        height: 291px;
         width: 450px;
     }
     .practictwotwo {
@@ -153,7 +148,7 @@
     }
     .practicimg {
         width: 100%;
-        height: 234px;
+        height: 232px;
     }
     .practiccart {
         padding-right: -15px;
@@ -176,23 +171,20 @@
     .fd {
         height: 234px;
         padding-left: 15px;
+        width: 450px;
+    }
+    .card {
+        width: 290px !important;
+        height: 290px !important;
     }
     .card-body {
         width: 290px !important;
-        height: 141px;
-    }
-    .rychka {
-        height: 291px;
-        width: 290px;
+        height: 140px !important;
     }
     .card:hover {
         width: 290px;
-        height: 431px;
+        height: 435px;
         box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
-    }
-    .rychka:hover {
-        height: 291px;
-        width: 290px;
     }
     .glyshkova {
         height: 295px;
@@ -228,12 +220,17 @@
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: -16px !important;
+        margin-left: 2px;
+        margin-top: -2px;
     }
     .navbar-right {
         float: right !important;
         margin-right: 56px !important;
-        margin-top: 7px;
+        margin-top: 1px;
+    }
+    .textkomand {
+        padding-left: 0px;
+        width: 213px !important;
     }
 }
 
