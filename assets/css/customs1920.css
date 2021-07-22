@@ -1,4 +1,7 @@
 @media screen and (max-width: 1965px) {
+    .mobile420 {
+        display: none;
+    }
     .paddinpronas {
         height: 70px;
     }

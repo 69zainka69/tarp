@@ -1,4 +1,35 @@
 @media screen and (max-width: 481px) {
+    .none480img {
+        display: none;
+    }
+    .mobile420 {
+        display: block;
+    }
+    .input {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        padding: 10px 19px;
+        border: 1px solid white;
+        color: #FFFFFF;
+    }
+    .texttoptex li {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        font-weight: 300;
+    }
+    .texttopbig {
+        padding-bottom: 24px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 25px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
     .client1 {
         width: 31%;
     }
@@ -55,7 +86,8 @@
         float: none !important;
     }
     .divesnew {
-        padding-top: 25px;
+        margin-left: -10px;
+        padding-top: 24px;
         width: 176px;
     }
     .buttnew {
@@ -378,6 +410,7 @@
         display: block;
     }
     .practic {
+        margin-left: -7px;
         width: 440px !important;
         background: #FFFFFF;
     }
@@ -388,6 +421,8 @@
         padding-left: 0px;
     }
     .yridconsoult {
+        margin-left: -6px;
+        padding-top: 5px;
         width: 460px;
         display: block;
         background-color: white;
