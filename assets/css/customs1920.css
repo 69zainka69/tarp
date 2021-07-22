@@ -1,4 +1,18 @@
 @media screen and (max-width: 1965px) {
+    .paddinpronas {
+        height: 70px;
+    }
+    .padheader {
+        padding-top: 40px;
+    }
+    .hones {
+        display: none;
+    }
+    .fotnotleft {
+        width: 1296px;
+        height: 100%;
+        margin-left: 240px;
+    }
     .ostpublicryad {
         padding-left: 88px;
     }
@@ -54,12 +68,12 @@
     }
     .contacts {
         position: absolute;
-        width: 100%;
-        padding-left: 701px;
+        width: 69%;
+        padding-left: 792px;
     }
     .mapsg {
-        padding-left: 123px;
-        width: 628px;
+        padding-left: 138px;
+        width: 644px;
     }
     .allrepublicpc {
         display: block;
@@ -85,7 +99,7 @@
     }
     .btnses {
         padding: 6px 24px;
-        border: 2px solid #B49A67;
+        border: 1px solid #B49A67;
     }
     .card:hover .card-body {
         box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);

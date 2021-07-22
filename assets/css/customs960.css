@@ -1,9 +1,139 @@
 @media screen and (max-width: 961px) {
+    .textzaps {
+        padding-top: 35px !important;
+        margin-left: 6px;
+    }
+    .sss {
+        padding-left: 11px !important;
+    }
+    .sysys {
+        padding-left: 62px !important;
+    }
+    .redersys {
+        padding-left: 0px !important;
+    }
+    .cardslefters {
+        padding-left: 48px !important;
+    }
+    .datestat {
+        margin-left: 64px;
+    }
+    .ontpc {
+        margin-left: 60px;
+    }
+    .order-sm-first {
+        width: 577px !important;
+        padding-left: 0px !important;
+    }
+    #pubcil {
+        padding-left: 5px !important;
+    }
+    .butpubtop {
+        padding-top: 102px !important;
+    }
+    .pubsec {
+        padding-top: 214px !important;
+    }
+    .btnsesp {
+        padding-top: 34px;
+        padding-right: 20px !important;
+    }
+    .btnses {
+        padding: 6px 43px;
+    }
+    .nonleft {
+        padding-left: 0px !important;
+    }
+    .toprigtt {
+        padding-left: 5px;
+    }
+    .practbuts {
+        padding-right: 100px !important;
+        padding-top: 113px !important;
+    }
+    .bottkomand {
+        padding-top: 17px;
+    }
+    .abousa {
+        padding-bottom: 172px;
+    }
+    .lineser {
+        width: 100%;
+        text-align: center;
+    }
+    .linepronas {
+        width: 68%;
+    }
+    .paddinpronas {
+        height: 99px;
+    }
+    .abownas:hover a {
+        color: white;
+        background: #B49A67;
+    }
+    .abownas:hover {
+        background: #B49A67;
+    }
+    .detail {
+        padding-left: 28px;
+        padding-right: 26px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border: 1px solid #B49A67;
+    }
+    .abownas {
+        float: right;
+        margin-top: -57px;
+        margin-right: 33px;
+        display: block;
+    }
+    .titleheading {
+        margin-left: 52px;
+        padding-top: 82px;
+    }
+    .titleheading2 {
+        margin-left: -38px;
+        padding-top: 3px;
+    }
+    .padheader {
+        padding-top: 19px;
+    }
+    .nazva {
+        left: 9.2% !important;
+        top: 154px !important;
+    }
+    .hones {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 85px;
+        line-height: 76px;
+        color: #223A76;
+        display: block;
+    }
+    .hone {
+        display: none;
+    }
+    .benerslide {
+        height: 651.27px !important;
+    }
+    body>section:nth-child(21)>footer>div:nth-child(1) {
+        display: none;
+    }
+    #toTop {
+        bottom: 44px !important;
+        right: 36px !important;
+    }
+    .mapsframe {
+        height: 657px !important;
+    }
+    .footerdivoss {
+        height: 657px !important;
+    }
     .ostpublicryad {
         padding-left: 18px;
     }
     #mu-reservation>div>div>div>div {
-        padding-left: 21px;
+        padding-left: 20px;
     }
     .texttocoments {
         padding-left: 29px;
@@ -13,18 +143,22 @@
         color: #223A76;
     }
     .fotnotleft {
+        width: 100% !important;
+        height: 100%;
+        margin-left: 0px;
         padding-left: 0px;
     }
     .conpadin {
-        padding-top: 15px;
+        padding-top: 40px;
     }
     .contacts {
-        padding-left: 503px;
+        padding-left: 519px;
         width: 98%;
     }
     .mapsg {
+        height: 657px;
         padding-left: 0px;
-        width: 480px;
+        width: 496px;
     }
     #mu-gallery>div>div>div>div.mu-gallery-area>div.col-lg-12>div>div {
         width: 920px;
@@ -45,6 +179,10 @@
         margin-left: 0px;
         padding-left: 0px;
     }
+    .allrepublicpc {
+        padding-right: 45px;
+        margin-top: -9px;
+    }
     .hoverpracticks:hover {
         opacity: 1;
         width: 450px !important;
@@ -62,20 +200,23 @@
     .practiccont {
         padding-left: 15px !important;
     }
-    .allrepublicpc {
-        display: none !important;
-    }
     .phonesfooter {
         width: 167px;
     }
+    .iconfooters span {
+        margin-left: 8px;
+    }
+    .iconfooters span a svg {
+        width: 33px;
+        height: 33px;
+    }
     .iconfooters {
+        padding-top: 29px;
+        padding-bottom: 46px;
         display: block;
     }
     .iconsfooter {
         display: none;
-    }
-    .mapsg {
-        padding-left: 0px;
     }
     .cardss {
         height: 165px;
@@ -87,7 +228,7 @@
         height: 158px;
     }
     .newsone {
-        width: 579px;
+        width: 605px;
         height: 320px;
     }
     .comentsto {
@@ -147,8 +288,8 @@
         width: 450px;
     }
     .practicimg {
-        width: 100%;
-        height: 232px;
+        width: 223.13px;
+        height: 234.17px;
     }
     .practiccart {
         padding-right: -15px;
@@ -218,19 +359,30 @@
         height: 295px;
         width: 290px;
     }
+    .lang {
+        padding-top: 7px !important;
+    }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: 2px;
-        margin-top: -2px;
+        margin-left: 8px;
+        margin-top: -1px;
     }
     .navbar-right {
         float: right !important;
-        margin-right: 56px !important;
-        margin-top: 1px;
+        margin-right: 81px !important;
+        margin-top: 9px !important;
+    }
+    .nav>li>a {
+        padding: 10px 12px !important;
     }
     .textkomand {
-        padding-left: 0px;
+        padding-left: 34px;
         width: 213px !important;
+    }
+    .titleheading3 {
+        padding-top: 0px !important;
+        padding-bottom: 3px !important;
+        margin-left: 49px !important;
     }
 }
 
