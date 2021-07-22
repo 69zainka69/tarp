@@ -1,4 +1,16 @@
 @media screen and (max-width: 481px) {
+    .client1 {
+        width: 31%;
+    }
+    .client2 {
+        width: 56%;
+    }
+    .client3 {
+        width: 59%;
+    }
+    .client4 {
+        width: 34%;
+    }
     .on480left {
         display: none !important;
     }
@@ -18,6 +30,12 @@
         line-height: 30px;
         color: #FFFFFF;
         padding-bottom: 9.92px !important;
+    }
+    .nothoverpractics {
+        display: none !important;
+    }
+    .hoverpracticks {
+        display: none !important;
     }
     .mapsg {
         display: none;
@@ -360,7 +378,7 @@
         display: block;
     }
     .practic {
-        width: 440px;
+        width: 440px !important;
         background: #FFFFFF;
     }
     .practicfirst {
@@ -370,6 +388,7 @@
         padding-left: 0px;
     }
     .yridconsoult {
+        width: 460px;
         display: block;
         background-color: white;
     }
@@ -422,46 +441,13 @@
         height: 186px;
         width: 210px;
     }
+    .card {
+        width: 210px !important;
+    }
     .card:hover {
         width: 209px;
         height: 186px;
         box-shadow: 8px 15px 10px 5px rgba(0, 0, 0, .2);
-    }
-    .rychka:hover {
-        height: 186px;
-        width: 210px;
-    }
-    .glyshkova {
-        height: 186px;
-        width: 210px;
-    }
-    .glyshkova:hover {
-        height: 186px;
-        width: 210px;
-    }
-    .milian {
-        height: 186px;
-        width: 210px;
-    }
-    .milian:hover {
-        height: 186px;
-        width: 210px;
-    }
-    .tarasov {
-        height: 186px;
-        width: 210px;
-    }
-    .tarasov:hover {
-        height: 186px;
-        width: 210px;
-    }
-    .nazarenko {
-        height: 186px;
-        width: 210px;
-    }
-    .nazarenko:hover {
-        height: 186px;
-        width: 210px;
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
@@ -471,5 +457,11 @@
         float: right !important;
         margin-right: 56px !important;
         margin-top: 7px;
+    }
+    .fotnotleft {
+        width: 460px !important;
+        height: 657px !important;
+        margin-left: 0px;
+        padding-left: 0px;
     }
 }
