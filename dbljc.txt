@@ -1,1 +1,13 @@
 https://www.youtube.com/watch?v=bj0MsKaQYJk
+
+Google Merchant feeds
+
+Дима, так как файл фида большой, то есть функция настройки Api https://support.google.com/merchants/answer/7514752?hl=uk
+
+Может есть смысл настроить передачу через Api что для этого нам нужно? Ключ он мне сформировал bb7bf08ed1468b6207f353fe35832f3d828649a1 + Email
+
+merchant-center-1627024232757@merchant-center-1627024232757.iam.gserviceaccount.com
+
+Unique ID
+
+107892462300051758038

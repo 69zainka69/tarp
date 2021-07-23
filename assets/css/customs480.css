@@ -1,4 +1,41 @@
 @media screen and (max-width: 481px) {
+    .btkomandass {
+        margin-right: -28px;
+        float: right;
+        margin-top: -68px;
+    }
+    .on768 {
+        display: block !important;
+    }
+    #mu-gallery>div>div>div>div.iconnumber>p:nth-child(1) {
+        display: none;
+    }
+    #mu-gallery>div>div>div>div.iconnumber>p:nth-child(2) {
+        display: none;
+    }
+    .abtncom {
+        font-weight: 600 !important;
+        font-size: 17px !important;
+        line-height: 22px !important;
+        padding: 5px 20px !important;
+    }
+    .titleaboutus {
+        font-weight: 450;
+        font-size: 40px;
+        line-height: 51px;
+    }
+    #mu-gallery>div>div>div>div.iconnumber>p:nth-child(3) {
+        display: none;
+    }
+    #mu-about-us>div.container>div>div>div>div.iconnumber>p:nth-child(1) {
+        display: none;
+    }
+    .lefticonhead {
+        width: 49% !important;
+    }
+    .righticonhead {
+        width: 50% !important;
+    }
     .none480img {
         display: none;
     }
@@ -139,10 +176,50 @@
     .butomzap {
         display: none;
     }
+    .titleaboutus {
+        margin-left: -16px;
+    }
     .telph {
         display: none !important;
     }
+    .heidingnum2 {
+        font-style: normal !important;
+        font-weight: bold !important;
+        font-size: 50px !important;
+        line-height: 25px !important;
+        text-align: center !important;
+    }
+    .abousa {
+        padding-bottom: 65px;
+    }
+    .btn {
+        padding: 8px 14px !important;
+    }
+    .detail {
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 17px !important;
+        line-height: 22px !important;
+        border: none;
+    }
+    .lineverthead {
+        margin-top: -15px;
+        margin-left: -1px;
+    }
+    .heidingnum1 {
+        height: 60px !important;
+        text-align: center !important;
+        font-style: normal !important;
+        font-weight: bold !important;
+        font-size: 55px !important;
+        line-height: 25px !important;
+        text-align: center !important;
+        color: #B49A67 !important;
+    }
     .titleheading {
+        padding-bottom: 10px;
+        margin-left: 4px;
+        padding-top: 17px;
         font-weight: 450;
         font-size: 40px;
         line-height: 51px;
@@ -152,13 +229,14 @@
     }
     .bottkomand {
         float: right;
-        padding-top: 0px !important;
+        padding-top: 4px !important;
         margin-top: -42px;
         margin-left: 15px;
         position: absolute;
         right: 15px;
     }
     .iconnumber {
+        height: 0px;
         display: block;
     }
     .infoiconss420 {
@@ -282,7 +360,11 @@
     #mu-header>nav>div>div.navbar-header>button {
         display: block;
         position: absolute;
-        right: 19px;
+        right: 1px;
+        top: 11px;
+    }
+    .coomandos {
+        padding-top: 0px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -291,8 +373,40 @@
         margin-right: 45px;
         margin-left: -118px;
     }
+    .butomzaps {
+        margin-left: -20px;
+        width: 440px;
+        height: 90px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 25px !important;
+        line-height: 28px !important;
+    }
+    .benerslide {
+        height: 621px !important;
+    }
+    .padinhead {
+        padding-top: 17px !important;
+    }
     #top-menu {
         display: none;
+    }
+    .hones {
+        display: table-caption;
+        font-weight: 450 !important;
+        font-size: 60px !important;
+        line-height: 60px !important;
+    }
+    .iconcos a svg {
+        width: 35px;
+        height: 35px;
+    }
+    .iconcos {
+        padding-top: 48px !important;
+    }
+    .nazva {
+        left: 8.2% !important;
+        top: 150px !important;
     }
     .phonesfooter {
         width: 167px;
@@ -354,6 +468,29 @@
         height: 295px;
         width: 290px;
     }
+    #mu-gallery>div>div>div>div.iconnumber>div.leftcomandas>div:nth-child(3) {
+        margin-left: -9px;
+    }
+    .btn-det {
+        margin-left: 25px;
+    }
+    .card-text {
+        padding-left: 25px;
+    }
+    .comandatextc {
+        padding-top: 93px !important;
+        display: block;
+    }
+    .practbuts {
+        padding-right: 0px !important;
+        padding-top: 3px !important;
+    }
+    .card-title {
+        margin-top: 16px !important;
+        padding-top: 0px;
+        padding-left: 25px;
+        line-height: 28px !important;
+    }
     .milian:hover {
         height: 295px;
         width: 290px;
@@ -376,7 +513,7 @@
     }
     .card-body {
         width: 210px !important;
-        height: 163px !important;
+        height: 180px !important;
         position: absolute;
         top: 290;
         z-index: 999999;
@@ -407,6 +544,8 @@
         display: none !important;
     }
     .butonas {
+        padding-left: 0px;
+        padding-top: 62px;
         display: block;
     }
     .practic {
@@ -472,11 +611,15 @@
         height: 185px;
         padding-left: 15px;
     }
+    #mu-gallery>div>div>div>div.iconnumber>div.leftcomandas>div:nth-child(1) {
+        margin-left: -9px;
+    }
     .rychka {
         height: 186px;
         width: 210px;
     }
     .card {
+        margin-left: -4px;
         width: 210px !important;
     }
     .card:hover {
@@ -486,7 +629,8 @@
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: -16px !important;
+        margin-left: -12px !important;
+        margin-top: 7px !important;
     }
     .navbar-right {
         float: right !important;
@@ -498,5 +642,8 @@
         height: 657px !important;
         margin-left: 0px;
         padding-left: 0px;
+    }
+    .navbar-toggle .icon-bar {
+        display: none;
     }
 }
