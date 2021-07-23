@@ -11,3 +11,9 @@ merchant-center-1627024232757@merchant-center-1627024232757.iam.gserviceaccount.
 Unique ID
 
 107892462300051758038
+
+
+
+розетка фид 
+
+https://patronservice.ua/exec/cron/rozetmap.php
