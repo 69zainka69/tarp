@@ -17,3 +17,5 @@ Unique ID
 розетка фид 
 
 https://patronservice.ua/exec/cron/rozetmap.php
+
+Дима, просьба в прайс Розетки https://patronservice.ua/exec/cron/rozetmap.php добавить весь ассортимент Stanger https://patronservice.ua/search/keyword_serch/stanger/6570.html Mizar https://patronservice.ua/search/keyword_serch/Mizar/6606.html ProFILE https://patronservice.ua/search/keyword_serch/ProFILE/6597.html Kuvert https://patronservice.ua/search/keyword_serch/Kuvert%20/6567.html
