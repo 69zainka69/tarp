@@ -112,18 +112,81 @@
         float: right;
         width: 48%;
     }
+    .toprigtt {
+        padding-top: 18px !important;
+        padding-left: 20px;
+    }
+    .#mu-reservation>div>div>div>div>div:nth-child(8) {
+        display: none;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(7) {
+        display: none;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(8) {
+        display: none;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(10) {
+        display: none;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(9)>div.col-lg-6.col-md-6.newsleft>p:nth-child(3) {
+        display: none;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(5) {
+        display: none;
+    }
+    #mu-reservation>div>div>div>div>div:nth-child(9)>div.col-lg-6.col-md-6.newsleft>p:nth-child(1) {
+        display: none;
+    }
+    body>div:nth-child(12) {
+        display: none;
+    }
+    .kavich {
+        margin-right: -15px;
+    }
     .on480left {
         float: left;
         width: 48%;
+    }
+    .iconcomento {
+        float: left;
+    }
+    .pubsec {
+        padding-top: 298px !important;
+    }
+    .sectionourclient {
+        height: 272px !important;
+    }
+    #mu-reservation\>div>div>div>div>div.carousel-item.item-1>div>div:nth-child(1)>img {
+        margin-right: 15px;
+    }
+    .titleheading2 {
+        padding-bottom: 3px;
+        margin-left: 19px !important;
+    }
+    .comenttomen {
+        margin-top: -34px;
+        float: right;
+    }
+    .btnsesp {
+        padding-top: 61px !important;
+        padding-right: 0px !important;
+    }
+    .btnses {
+        padding: 6px 25px;
+    }
+    .padl0px {
+        margin-top: -13px;
+        padding-left: 0px !important;
     }
     .butallposlygi {
         text-align: center;
     }
     .butallposlyg {
+        padding: 8px 48px;
         float: none !important;
     }
     .divesnew {
-        margin-left: -10px;
+        margin-left: -4px;
         padding-top: 24px;
         width: 176px;
     }
@@ -216,10 +279,21 @@
         text-align: center !important;
         color: #B49A67 !important;
     }
+    .newsleftle {
+        margin-left: 7px !important;
+    }
+    .practbuts {
+        margin-right: -18px;
+        padding-right: 0px !important;
+        padding-top: 54px !important;
+    }
+    .practicpadtopbot {
+        height: 3px !important;
+    }
     .titleheading {
         padding-bottom: 10px;
-        margin-left: 4px;
-        padding-top: 17px;
+        margin-left: 14px;
+        padding-top: 46px;
         font-weight: 450;
         font-size: 40px;
         line-height: 51px;
@@ -478,12 +552,21 @@
         padding-left: 25px;
     }
     .comandatextc {
-        padding-top: 93px !important;
+        color: #223a7600;
+        padding-top: 104px !important;
         display: block;
     }
-    .practbuts {
-        padding-right: 0px !important;
-        padding-top: 3px !important;
+    .comandatextc a:hover {
+        color: #B49A67 !important;
+        background: #FFFFFF !important;
+    }
+    .comandatextc a {
+        font-weight: 600 !important;
+        font-size: 17px !important;
+        line-height: 22px !important;
+        color: #FFFFFF !important;
+        border: solid 1px white !important;
+        padding: 7px 73px !important;
     }
     .card-title {
         margin-top: 16px !important;

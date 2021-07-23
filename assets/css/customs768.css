@@ -51,12 +51,14 @@
         display: block !important;
         width: 600px;
         display: block !important;
-        /* padding-left: 5px; */
-        padding-top: 19px;
+        padding-top: 28px;
         color: #223A76;
     }
     .telph a {
-        padding-left: 74px;
+        font-weight: 450;
+        font-size: 28px;
+        line-height: 30px;
+        padding-left: 57px;
         color: #223A76;
     }
     .telph a:hover {
@@ -158,14 +160,44 @@
         margin-left: 20px !important;
     }
     .on768 {
-        padding-left: 34px;
+        padding-left: 51px;
         width: 100% !important;
         display: block;
+    }
+    .benerslide {
+        height: 780px !important;
+        background-position: -346px -90px !important;
+    }
+    .titleheading {
+        font-weight: 450;
+        font-size: 50px;
+        line-height: 64px;
+        margin-left: 40px;
+        padding-top: 0px;
+    }
+    .hones {
+        display: table-caption;
+    }
+    .paddinpronas {
+        height: 150px;
+    }
+    .butomzap {
+        font-weight: 600 !important;
+        font-size: 17px !important;
+        line-height: 17px !important;
+    }
+    .padheader {
+        padding-top: 36px;
+    }
+    .nazva {
+        left: 9.1% !important;
+        top: 151px !important;
     }
     .abownas {
         display: block;
         float: right;
-        margin-top: -57px;
+        margin-top: -51px;
+        margin-right: 0px;
     }
     .abownas a {
         padding: 3px 15px;
@@ -178,6 +210,7 @@
         display: block;
         position: absolute;
         right: 19px;
+        top: 11px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -233,14 +266,29 @@
         top: 290 !important;
         z-index: 999999 !important;
     }
+    .posobsl {
+        padding-left: 0px !important;
+        width: 340px !important;
+        height: 185px !important;
+    }
+    .icon-bar {
+        display: none !important;
+    }
     .contcomand {
         padding-right: 2px;
         padding-left: 2px;
         margin-right: 2px;
         margin-left: 2px;
     }
+    .hoverpracticks:hover {
+        opacity: 1;
+        width: 356px !important;
+        padding-left: 3px;
+        box-shadow: 8px 15px 10px 5px rgb(0 0 0 / 20%);
+        margin-left: -6px;
+    }
     .container {
-        width: 730px;
+        width: 760px;
     }
     .container>.navbar-header,
     .container-fluid>.navbar-header,
@@ -324,12 +372,14 @@
         height: 291px;
         width: 290px;
     }
-    #mu-gallery {}
     .coomandos {
+        padding-top: 0px;
         padding-left: 0px;
     }
     .mu-single-gallery {
         margin-left: 0px !important;
+        width: 320px !important;
+        height: 295px !important;
     }
     .card {
         width: 320px !important;
@@ -378,7 +428,8 @@
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: -16px !important;
+        margin-left: 32px !important;
+        margin-top: 7px;
     }
     .navbar-right {
         float: right !important;
