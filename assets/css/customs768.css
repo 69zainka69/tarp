@@ -32,7 +32,7 @@
         display: none;
     }
     #mu-gallery>div>div>div>div.mu-gallery-area>div.col-lg-12>div>div {
-        width: 580px;
+        width: 100%;
     }
     .comenttomen {
         width: 91% !important;
@@ -81,9 +81,6 @@
     .witeblue {
         background: white;
     }
-    .witeblue:hover {
-        background: #223A76;
-    }
     .onpoint {
         opacity: 0;
     }
@@ -99,13 +96,31 @@
     .non7866 {
         display: none;
     }
+    .titleр2 {
+        margin-left: 52px !important;
+        padding-top: 10px !important;
+    }
+    .practbuts {
+        padding-right: 26px !important;
+        padding-top: 23px !important;
+    }
+    .liuli li {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .ybratix768 {
+        display: none;
+    }
     .titlenew {
+        padding-top: 5px !important;
+        font-style: normal;
         font-weight: 450;
         font-size: 22px;
         line-height: 23px;
-        color: #FFFFFF;
     }
     .liuli {
+        font-style: normal;
+        font-weight: normal;
         font-size: 15px;
         line-height: 17px;
     }
@@ -165,21 +180,27 @@
         display: block;
     }
     .benerslide {
-        height: 780px !important;
-        background-position: -346px -90px !important;
+        height: 822px !important;
+        background-position: -300px -50px !important;
+    }
+    .abousa {
+        padding-bottom: 72px;
+        padding-top: 0px;
+        margin-top: -34px;
+        margin-left: -4px;
     }
     .titleheading {
         font-weight: 450;
         font-size: 50px;
         line-height: 64px;
-        margin-left: 40px;
+        margin-left: 44px;
         padding-top: 0px;
     }
     .hones {
         display: table-caption;
     }
     .paddinpronas {
-        height: 150px;
+        height: 140px;
     }
     .butomzap {
         font-weight: 600 !important;
@@ -259,6 +280,9 @@
     .comentstokate {
         display: none;
     }
+    .textaboutus {
+        width: auto;
+    }
     .card-body {
         width: 320px !important;
         height: 140px !important;
@@ -306,10 +330,15 @@
     .butonas {
         display: none;
     }
+    .toprigtt {
+        padding-left: 35px;
+    }
     .practic {
-        width: 772px !important;
+        margin-left: 12px !important;
+        width: 727px !important;
     }
     .practicfirst {
+        background-position: center !important;
         padding-right: 0px;
         height: 290px;
         width: 371px;
@@ -330,17 +359,20 @@
         height: 185px;
         width: 356px;
     }
-    .practiccarts {
-        height: 185px;
-        width: 356px;
-        padding-left: 0px !important;
-    }
     .nothoverpractics {
         width: 356px;
         height: 185px;
     }
     .hoverpracticks {
-        display: none !important;
+        top: 0;
+        left: 0px;
+        position: absolute;
+        width: 356px;
+        height: 185px;
+        z-index: 9999999;
+    }
+    .noteon768 {
+        display: none;
     }
     .practicimg {
         width: 100%;
@@ -354,7 +386,7 @@
     .practiccarts {
         height: 185px;
         width: 356px;
-        padding-left: 17px;
+        padding-left: 14px;
     }
     .practicscar {
         padding-left: 15px;
@@ -362,9 +394,11 @@
         width: 356px;
     }
     .practictextcart {
+        padding-right: 0px;
         height: 185px !important;
     }
     .fd {
+        width: 356px;
         height: 185px;
         padding-left: 15px;
     }
@@ -373,11 +407,13 @@
         width: 290px;
     }
     .coomandos {
+        padding-top: 37px !important;
         padding-top: 0px;
         padding-left: 0px;
     }
     .mu-single-gallery {
-        margin-left: 0px !important;
+        margin-top: 15px;
+        margin-left: 32px !important;
         width: 320px !important;
         height: 295px !important;
     }
@@ -428,8 +464,8 @@
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: 32px !important;
-        margin-top: 7px;
+        margin-left: 35px !important;
+        margin-top: 7px !important;
     }
     .navbar-right {
         float: right !important;
@@ -441,5 +477,8 @@
     }
     .practop1 {
         padding-left: 0px;
+    }
+    .iconcos {
+        padding-left: 7px;
     }
 }

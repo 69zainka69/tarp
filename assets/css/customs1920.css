@@ -1,5 +1,5 @@
 @media screen and (max-width: 1965px) {
-    #mu-reservation\  > div > div > div > div > div.carousel-item.item-1 > div > div.col-sm-4{
+    #mu-reservation\>div>div>div>div>div.carousel-item.item-1>div>div.col-sm-4 {
         float: right;
     }
     .mobile420 {
@@ -19,20 +19,66 @@
         height: 100%;
         margin-left: 240px;
     }
+    .btnsesp {
+        padding-right: 65px !important;
+    }
     .ostpublicryad {
         padding-left: 88px;
     }
+    .butpubtop {
+        padding-right: 49px !important;
+    }
     .texttocoments {
-        padding-left: 15px;
-       margin-top: -65px;
-        font-size: 17px;
-        line-height: 19px;
+        padding-left: 10px !important;
+        margin-top: 47px !important;
+        font-size: 17px !important;
+        line-height: 19px !important;
+        color: #223A76 !important;
+    }
+    .texttocoments2 {
+        padding-left: 10px !important;
+        margin-top: 47px !important;
+        font-size: 17px !important;
+        line-height: 19px !important;
+        color: #223A76 !important;
+    }
+    .iconcomento {
+        padding-top: 23px;
+        padding-left: 0px !important;
+    }
+    .iconcomento2 {
+        padding-top: 23px;
+        padding-left: 0px !important;
+    }
+    .comenttomen2 {
+        padding-left: 24px !important;
+    }
+    .comenttomen {
+        padding-left: 24px !important;
+    }
+    .kavich2 {
+        padding-left: 52px !important;
+    }
+    .kavich {
+        padding-left: 52px !important;
+    }
+    .titleheadi4 {
+        padding-bottom: 8px;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 60px;
+        line-height: 48px;
         color: #223A76;
+        margin-left: -14px;
+        padding-top: 21px;
+    }
+    .texttocomentsdiv {
+        width: 46.333333% !important;
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
         margin-left: -48px !important;
-        margin-top: -6px !important;
+        margin-top: -2px !important;
     }
     .conpadin {
         padding-top: 45px;
@@ -47,13 +93,35 @@
     .lefter {
         padding-left: 72px;
     }
+    .textzaps {
+        padding-top: 35px;
+    }
     #mu-reservation\ ssse>div:nth-child(1)>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first>p:nth-child(7)>a:hover {
         color: white !important;
         background: #B49A67;
     }
+    .publiknizblocks {
+        padding-top: 25px;
+        padding-bottom: 53.35px;
+    }
+    .textfornewstop {
+        height: 47px;
+    }
+    #mu-reservation\ ssse>div:nth-child(2)>div>div:nth-child(1) {
+        display: none !important;
+    }
+    #mu-reservation\ ssse>div:nth-child(2)>div>div:nth-child(3) {
+        display: none !important;
+    }
+    .padtopublictop {
+        height: 2px !important;
+    }
     .cards:hover .btnssa {
         color: #B49A67;
         background: white;
+    }
+    .ontpc {
+        padding-top: 11px;
     }
     input:focus {
         color: white;
@@ -85,6 +153,9 @@
         display: block;
         padding-right: 434px;
         margin-top: -30px;
+    }
+    .sysys {
+        padding-left: 59px !important;
     }
     .cards:hover .cardsshover {
         opacity: 1 !important;
@@ -256,8 +327,12 @@
     .abousa {
         padding-top: 22px;
     }
+    .benerslide {
+        height: 860px !important;
+    }
     .navbar-right {
         margin-right: -182px !important;
+        margin-top: 5px !important;
     }
     .butonas {
         text-align: center;
@@ -294,6 +369,9 @@
     .telph {
         display: none;
     }
+    .card-text {
+        padding-bottom: 9px;
+    }
     .titleheading {
         font-style: normal;
         font-weight: 450;
@@ -312,8 +390,13 @@
     .ollpublic {
         display: none;
     }
+    .formfooterniz {
+        padding-bottom: 26.35px;
+        padding-top: 91px;
+    }
     .hree {
-        display: none;
+        width: 5px;
+        height: 24px;
     }
     .btnssa {
         color: white;

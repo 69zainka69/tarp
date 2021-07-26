@@ -4,39 +4,58 @@
         margin-left: 6px;
     }
     .sss {
-        padding-left: 11px !important;
+        padding-left: 19px !important;
     }
     .sysys {
-        padding-left: 62px !important;
+        padding-left: 52px !important;
     }
     .redersys {
-        padding-left: 0px !important;
+        padding-left: 17px !important;
     }
     .cardslefters {
-        padding-left: 48px !important;
+        padding-left: 37px !important;
     }
     .datestat {
         margin-left: 64px;
     }
     .ontpc {
-        margin-left: 60px;
+        margin-left: 66px;
+        margin-top: 5px;
     }
     .order-sm-first {
-        width: 577px !important;
-        padding-left: 0px !important;
+        width: 605px !important;
+        padding-left: 5px !important;
+    }
+    .padtopublictop {
+        height: 0px !important;
     }
     #pubcil {
         padding-left: 5px !important;
     }
+    .publiknizblocks {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .cards:hover .cardsshover {
+        opacity: 0 !important;
+        display: none;
+    }
+    .cards:hover .cardsshover960 {
+        opacity: 1 !important;
+    }
+    .cardsshover img {
+        display: none;
+    }
     .butpubtop {
-        padding-top: 102px !important;
+        padding-right: 18px !important;
+        padding-top: 89px !important;
     }
     .pubsec {
         padding-top: 214px !important;
     }
     .btnsesp {
-        padding-top: 34px;
-        padding-right: 20px !important;
+        padding-top: 31px !important;
+        padding-right: 36px !important;
     }
     .btnses {
         padding: 6px 43px;
@@ -48,11 +67,11 @@
         padding-left: 5px;
     }
     .practbuts {
-        padding-right: 100px !important;
+        padding-right: 26px !important;
         padding-top: 113px !important;
     }
     .bottkomand {
-        padding-top: 17px;
+        padding-top: 35px !important;
     }
     .abousa {
         padding-bottom: 172px;
@@ -61,8 +80,13 @@
         width: 100%;
         text-align: center;
     }
+    .textaboutus {
+        width: 220px;
+    }
     .linepronas {
         width: 68%;
+        padding-top: 14px !important;
+        padding-bottom: 37px !important;
     }
     .paddinpronas {
         height: 99px;
@@ -87,9 +111,13 @@
         margin-right: 33px;
         display: block;
     }
+    .titleр2 {
+        margin-left: 52px !important;
+        padding-top: 82px !important;
+    }
     .titleheading {
-        margin-left: 52px;
-        padding-top: 82px;
+        margin-left: 71px;
+        padding-top: 36px;
     }
     .titleheading2 {
         margin-left: -38px;
@@ -119,9 +147,35 @@
     body>section:nth-child(21)>footer>div:nth-child(1) {
         display: none;
     }
+    .comenttomen2 {
+        padding-left: 0px !important;
+        margin-left: -10px;
+    }
+    .comenttomen {
+        padding-left: 0px !important;
+        margin-left: -10px;
+    }
+    .klient2 {
+        padding-top: 18px;
+    }
     #toTop {
         bottom: 44px !important;
         right: 36px !important;
+    }
+    .padcomenttop {
+        padding-top: 55px !important;
+    }
+    .iconcomento2 {
+        padding-top: 0px;
+        padding-left: 15px !important;
+        margin-top: 23px;
+        margin-left: 10px;
+    }
+    .iconcomento {
+        padding-top: 0px;
+        padding-left: 15px !important;
+        margin-top: 23px;
+        margin-left: 10px;
     }
     .mapsframe {
         height: 657px !important;
@@ -130,15 +184,47 @@
         height: 657px !important;
     }
     .ostpublicryad {
-        padding-left: 18px;
+        padding-left: 21px;
     }
     #mu-reservation>div>div>div>div {
         padding-left: 20px;
     }
+    .textfornewstop {
+        width: 15px;
+        height: 27px;
+    }
+    .kavich {
+        margin-left: -18px !important;
+        padding-left: 15px!important;
+    }
+    .kavich2 {
+        margin-left: -18px !important;
+        padding-left: 15px!important;
+    }
+    .texttocomentsdiv2 {
+        width: 35.233333% !important;
+    }
+    .titleheadi4 {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 60px;
+        line-height: 44px;
+        color: #223A76;
+        margin-left: 44px;
+        padding-top: 78px;
+    }
+    .texttocoments2 {
+        padding-left: 45px !important;
+        padding-top: 0px;
+        font-size: 17px !important;
+        line-height: 19px;
+        color: #223A76;
+    }
     .texttocoments {
-        padding-left: 29px;
-        padding-top: 25px;
-        font-size: 17px;
+        margin-left: 48px;
+        padding-left: 0px !important;
+        padding-top: 0px;
+        font-size: 17px !important;
         line-height: 19px;
         color: #223A76;
     }
@@ -164,8 +250,11 @@
         width: 920px;
     }
     .coomandos {
-        padding-top: 120px;
-        padding-left: 17px;
+        padding-top: 61px !important;
+        padding-left: 1px;
+    }
+    .formfooterniz {
+        padding-top: 41px;
     }
     .mu-single-gallery {
         margin-left: 15px !important;
@@ -180,7 +269,7 @@
         padding-left: 0px;
     }
     .allrepublicpc {
-        padding-right: 45px;
+        padding-right: 25px;
         margin-top: -9px;
     }
     .hoverpracticks:hover {
@@ -225,7 +314,7 @@
     .card-bodys {
         background: #223A76;
         width: 290px;
-        height: 158px;
+        height: 155px;
     }
     .newsone {
         width: 605px;
@@ -272,6 +361,7 @@
         width: 920px;
     }
     .practicfirst {
+        background-position: inherit !important;
         padding-right: 0px;
         height: 291px;
         width: 470px;
@@ -364,8 +454,8 @@
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: 8px;
-        margin-top: -1px;
+        margin-left: 8px !important;
+        margin-top: -1px !important;
     }
     .navbar-right {
         float: right !important;
@@ -380,8 +470,8 @@
         width: 213px !important;
     }
     .titleheading3 {
-        padding-top: 0px !important;
-        padding-bottom: 3px !important;
+        padding-top: 17px !important;
+        padding-bottom: 28px !important;
         margin-left: 49px !important;
     }
 }
