@@ -1,4 +1,10 @@
 @media screen and (max-width: 481px) {
+    .textcomentos{
+        padding-top:29px;
+    }
+    .klient{
+        padding-top: 45px !important;
+    }
     .btkomandass {
         margin-right: -28px;
         float: right;
@@ -32,8 +38,10 @@
     }
     .lefticonhead {
         width: 49% !important;
+        margin-right: -6px;
     }
     .righticonhead {
+        margin-left: -8px;
         width: 50% !important;
     }
     .none480img {
@@ -140,7 +148,19 @@
     body>div:nth-child(12) {
         display: none;
     }
-    .kavich {
+    #mu-reservation\  > div > div > div > div > div.carousel-item.item-2.light > div > div:nth-child(4){
+        float: left;
+    width: 12%;
+    }
+    #mu-reservation\  > div > div > div > div > div.carousel-item.item-2.light > div > div.col-sm-4{
+        width: 87%;
+    float: right;
+    }
+    .padcomenttop{
+        padding-top: 82px !important;
+    }
+    .kavich {float: left;
+        padding-left: 0px;
         margin-right: -15px;
     }
     .on480left {
@@ -240,7 +260,7 @@
         display: none;
     }
     .titleaboutus {
-        margin-left: -16px;
+        margin-left: -35px;
     }
     .telph {
         display: none !important;
@@ -256,7 +276,7 @@
         padding-bottom: 65px;
     }
     .btn {
-        padding: 8px 14px !important;
+        padding: 8px 24px !important;
     }
     .detail {
         font-style: normal !important;
@@ -267,7 +287,7 @@
     }
     .lineverthead {
         margin-top: -15px;
-        margin-left: -1px;
+        margin-left: 6px;
     }
     .heidingnum1 {
         height: 60px !important;
@@ -291,12 +311,16 @@
         height: 3px !important;
     }
     .titleheading {
+        margin-top: -30px;
         padding-bottom: 10px;
-        margin-left: 14px;
-        padding-top: 46px;
+        margin-left: 4px;
+        padding-top: 0px;
         font-weight: 450;
         font-size: 40px;
         line-height: 51px;
+    }
+    .abousa {
+        padding-top: 0px;
     }
     .mu-gallery-area {
         display: none;
@@ -457,10 +481,10 @@
         line-height: 28px !important;
     }
     .benerslide {
-        height: 621px !important;
+        height: 710px !important;
     }
     .padinhead {
-        padding-top: 17px !important;
+        padding-top: 11px !important;
     }
     #top-menu {
         display: none;
@@ -476,7 +500,7 @@
         height: 35px;
     }
     .iconcos {
-        padding-top: 48px !important;
+        padding-top: 33px !important;
     }
     .nazva {
         left: 8.2% !important;
@@ -554,7 +578,7 @@
     .comandatextc {
         color: #223a7600;
         padding-top: 104px !important;
-        display: block;
+        display: none !important;
     }
     .comandatextc a:hover {
         color: #B49A67 !important;
@@ -627,6 +651,7 @@
         display: none !important;
     }
     .butonas {
+        margin-left: -16px;
         padding-left: 0px;
         padding-top: 62px;
         display: block;

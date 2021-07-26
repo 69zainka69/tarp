@@ -1,4 +1,7 @@
 @media screen and (max-width: 1965px) {
+    #mu-reservation\  > div > div > div > div > div.carousel-item.item-1 > div > div.col-sm-4{
+        float: right;
+    }
     .mobile420 {
         display: none;
     }
@@ -21,15 +24,15 @@
     }
     .texttocoments {
         padding-left: 15px;
-        padding-top: 25px;
+       margin-top: -65px;
         font-size: 17px;
         line-height: 19px;
         color: #223A76;
     }
     .navbar>.container .navbar-brand,
     .navbar>.container-fluid .navbar-brand {
-        margin-left: -45px;
-        margin-top: -2px;
+        margin-left: -48px !important;
+        margin-top: -6px !important;
     }
     .conpadin {
         padding-top: 45px;
