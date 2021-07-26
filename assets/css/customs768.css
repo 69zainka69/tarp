@@ -34,8 +34,22 @@
     #mu-gallery>div>div>div>div.mu-gallery-area>div.col-lg-12>div>div {
         width: 100%;
     }
-    .comenttomen {
-        width: 91% !important;
+    .comenttomen { 
+        width: 85% !important;
+    }.comenttomen {
+        padding-left: 0px !important;
+        margin-left: 6px;
+    }
+    .iconcomento{
+        width: 16.333333% !important;
+    }
+    .textcomentos {margin-left: auto;
+        margin-right: auto;
+        font-size: 17px;
+        line-height: 19px;
+        color: #223A76;
+        padding-top: 10px;
+        width: 91%;
     }
     .sysys {
         padding-left: 10px !important;
@@ -189,11 +203,20 @@
         margin-top: -34px;
         margin-left: -4px;
     }
+    .vverhykontaktov{
+        height: 18px !important;
+    }
+    .klient2{
+        width:96%;
+    }
+    .klient{
+        width:96%;
+    }
     .titleheading {
         font-weight: 450;
         font-size: 50px;
         line-height: 64px;
-        margin-left: 44px;
+        margin-left: 27px;
         padding-top: 0px;
     }
     .hones {
@@ -206,6 +229,9 @@
         font-weight: 600 !important;
         font-size: 17px !important;
         line-height: 17px !important;
+    }
+    .texttocoments{
+        width: 350px;
     }
     .padheader {
         padding-top: 36px;
@@ -268,8 +294,9 @@
         height: 158px;
     }
     .newsone {
-        width: 660px;
-        height: 320px;
+        width: 728px;
+        height: 324px;
+        background: url(/img/news1786.svg) !important;
     }
     .order-sm-first {
         width: 100% !important;
@@ -304,11 +331,24 @@
         margin-right: 2px;
         margin-left: 2px;
     }
+    .btnsesp {
+        padding-top: 31px !important;
+        padding-right: 18px !important;
+    }
+    .padl0px{
+        padding-left: 30px !important;
+        padding-top: 37px;
+    }
+    .butallposlygi{
+        padding-right: 16px !important;
+        margin-top: -38px;
+    }
     .hoverpracticks:hover {
+        background: #ffffff;
         opacity: 1;
         width: 356px !important;
-        padding-left: 3px;
-        box-shadow: 8px 15px 10px 5px rgb(0 0 0 / 20%);
+        padding-left: 17px;
+        box-shadow: 20px 15px 10px 5px rgb(0 0 0 / 20%);
         margin-left: -6px;
     }
     .container {

@@ -124,7 +124,7 @@
         padding-top: 18px !important;
         padding-left: 20px;
     }
-    .#mu-reservation>div>div>div>div>div:nth-child(8) {
+    #mu-reservation>div>div>div>div>div:nth-child(8) {
         display: none;
     }
     #mu-reservation>div>div>div>div>div:nth-child(7) {
