@@ -37,6 +37,10 @@
     <style>
         /*карусель*/
         
+        .cards {
+            width: 320px;
+        }
+        
         .carousel-wrapper {
             position: relative;
         }
@@ -271,10 +275,6 @@
             width: 100%;
         }
         
-        .bottkomand {
-            padding-top: 55px;
-        }
-        
         .bottkomand a span {
             font-style: normal;
             font-weight: 600;
@@ -286,14 +286,6 @@
             padding-top: 8px;
             padding-bottom: 8px;
             color: #B49A67;
-        }
-        
-        .bottkomand a {
-            border: solid 2px #B49A67;
-            padding-left: 18px;
-            padding-right: 18px;
-            padding-top: 8px;
-            padding-bottom: 8px;
         }
         
         .lang-active {
@@ -390,10 +382,6 @@
             border: solid 2px #223A76;
             color: #ffffff;
             background-color: #223A76;
-        }
-        
-        .cards {
-            width: 320px;
         }
         
         .butomzap:active {
@@ -859,7 +847,7 @@
                     <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
                         <li id="home"><a style="color:#B49A67;" href="https://new-partner.vm.ua/tarp">Головна</a></li>
                         <li id="about"><a href="https://new-partner.vm.ua/tarp/ua/about/">Про нас</a></li>
-                        <li id="men"><a href="#mu-restaurant-menu">Команда</a></li>
+                        <li id="men"><a href="#coomandoss">Команда</a></li>
                         <li id="praktiki"><a href="https://new-partner.vm.ua/tarp/ua/praktiki/yuridicheskiy-autsyursing/">Практики</a></li>
                         <li><a id="men" href="#mu-gallery">Наші клієнти</a></li>
                         <li><a id="men" href="#pubcil">Публікації</a></li>
@@ -1162,9 +1150,9 @@
 
     </section>
 
-    <section id="mu-gallery" style="height: 1151px;">
+    <section id="mu-gallery" class="startcomanda">
         <div class="container contcomand">
-            <div class="row lefter">
+            <div id="coomandoss" class="row lefter">
                 <div class="coomandos" class="col-lg-12">
                     <div class="textkomand on768" class="mu-single-gallery col-lg-4 col-sm-6 col-md-titleaboutus">
                         <h3 class="titleaboutus">Команда</h3><br><span class="btkomandass"><a class="abtncom" href="">Вся команда</a></span>
@@ -1264,7 +1252,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="padding-bottom:198px; padding-top:263px; z-index:-1;"></div>
+                        <div class="megdycartcomand"></div>
                         <div style="padding-left: 0px;" class="col-lg-12">
                             <div class="mu-gallery-area">
                                 <div class="mu-gallery-content">
@@ -1319,7 +1307,7 @@
             <div class="row">
                 <div style="padding-top:17px; z-index:3;" class="col-lg-12 col-md-12 col-sm-12 practop1">
                     <div class="mu-reservation-area">
-                        <div class="practbuts" style="float:right; padding-right:61px; padding-top:33px;">
+                        <div class="practbuts">
                             <p class="buttonposlyg" class="btn"><a href="">Весь список послуг</a></p>
                         </div>
                         <div class="mu-title">
@@ -1482,7 +1470,7 @@
                                 <p class="batcartyn"><a href="">Дізнатися більше</a></p>
                             </div>
                         </div>
-                        <div style="padding-top:30px; " class="row toprigtt">
+                        <div class="row toprigtt prac1linnes">
                             <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practictwotwo">
                                 <div class="nothoverpractics">
                                     <div class="col-lg-6 col-md-6 col-sm-6 newsleft">
@@ -1552,7 +1540,7 @@
 
 
                         <div class="onpad"></div>
-                        <div style="padding-top:29px; " class="row toprigtt">
+                        <div class="row toprigtt prac2linnes">
 
 
 
@@ -1624,7 +1612,7 @@
                         </div>
 
 
-                        <div style="padding-top:25px; " class="row toprigtt">
+                        <div class="row toprigtt prac3linnes">
 
                             <div class="col-lg-6 col-md-6 col-sm-6 newsleft  practiccart witeblue">
 
@@ -1714,7 +1702,7 @@
                         </div>
 
 
-                        <div style="padding-top:27px; " class="row toprigtt">
+                        <div class="row toprigtt prac4linnes">
                             <div style="background:white;" class="col-lg-6 col-md-6 col-sm-6 newsleft practiccart">
                                 <div class="nothoverpractics">
 
@@ -1945,14 +1933,14 @@
 
                     <p class="headnews ontpc ">Тримання під вартою підозрюваних</p>
                     <div class="padtopublictop" style="height:20px;"></div>
-                    <p class="textnews ontpc ">Вам колись доводилось бачити умови, в яких тримають під вартою<br> підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. В Україні вже давно варто запровадити більш чіткі правила щодо
-                        визначення запобіжного заходу. У багатьох випадках утримання під вартою в СІЗО достатньо було б замінити домашнім арештом. Чому ініціатива міністра юстиції Дениса Малюськи щодо «фільтрування» СІЗО законодавчо необгрунтована, та
-                        як варто проводити там «ревізії», розповів виданню ГолосUA керуючий партнер ЮК “Тарасов та партнери”, адвокат Андрей Тарасов.
+                    <p class="textnews ontpc ">Вам колись доводилось бачити умови, в яких тримають під вартою підозрюваних в СІЗО? Ми щиро сподіваємось на негативну відповідь, оскільки видовище це не з приємних. <br>В Україні вже давно варто запровадити більш чіткі правила щодо
+                        визначення запобіжного заходу. У багатьох випадках утримання під вартою в СІЗО достатньо було б замінити домашнім арештом.<br> Чому ініціатива міністра юстиції Дениса Малюськи щодо «фільтрування» СІЗО законодавчо необгрунтована,
+                        та як варто проводити там «ревізії», розповів виданню ГолосUA керуючий партнер ЮК “Тарасов та партнери”, адвокат Андрей Тарасов.
                     </p>
                     <div class="textfornewstop"></div>
 
                     <p class="datestat" style="float:left; ">12-02-2020</p>
-                    <p style="float:right; "><a style="color:#B49A67; padding:3px 15px; border:1px solid #B49A67; " class="textbutton onpcs" href="# ">Детальніше на сторінці ЗМІ</a></p>
+                    <p class="pbutonnew768"><a class="textbutton onpcs abutonnew768" href="# ">Детальніше на сторінці ЗМІ</a></p>
 
                     <div class="hree"></div>
 
@@ -2057,7 +2045,7 @@
         <div class="container ">
             <div class="row ">
                 <div style="padding-top:5px;"></div>
-                <div class="hree"></div>
+                <div class="hreer"></div>
                 <div style="padding-top:5px;"></div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-sm-4 onpc ostpublicryad">
                     <div class="cards ">

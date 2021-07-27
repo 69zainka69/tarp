@@ -474,6 +474,9 @@
         padding-bottom: 28px !important;
         margin-left: 49px !important;
     }
+    .cards {
+        width: 299px !important;
+    }
 }
 
 @media (min-width: 788px) {

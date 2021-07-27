@@ -14,8 +14,8 @@
     .hones {
         display: none;
     }
-    .titleheading3{
-padding-bottom: 30px;
+    .titleheading3 {
+        padding-bottom: 30px;
     }
     .fotnotleft {
         width: 1296px;
@@ -112,6 +112,14 @@ padding-bottom: 30px;
     }
     #mu-reservation\ ssse>div:nth-child(2)>div>div:nth-child(1) {
         display: none !important;
+    }
+    .abutonnew768 {
+        color: #B49A67;
+        padding: 3px 15px;
+        border: 1px solid #B49A67;
+    }
+    .pbutonnew768 {
+        float: right;
     }
     #mu-reservation\ ssse>div:nth-child(2)>div>div:nth-child(3) {
         display: none !important;
@@ -369,11 +377,30 @@ padding-bottom: 30px;
     .yridconsoult {
         display: none;
     }
+    .textaboutus {
+        line-height: 19px;
+        width: 217px;
+        padding-top: 9px;
+        padding-left: 4px;
+        font-size: 17px;
+        color: #223A76;
+    }
     .telph {
         display: none;
     }
     .card-text {
         padding-bottom: 9px;
+    }
+    .bottkomand {
+        padding-top: 42px;
+        margin-left: 3px;
+    }
+    .bottkomand a {
+        border: solid 2px #B49A67;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
     .titleheading {
         font-style: normal;
@@ -417,6 +444,11 @@ padding-bottom: 30px;
         font-weight: 490;
         font-size: 37.3153px;
     }
+    .practbuts {
+        float: right;
+        padding-right: 57px;
+        padding-top: 34px;
+    }
     .heicart {
         height: 234px;
     }
@@ -426,9 +458,14 @@ padding-bottom: 30px;
     .nonetable {
         display: block;
     }
+    .text {
+        font-size: 17px;
+        line-height: 19px;
+        padding-left: 10px;
+    }
     .newstitle {
-        padding-top: 14px;
-        padding-left: 3px;
+        padding-top: 17px;
+        padding-left: 13px;
         font-style: normal;
         font-weight: 450;
         font-size: 27px;
@@ -480,6 +517,18 @@ padding-bottom: 30px;
         height: 290px;
         width: 494px;
     }
+    .prac1linnes {
+        padding-top: 28px;
+    }
+    .prac4linnes {
+        padding-top: 27px;
+    }
+    .prac3linnes {
+        padding-top: 23px;
+    }
+    .prac2linnes {
+        padding-top: 27px;
+    }
     .practictwotwo {
         padding-right: -15px;
         height: 234px;
@@ -497,7 +546,7 @@ padding-bottom: 30px;
     .practiccarts {
         height: 234px;
         width: 520px;
-        padding-left: 22px;
+        padding-left: 25px;
     }
     .practicscar {
         padding-left: 15px;
@@ -555,5 +604,13 @@ padding-bottom: 30px;
     .nazarenko:hover {
         height: 295px;
         width: 320px;
+    }
+    .megdycartcomand {
+        padding-bottom: 198px;
+        padding-top: 263px;
+        z-index: -1;
+    }
+    .startcomanda {
+        height: 1151px;
     }
 }

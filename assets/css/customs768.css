@@ -34,16 +34,36 @@
     #mu-gallery>div>div>div>div.mu-gallery-area>div.col-lg-12>div>div {
         width: 100%;
     }
-    .comenttomen { 
+    .comenttomen2 {
         width: 85% !important;
-    }.comenttomen {
+        padding-left: 0px !important;
+        margin-left: 6px;
+        padding-top: 40px;
+    }
+    .kavich2 {
+        padding-top: 38px;
+    }
+    .comenttomen {
+        width: 85% !important;
         padding-left: 0px !important;
         margin-left: 6px;
     }
-    .iconcomento{
+    .iconcomento {
+        padding-top: 0px;
+        padding-left: 159px !important;
+        margin-top: 23px;
+        margin-left: 10px;
         width: 16.333333% !important;
     }
-    .textcomentos {margin-left: auto;
+    .iconcomento2 {
+        padding-top: 0px;
+        padding-left: 167px !important;
+        margin-top: 23px;
+        margin-left: 10px;
+        width: 34.333333% !important;
+    }
+    .textcomentos {
+        margin-left: auto;
         margin-right: auto;
         font-size: 17px;
         line-height: 19px;
@@ -80,11 +100,6 @@
     }
     .ollpublic {
         display: block;
-    }
-    .hree {
-        display: block;
-        height: 1px;
-        background-color: rgb(114, 114, 114);
     }
     #mu-reservation\>div>div>div>div.col-lg-8.col-md-8.col-sm-8.col-8.order-sm-first {
         width: 100% !important;
@@ -180,6 +195,9 @@
     .nenadonamob {
         display: none;
     }
+    .texttocomentsdiv2 {
+        width: 19.233333% !important;
+    }
     .texton768 {
         float: right;
         padding-left: 54%;
@@ -188,9 +206,20 @@
     .lefter {
         margin-left: 20px !important;
     }
+    .redersys {
+        padding-left: 10px !important;
+    }
+    .megdycartcomand {
+        padding-bottom: 261px;
+        padding-top: 266px;
+        z-index: -1;
+    }
+    .startcomanda {
+        height: 1206px;
+    }
     .on768 {
-        padding-left: 51px;
-        width: 100% !important;
+        padding-left: 19px;
+        width: 50% !important;
         display: block;
     }
     .benerslide {
@@ -203,14 +232,14 @@
         margin-top: -34px;
         margin-left: -4px;
     }
-    .vverhykontaktov{
+    .vverhykontaktov {
         height: 18px !important;
     }
-    .klient2{
-        width:96%;
+    .klient2 {
+        width: 96%;
     }
-    .klient{
-        width:96%;
+    .klient {
+        width: 96%;
     }
     .titleheading {
         font-weight: 450;
@@ -230,8 +259,60 @@
         font-size: 17px !important;
         line-height: 17px !important;
     }
-    .texttocoments{
+    .abutonnew768 {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        padding: 6px 15px !important;
+    }
+    .pbutonnew768 {
+        float: right;
+        padding-right: 2px;
+    }
+    .texttocoments {
         width: 350px;
+        margin-left: 107px;
+        padding-left: 0px !important;
+        padding-top: 0px;
+        font-size: 17px !important;
+    }
+    .pubsec {
+        padding-top: 220px !important;
+    }
+    .order-sm-first {
+        padding-left: 1px !important;
+    }
+    .datestat {
+        margin-left: 61px;
+    }
+    .textnews {
+        width: 91%;
+    }
+    .textfornewstop {
+        height: 46px;
+    }
+    .ontpc {
+        margin-left: 58px;
+        margin-top: 8px;
+    }
+    .titleheadi4 {
+        font-style: normal;
+        font-weight: 450;
+        font-size: 50px;
+        line-height: 47px;
+        color: #223A76;
+        margin-left: 36px;
+        padding-top: 78px;
+    }
+    .texttocoments2 {
+        width: 350px;
+    }
+    .butpubtop {
+        padding-right: 18px !important;
+        padding-top: 104px !important;
+    }
+    #pubcil {
+        padding-top: 85px !important;
     }
     .padheader {
         padding-top: 36px;
@@ -275,14 +356,35 @@
     .iconfooters {
         display: block;
     }
+    .ollpublic {
+        display: none;
+    }
     .iconsfooter {
         display: none;
     }
     .contacts {
-        padding-left: 2px;
+        width: 99%;
+        padding-left: 50%;
+    }
+    .hreer {
+        margin-top: 22px;
+        margin-bottom: 22px;
+        width: 100%;
+        background-color: rgb(114, 114, 114);
+        height: 1px;
+    }
+    .hree {
+        height: 1px;
+        margin-top: 62px;
+        margin-bottom: 35px;
+        width: 100%;
+        background-color: rgb(114, 114, 114);
     }
     .mapsg {
         padding-left: 0px;
+    }
+    .cards {
+        width: 250px !important;
     }
     .cardss {
         height: 165px;
@@ -291,7 +393,7 @@
     .card-bodys {
         background: #223A76;
         width: 354px;
-        height: 158px;
+        height: 140px;
     }
     .newsone {
         width: 728px;
@@ -335,11 +437,11 @@
         padding-top: 31px !important;
         padding-right: 18px !important;
     }
-    .padl0px{
+    .padl0px {
         padding-left: 30px !important;
         padding-top: 37px;
     }
-    .butallposlygi{
+    .butallposlygi {
         padding-right: 16px !important;
         margin-top: -38px;
     }
@@ -507,6 +609,10 @@
         margin-left: 35px !important;
         margin-top: 7px !important;
     }
+    .allrepublicpc {
+        padding-right: 0px;
+        margin-top: 0px;
+    }
     .navbar-right {
         float: right !important;
         margin-right: 56px !important;
@@ -520,5 +626,8 @@
     }
     .iconcos {
         padding-left: 7px;
+    }
+    #mu-reservation {
+        display: none !important;
     }
 }
