@@ -99,11 +99,11 @@
         background: #B49A67;
     }
     .detail {
-        padding-left: 28px;
-        padding-right: 26px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        border: 1px solid #B49A67;
+        padding-left: 28px !important;
+        padding-right: 26px !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        border: 1px solid #B49A67 !important;
     }
     .abownas {
         float: right;

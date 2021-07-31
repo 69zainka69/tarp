@@ -1,4 +1,24 @@
 @media screen and (max-width: 1965px) {
+    .heidingnum1 {
+        height: 60px;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 25px;
+        text-align: center;
+        color: #B49A67;
+    }
+    
+    .heidingnum2 {
+        height: 60px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 25px;
+        text-align: center;
+       
+    }
     #mu-reservation\>div>div>div>div>div.carousel-item.item-1>div>div.col-sm-4 {
         float: right;
     }

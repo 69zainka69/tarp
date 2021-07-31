@@ -1,4 +1,111 @@
 @media screen and (max-width: 769px) {
+    .globys{margin-left: -4px;
+        margin-top: -10px;
+    }
+    .car6{
+        margin-left: 55px;
+    }
+    .car5{
+        margin-left: 33px;
+    }
+    .textglobys{
+        margin-top: 16px;
+        width: 97%;
+        font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 24px;
+text-align: center;
+    }
+    .textbeskonechnost{
+        margin-top: 6px;
+        width: 121%;
+        margin-left: -6px;
+        font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 24px;
+    }
+    .textproc100{
+        margin-left: -3px;
+        margin-top: 2px;
+        font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 24px;
+    }
+    .car4{margin-top: 5px;
+        margin-left: -34px;
+    }
+    .linepronas {
+        width: 82%;
+        padding-top: 16px !important;
+        padding-bottom: 37px !important;
+        margin-left: -96px;
+    }
+    .car2{
+        margin-left: 38px;
+    }
+    .car1{
+        margin-left: -37px;
+    }
+    .text15yur{margin-top: -5px;
+        margin-left: -26px;
+        width: 158%;
+        font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 24px;
+    }
+    .proc100{
+        font-style: normal !important;
+font-weight: bold !important;
+font-size: 50px !important;
+line-height: 28px !important;
+    }
+    .for247{
+        font-style: normal !important;
+        font-weight: bold !important;
+        font-size: 50px !important;
+        line-height: 23px !important;
+    }
+    .car2{
+        padding-left: 18px !important;
+    }
+    .text12rokiv{
+        margin-top: -5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .text12rok{
+        margin-left: -8px;
+        margin-top: -5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px;
+        width: 168%;
+    }
+    .car3{
+        padding-left: 68px;
+    }
+    .detail{
+        font-weight: 600 !important;
+font-size: 17px !important;
+line-height: 22px !important;
+    }
+    .butomzap {
+        padding-top: 9px !important;
+        margin-left: 3px !important;
+        width: 187.69px !important;
+    height: 59.26px !important;
+    }
+
+    .iconcs{
+        padding-right: 7px;
+    }
     .fotnotleft {
         width: 768px !important;
         height: 657px !important;
@@ -14,7 +121,9 @@
         margin-left: -14px;
     }
     .titleaboutus {
-        margin-left: -14px;
+        padding-left: 15px;
+        padding-top: 65px !important;
+        margin-left: 3px;
         font-style: normal;
         font-weight: 450;
         font-size: 50px;
@@ -245,7 +354,7 @@
         font-weight: 450;
         font-size: 50px;
         line-height: 64px;
-        margin-left: 27px;
+        margin-left: 44px;
         padding-top: 0px;
     }
     .hones {
@@ -254,11 +363,7 @@
     .paddinpronas {
         height: 140px;
     }
-    .butomzap {
-        font-weight: 600 !important;
-        font-size: 17px !important;
-        line-height: 17px !important;
-    }
+    
     .abutonnew768 {
         font-weight: 600;
         font-size: 17px;
@@ -324,12 +429,15 @@
     .abownas {
         display: block;
         float: right;
-        margin-top: -51px;
-        margin-right: 0px;
+        margin-top: -50px;
+        margin-right: -4px;
     }
     .abownas a {
-        padding: 3px 15px;
-        border: 1px solid #B49A67;
+        padding-top: 5px !important;
+        padding-bottom: 11px !important;
+        padding-right: 43px !important;
+        padding-left: 46px !important;
+        border: 1px solid #B49A67 !important;
     }
     .navbar-default .navbar-toggle {
         border-color: rgba(161, 117, 117, 0) !important;
